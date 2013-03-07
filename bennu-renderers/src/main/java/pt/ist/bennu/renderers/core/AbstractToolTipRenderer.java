@@ -1,15 +1,15 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlBlockContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlInlineContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlScript;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
+import pt.ist.bennu.renderers.core.components.HtmlBlockContainer;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlContainer;
+import pt.ist.bennu.renderers.core.components.HtmlInlineContainer;
+import pt.ist.bennu.renderers.core.components.HtmlScript;
+import pt.ist.bennu.renderers.core.layouts.Layout;
 
 public abstract class AbstractToolTipRenderer extends OutputRenderer {
 

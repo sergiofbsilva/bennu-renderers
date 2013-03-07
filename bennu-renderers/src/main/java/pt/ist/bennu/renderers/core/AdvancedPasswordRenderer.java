@@ -1,12 +1,12 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlBlockContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlCheckBox;
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlPasswordInput;
-import pt.ist.fenixWebFramework.renderers.components.HtmlScript;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.components.HtmlBlockContainer;
+import pt.ist.bennu.renderers.core.components.HtmlCheckBox;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlPasswordInput;
+import pt.ist.bennu.renderers.core.components.HtmlScript;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 public class AdvancedPasswordRenderer extends InputRenderer {
 

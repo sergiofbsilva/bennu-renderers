@@ -1,6 +1,6 @@
-package pt.ist.fenixWebFramework.rendererExtensions.factories;
+package pt.ist.bennu.renderers.rendererExtensions.factories;
 
-import pt.ist.fenixWebFramework.renderers.model.MetaObjectKey;
+import pt.ist.bennu.renderers.core.model.MetaObjectKey;
 
 public class CreationMetaObjectKey extends MetaObjectKey {
     public CreationMetaObjectKey(Class type) {

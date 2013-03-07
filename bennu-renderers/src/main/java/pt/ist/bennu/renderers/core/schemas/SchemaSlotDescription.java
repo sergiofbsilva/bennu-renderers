@@ -1,10 +1,10 @@
-package pt.ist.fenixWebFramework.renderers.schemas;
+package pt.ist.bennu.renderers.core.schemas;
 
 import java.util.List;
 import java.util.Properties;
 
-import pt.ist.fenixWebFramework.renderers.components.converters.Converter;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlValidator;
+import pt.ist.bennu.renderers.core.components.converters.Converter;
+import pt.ist.bennu.renderers.core.validators.HtmlValidator;
 import pt.utl.ist.fenix.tools.util.Pair;
 
 public class SchemaSlotDescription {

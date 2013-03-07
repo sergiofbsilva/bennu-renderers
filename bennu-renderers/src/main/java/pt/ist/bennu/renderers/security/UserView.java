@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.security;
+package pt.ist.bennu.renderers.security;
 
 public class UserView {
 

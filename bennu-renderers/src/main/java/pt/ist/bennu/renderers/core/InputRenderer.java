@@ -1,20 +1,20 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
 import java.util.List;
 
 import org.apache.commons.collections.Predicate;
 import org.apache.log4j.Logger;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlFormComponent;
-import pt.ist.fenixWebFramework.renderers.components.Validatable;
-import pt.ist.fenixWebFramework.renderers.contexts.InputContext;
-import pt.ist.fenixWebFramework.renderers.contexts.PresentationContext;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
-import pt.ist.fenixWebFramework.renderers.utils.RenderKit;
-import pt.ist.fenixWebFramework.renderers.utils.RenderMode;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlChainValidator;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlValidator;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlFormComponent;
+import pt.ist.bennu.renderers.core.components.Validatable;
+import pt.ist.bennu.renderers.core.contexts.InputContext;
+import pt.ist.bennu.renderers.core.contexts.PresentationContext;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
+import pt.ist.bennu.renderers.core.utils.RenderKit;
+import pt.ist.bennu.renderers.core.utils.RenderMode;
+import pt.ist.bennu.renderers.core.validators.HtmlChainValidator;
+import pt.ist.bennu.renderers.core.validators.HtmlValidator;
 
 /**
  * The base renderer for every input renderer.

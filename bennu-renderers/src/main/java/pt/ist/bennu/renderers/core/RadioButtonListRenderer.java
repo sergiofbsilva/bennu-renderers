@@ -1,25 +1,25 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.lang.StringUtils;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlLabel;
-import pt.ist.fenixWebFramework.renderers.components.HtmlRadioButton;
-import pt.ist.fenixWebFramework.renderers.components.HtmlRadioButtonList;
-import pt.ist.fenixWebFramework.renderers.components.converters.BiDirectionalConverter;
-import pt.ist.fenixWebFramework.renderers.contexts.PresentationContext;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.model.MetaObject;
-import pt.ist.fenixWebFramework.renderers.model.MetaObjectFactory;
-import pt.ist.fenixWebFramework.renderers.model.MetaObjectKey;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlotKey;
-import pt.ist.fenixWebFramework.renderers.schemas.Schema;
-import pt.ist.fenixWebFramework.renderers.utils.RenderKit;
-import pt.ist.fenixWebFramework.renderers.utils.RenderMode;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlLabel;
+import pt.ist.bennu.renderers.core.components.HtmlRadioButton;
+import pt.ist.bennu.renderers.core.components.HtmlRadioButtonList;
+import pt.ist.bennu.renderers.core.components.converters.BiDirectionalConverter;
+import pt.ist.bennu.renderers.core.contexts.PresentationContext;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.model.MetaObject;
+import pt.ist.bennu.renderers.core.model.MetaObjectFactory;
+import pt.ist.bennu.renderers.core.model.MetaObjectKey;
+import pt.ist.bennu.renderers.core.model.MetaSlotKey;
+import pt.ist.bennu.renderers.core.schemas.Schema;
+import pt.ist.bennu.renderers.core.utils.RenderKit;
+import pt.ist.bennu.renderers.core.utils.RenderMode;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 /**
  * This renderer can be used as the input for a list of objects. The list of

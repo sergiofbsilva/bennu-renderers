@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.utils;
+package pt.ist.bennu.renderers.core.utils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Properties;
 
 import org.apache.commons.collections.Predicate;
 
-import pt.ist.fenixWebFramework.renderers.exceptions.NoRendererException;
+import pt.ist.bennu.renderers.core.exceptions.NoRendererException;
 
 public class RendererRegistry {
 

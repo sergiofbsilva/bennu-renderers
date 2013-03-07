@@ -1,7 +1,7 @@
-package pt.ist.fenixWebFramework.rendererExtensions.taglib;
+package pt.ist.bennu.renderers.rendererExtensions.taglib;
 
-import pt.ist.fenixWebFramework.renderers.taglib.CreateObjectTag;
-import pt.ist.fenixWebFramework.renderers.taglib.DefaultValueTag;
+import pt.ist.bennu.renderers.core.taglib.CreateObjectTag;
+import pt.ist.bennu.renderers.core.taglib.DefaultValueTag;
 
 public class FenixDefaultValueTag extends DefaultValueTag {
 

@@ -1,9 +1,9 @@
-package pt.ist.fenixWebFramework.renderers.validators;
+package pt.ist.bennu.renderers.core.validators;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import pt.ist.fenixWebFramework.renderers.components.Validatable;
+import pt.ist.bennu.renderers.core.components.Validatable;
 
 public class HtmlChainValidator extends AbstractHtmlValidator {
 

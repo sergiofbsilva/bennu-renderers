@@ -1,12 +1,12 @@
-package pt.ist.fenixWebFramework.renderers.model;
+package pt.ist.bennu.renderers.core.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-import pt.ist.fenixWebFramework.renderers.schemas.Schema;
-import pt.ist.fenixWebFramework.renderers.utils.RenderKit;
+import pt.ist.bennu.renderers.core.schemas.Schema;
+import pt.ist.bennu.renderers.core.utils.RenderKit;
 
 /**
  * A MetaObject is an abstraction of a real domain object. If provides a

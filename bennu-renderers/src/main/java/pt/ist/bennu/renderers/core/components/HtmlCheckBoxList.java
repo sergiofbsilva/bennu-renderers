@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.components;
+package pt.ist.bennu.renderers.core.components;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +7,8 @@ import javax.servlet.jsp.PageContext;
 
 import org.apache.commons.collections.Predicate;
 
-import pt.ist.fenixWebFramework.renderers.components.tags.HtmlTag;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.components.tags.HtmlTag;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 public class HtmlCheckBoxList extends HtmlMultipleValueComponent {
 

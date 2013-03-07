@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pt.ist.fenixWebFramework.struts.plugin;
+package pt.ist.bennu.renderers.struts.plugin;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,16 +28,16 @@ import org.apache.struts.config.FormBeanConfig;
 import org.apache.struts.config.MessageResourcesConfig;
 import org.apache.struts.config.ModuleConfig;
 
-import pt.ist.fenixWebFramework.Config;
-import pt.ist.fenixWebFramework.FenixWebFramework;
-import pt.ist.fenixWebFramework.struts.annotations.ExceptionHandling;
-import pt.ist.fenixWebFramework.struts.annotations.Exceptions;
-import pt.ist.fenixWebFramework.struts.annotations.Forward;
-import pt.ist.fenixWebFramework.struts.annotations.Forwards;
-import pt.ist.fenixWebFramework.struts.annotations.Input;
-import pt.ist.fenixWebFramework.struts.annotations.Mapping;
-import pt.ist.fenixWebFramework.struts.tiles.FenixDefinitionsFactory;
-import pt.ist.fenixWebFramework.struts.tiles.PartialTileDefinition;
+import pt.ist.bennu.renderers.Config;
+import pt.ist.bennu.renderers.FenixWebFramework;
+import pt.ist.bennu.renderers.struts.annotations.ExceptionHandling;
+import pt.ist.bennu.renderers.struts.annotations.Exceptions;
+import pt.ist.bennu.renderers.struts.annotations.Forward;
+import pt.ist.bennu.renderers.struts.annotations.Forwards;
+import pt.ist.bennu.renderers.struts.annotations.Input;
+import pt.ist.bennu.renderers.struts.annotations.Mapping;
+import pt.ist.bennu.renderers.struts.tiles.FenixDefinitionsFactory;
+import pt.ist.bennu.renderers.struts.tiles.PartialTileDefinition;
 import pt.ist.fenixframework.artifact.FenixFrameworkArtifact;
 import pt.ist.fenixframework.project.exception.FenixFrameworkProjectException;
 

@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.model;
+package pt.ist.bennu.renderers.core.model;
 
 import java.lang.reflect.Method;
 import java.text.ParseException;
@@ -7,8 +7,8 @@ import java.util.Date;
 
 import org.apache.log4j.Logger;
 
-import pt.ist.fenixWebFramework._development.LogLevel;
-import pt.ist.fenixWebFramework.renderers.utils.ClassHierarchyTable;
+import pt.ist.bennu.renderers._development.LogLevel;
+import pt.ist.bennu.renderers.core.utils.ClassHierarchyTable;
 
 // TODO: This needs revision. It's problably an horrible way of creating default values for types
 public class DefaultValues {

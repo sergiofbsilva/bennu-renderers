@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework;
+package pt.ist.bennu.renderers;
 
 import java.util.Map;
 import java.util.Map.Entry;

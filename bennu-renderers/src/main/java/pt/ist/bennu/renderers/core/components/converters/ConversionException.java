@@ -1,6 +1,6 @@
-package pt.ist.fenixWebFramework.renderers.components.converters;
+package pt.ist.bennu.renderers.core.components.converters;
 
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 public class ConversionException extends RuntimeException {
 

@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.rendererExtensions.factories;
+package pt.ist.bennu.renderers.rendererExtensions.factories;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -9,14 +9,14 @@ import java.util.List;
 
 import org.apache.commons.beanutils.PropertyUtils;
 
-import pt.ist.fenixWebFramework.rendererExtensions.util.ObjectChange;
-import pt.ist.fenixWebFramework.rendererExtensions.util.ObjectKey;
-import pt.ist.fenixWebFramework.renderers.model.CompositeSlotSetter;
-import pt.ist.fenixWebFramework.renderers.model.MetaObjectKey;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
-import pt.ist.fenixWebFramework.renderers.model.SimpleMetaObject;
-import pt.ist.fenixWebFramework.services.ServiceManager;
-import pt.ist.fenixWebFramework.services.ServicePredicate;
+import pt.ist.bennu.renderers.core.model.CompositeSlotSetter;
+import pt.ist.bennu.renderers.core.model.MetaObjectKey;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
+import pt.ist.bennu.renderers.core.model.SimpleMetaObject;
+import pt.ist.bennu.renderers.rendererExtensions.util.ObjectChange;
+import pt.ist.bennu.renderers.rendererExtensions.util.ObjectKey;
+import pt.ist.bennu.renderers.services.ServiceManager;
+import pt.ist.bennu.renderers.services.ServicePredicate;
 import pt.ist.fenixframework.DomainObject;
 import pt.ist.fenixframework.pstm.IllegalWriteException;
 import pt.ist.fenixframework.pstm.Transaction;

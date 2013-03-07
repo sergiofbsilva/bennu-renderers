@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.plugin;
+package pt.ist.bennu.renderers.core.plugin;
 
 import javax.servlet.ServletException;
 
@@ -10,11 +10,11 @@ import org.apache.struts.config.ControllerConfig;
 import org.apache.struts.config.ModuleConfig;
 import org.apache.struts.util.RequestUtils;
 
-import pt.ist.fenixWebFramework._development.LogLevel;
-import pt.ist.fenixWebFramework.renderers.model.MetaObjectFactory;
-import pt.ist.fenixWebFramework.renderers.model.SchemaFactory;
-import pt.ist.fenixWebFramework.renderers.model.UserIdentityFactory;
-import pt.ist.fenixWebFramework.renderers.utils.RenderKit;
+import pt.ist.bennu.renderers._development.LogLevel;
+import pt.ist.bennu.renderers.core.model.MetaObjectFactory;
+import pt.ist.bennu.renderers.core.model.SchemaFactory;
+import pt.ist.bennu.renderers.core.model.UserIdentityFactory;
+import pt.ist.bennu.renderers.core.utils.RenderKit;
 
 public class RenderersPlugin implements PlugIn {
     private static Logger logger = Logger.getLogger(RenderersPlugin.class);

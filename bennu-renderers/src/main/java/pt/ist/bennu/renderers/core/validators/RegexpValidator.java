@@ -1,6 +1,6 @@
-package pt.ist.fenixWebFramework.renderers.validators;
+package pt.ist.bennu.renderers.core.validators;
 
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 public class RegexpValidator extends HtmlValidator {
 

@@ -1,14 +1,14 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
 import org.apache.commons.lang.StringUtils;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlMenu;
-import pt.ist.fenixWebFramework.renderers.components.HtmlMenuOption;
-import pt.ist.fenixWebFramework.renderers.components.converters.Converter;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlotKey;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlMenu;
+import pt.ist.bennu.renderers.core.components.HtmlMenuOption;
+import pt.ist.bennu.renderers.core.components.converters.Converter;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.model.MetaSlotKey;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 /**
  * This renderer provides an alternative way of doing the input of a boolean

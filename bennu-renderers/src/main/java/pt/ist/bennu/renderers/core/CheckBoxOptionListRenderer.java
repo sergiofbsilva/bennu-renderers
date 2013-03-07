@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -6,20 +6,20 @@ import java.util.List;
 
 import org.apache.commons.collections.Predicate;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlCheckBox;
-import pt.ist.fenixWebFramework.renderers.components.HtmlCheckBoxList;
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlLabel;
-import pt.ist.fenixWebFramework.renderers.components.HtmlListItem;
-import pt.ist.fenixWebFramework.renderers.contexts.PresentationContext;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.model.MetaObject;
-import pt.ist.fenixWebFramework.renderers.model.MetaObjectFactory;
-import pt.ist.fenixWebFramework.renderers.model.MetaObjectKey;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlotKey;
-import pt.ist.fenixWebFramework.renderers.schemas.Schema;
-import pt.ist.fenixWebFramework.renderers.utils.RenderKit;
-import pt.ist.fenixWebFramework.renderers.utils.RenderMode;
+import pt.ist.bennu.renderers.core.components.HtmlCheckBox;
+import pt.ist.bennu.renderers.core.components.HtmlCheckBoxList;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlLabel;
+import pt.ist.bennu.renderers.core.components.HtmlListItem;
+import pt.ist.bennu.renderers.core.contexts.PresentationContext;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.model.MetaObject;
+import pt.ist.bennu.renderers.core.model.MetaObjectFactory;
+import pt.ist.bennu.renderers.core.model.MetaObjectKey;
+import pt.ist.bennu.renderers.core.model.MetaSlotKey;
+import pt.ist.bennu.renderers.core.schemas.Schema;
+import pt.ist.bennu.renderers.core.utils.RenderKit;
+import pt.ist.bennu.renderers.core.utils.RenderMode;
 
 /**
  * This renderer can be used as the input for a list of objects. The list of

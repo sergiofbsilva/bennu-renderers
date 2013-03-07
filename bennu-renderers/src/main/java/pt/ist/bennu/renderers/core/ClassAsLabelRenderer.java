@@ -1,9 +1,9 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlText;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlText;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 /**
  * This renderer allows you to handle cases were you don't have an enum value to
@@ -46,7 +46,7 @@ public class ClassAsLabelRenderer extends OutputRenderer {
     /**
      * The format of the label. This property allows you to alter the default
      * format of the label. You can use a format like the one supported by
-     * {@link pt.ist.fenixWebFramework.renderers.FormatRenderer} and it will be
+     * {@link pt.ist.bennu.renderers.core.FormatRenderer} and it will be
      * applied to the class object.
      * <p>
      * For example a format of <code>"label.${superclass.simpleName}.${simpleName}"</code> would produce the label

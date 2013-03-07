@@ -1,20 +1,20 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
 import java.util.Collection;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Map;
 
-import pt.ist.fenixWebFramework.rendererExtensions.CssStyler;
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlList;
-import pt.ist.fenixWebFramework.renderers.components.HtmlText;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.layouts.ListLayout;
-import pt.ist.fenixWebFramework.renderers.schemas.Schema;
-import pt.ist.fenixWebFramework.renderers.utils.RenderKit;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
-import pt.ist.fenixWebFramework.renderers.utils.RendererPropertyUtils;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlList;
+import pt.ist.bennu.renderers.core.components.HtmlText;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.layouts.ListLayout;
+import pt.ist.bennu.renderers.core.schemas.Schema;
+import pt.ist.bennu.renderers.core.utils.RenderKit;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.utils.RendererPropertyUtils;
+import pt.ist.bennu.renderers.rendererExtensions.CssStyler;
 
 /**
  * This renderer provides a basic presentation for a {@link java.util.List}.
@@ -128,7 +128,7 @@ public class ListRenderer extends OutputRenderer {
 
     /**
      * Allows you to choose the order in wich the elements will be presented.-
-     * See {@link pt.ist.fenixWebFramework.renderers.utils.RenderUtils#sortCollectionWithCriteria(Collection, String)} for more
+     * See {@link pt.ist.bennu.renderers.core.utils.RenderUtils#sortCollectionWithCriteria(Collection, String)} for more
      * details.
      * 
      * @property

@@ -1,17 +1,17 @@
-package pt.ist.fenixWebFramework.renderers.components;
+package pt.ist.bennu.renderers.core.components;
 
 import javax.servlet.jsp.PageContext;
 
-import pt.ist.fenixWebFramework.renderers.components.controllers.Controllable;
-import pt.ist.fenixWebFramework.renderers.components.controllers.HtmlController;
-import pt.ist.fenixWebFramework.renderers.components.converters.Converter;
-import pt.ist.fenixWebFramework.renderers.components.converters.Convertible;
-import pt.ist.fenixWebFramework.renderers.components.tags.HtmlTag;
-import pt.ist.fenixWebFramework.renderers.model.MetaObject;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlotKey;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlChainValidator;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlValidator;
+import pt.ist.bennu.renderers.core.components.controllers.Controllable;
+import pt.ist.bennu.renderers.core.components.controllers.HtmlController;
+import pt.ist.bennu.renderers.core.components.converters.Converter;
+import pt.ist.bennu.renderers.core.components.converters.Convertible;
+import pt.ist.bennu.renderers.core.components.tags.HtmlTag;
+import pt.ist.bennu.renderers.core.model.MetaObject;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
+import pt.ist.bennu.renderers.core.model.MetaSlotKey;
+import pt.ist.bennu.renderers.core.validators.HtmlChainValidator;
+import pt.ist.bennu.renderers.core.validators.HtmlValidator;
 
 public abstract class HtmlFormComponent extends HtmlComponent implements Convertible, Controllable, SlotChanger, Validatable {
 

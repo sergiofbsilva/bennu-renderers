@@ -1,11 +1,11 @@
-package pt.ist.fenixWebFramework.renderers.taglib;
+package pt.ist.bennu.renderers.core.taglib;
 
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.BodyTagSupport;
 
 import org.apache.log4j.Logger;
 
-import pt.ist.fenixWebFramework._development.LogLevel;
+import pt.ist.bennu.renderers._development.LogLevel;
 
 public class PropertyTag extends BodyTagSupport {
     private static final Logger logger = Logger.getLogger(PropertyTag.class);

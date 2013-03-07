@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.rendererExtensions;
+package pt.ist.bennu.renderers.rendererExtensions;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,23 +9,23 @@ import java.util.Map.Entry;
 import java.util.Properties;
 import java.util.TreeMap;
 
-import pt.ist.fenixWebFramework.renderers.InputRenderer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlActionLink;
-import pt.ist.fenixWebFramework.renderers.components.HtmlBlockContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlHiddenField;
-import pt.ist.fenixWebFramework.renderers.components.HtmlSimpleValueComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlTextInput;
-import pt.ist.fenixWebFramework.renderers.components.controllers.HtmlActionLinkController;
-import pt.ist.fenixWebFramework.renderers.components.controllers.HtmlController;
-import pt.ist.fenixWebFramework.renderers.components.converters.Converter;
-import pt.ist.fenixWebFramework.renderers.components.state.IViewState;
-import pt.ist.fenixWebFramework.renderers.contexts.PresentationContext;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlotKey;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.InputRenderer;
+import pt.ist.bennu.renderers.core.components.HtmlActionLink;
+import pt.ist.bennu.renderers.core.components.HtmlBlockContainer;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlContainer;
+import pt.ist.bennu.renderers.core.components.HtmlHiddenField;
+import pt.ist.bennu.renderers.core.components.HtmlSimpleValueComponent;
+import pt.ist.bennu.renderers.core.components.HtmlTextInput;
+import pt.ist.bennu.renderers.core.components.controllers.HtmlActionLinkController;
+import pt.ist.bennu.renderers.core.components.controllers.HtmlController;
+import pt.ist.bennu.renderers.core.components.converters.Converter;
+import pt.ist.bennu.renderers.core.components.state.IViewState;
+import pt.ist.bennu.renderers.core.contexts.PresentationContext;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
+import pt.ist.bennu.renderers.core.model.MetaSlotKey;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 import pt.utl.ist.fenix.tools.util.Strings;
 
 /**

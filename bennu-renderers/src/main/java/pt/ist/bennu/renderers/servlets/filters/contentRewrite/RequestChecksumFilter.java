@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.filters.contentRewrite;
+package pt.ist.bennu.renderers.servlets.filters.contentRewrite;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -18,7 +18,7 @@ import javax.servlet.http.HttpSession;
 
 import org.apache.commons.lang.CharEncoding;
 
-import pt.ist.fenixWebFramework.FenixWebFramework;
+import pt.ist.bennu.renderers.FenixWebFramework;
 
 public class RequestChecksumFilter implements Filter {
 

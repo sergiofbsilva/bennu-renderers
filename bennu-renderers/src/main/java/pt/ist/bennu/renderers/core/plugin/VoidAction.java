@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.plugin;
+package pt.ist.bennu.renderers.core.plugin;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

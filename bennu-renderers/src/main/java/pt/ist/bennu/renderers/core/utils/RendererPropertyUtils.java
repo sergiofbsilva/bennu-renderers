@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.utils;
+package pt.ist.bennu.renderers.core.utils;
 
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.InvocationTargetException;

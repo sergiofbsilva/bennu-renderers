@@ -1,17 +1,17 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlBlockContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlText;
-import pt.ist.fenixWebFramework.renderers.contexts.InputContext;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.utils.RenderKit;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.components.HtmlBlockContainer;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlContainer;
+import pt.ist.bennu.renderers.core.components.HtmlText;
+import pt.ist.bennu.renderers.core.contexts.InputContext;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.utils.RenderKit;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 /**
  * This renderer allows a comment to be added to any layout.

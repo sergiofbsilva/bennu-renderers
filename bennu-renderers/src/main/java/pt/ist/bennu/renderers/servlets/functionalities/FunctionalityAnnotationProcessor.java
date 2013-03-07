@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.functionalities;
+package pt.ist.bennu.renderers.servlets.functionalities;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -13,10 +13,10 @@ import javax.lang.model.SourceVersion;
 import javax.lang.model.element.Element;
 import javax.lang.model.element.TypeElement;
 
-import pt.ist.fenixWebFramework.struts.annotations.Mapping;
+import pt.ist.bennu.renderers.struts.annotations.Mapping;
 
 @SupportedSourceVersion(SourceVersion.RELEASE_6)
-@SupportedAnnotationTypes(value = { "pt.ist.fenixWebFramework.servlets.functionalities.Functionality" })
+@SupportedAnnotationTypes(value = { "pt.ist.bennu.renderers.servlets.functionalities.Functionality" })
 public class FunctionalityAnnotationProcessor extends AbstractProcessor {
 
     public static final String FUNCTIONALITIES_FILE = ".functionalitiesMappingLog";

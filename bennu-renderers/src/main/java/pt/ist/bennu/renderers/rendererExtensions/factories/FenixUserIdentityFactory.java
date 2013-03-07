@@ -1,11 +1,11 @@
-package pt.ist.fenixWebFramework.rendererExtensions.factories;
+package pt.ist.bennu.renderers.rendererExtensions.factories;
 
 import javax.servlet.http.HttpServletRequest;
 
-import pt.ist.fenixWebFramework.renderers.model.UserIdentity;
-import pt.ist.fenixWebFramework.renderers.model.UserIdentityFactory;
-import pt.ist.fenixWebFramework.security.User;
-import pt.ist.fenixWebFramework.security.UserView;
+import pt.ist.bennu.renderers.core.model.UserIdentity;
+import pt.ist.bennu.renderers.core.model.UserIdentityFactory;
+import pt.ist.bennu.renderers.security.User;
+import pt.ist.bennu.renderers.security.UserView;
 
 public class FenixUserIdentityFactory extends UserIdentityFactory {
 

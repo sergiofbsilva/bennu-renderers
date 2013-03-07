@@ -1,8 +1,8 @@
-package pt.ist.fenixWebFramework.renderers.validators;
+package pt.ist.bennu.renderers.core.validators;
 
 import org.apache.commons.lang.StringUtils;
 
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 public class NumberValidator extends HtmlValidator {
 

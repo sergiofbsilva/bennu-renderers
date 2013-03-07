@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.taglib;
+package pt.ist.bennu.renderers.core.taglib;
 
 import javax.servlet.jsp.tagext.TagData;
 import javax.servlet.jsp.tagext.TagExtraInfo;

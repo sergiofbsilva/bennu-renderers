@@ -1,9 +1,9 @@
-package pt.ist.fenixWebFramework.renderers.layouts;
+package pt.ist.bennu.renderers.core.layouts;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlBlockContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlInlineContainer;
+import pt.ist.bennu.renderers.core.components.HtmlBlockContainer;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlContainer;
+import pt.ist.bennu.renderers.core.components.HtmlInlineContainer;
 
 public abstract class FlowLayout extends Layout {
 

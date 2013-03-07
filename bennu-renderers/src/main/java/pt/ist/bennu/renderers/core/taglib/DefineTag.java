@@ -1,12 +1,12 @@
-package pt.ist.fenixWebFramework.renderers.taglib;
+package pt.ist.bennu.renderers.core.taglib;
 
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.TagSupport;
 
 import org.apache.commons.beanutils.PropertyUtils;
 
-import pt.ist.fenixWebFramework.renderers.components.Constants;
-import pt.ist.fenixWebFramework.renderers.model.MetaObject;
+import pt.ist.bennu.renderers.core.components.Constants;
+import pt.ist.bennu.renderers.core.model.MetaObject;
 
 public class DefineTag extends TagSupport {
 

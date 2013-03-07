@@ -1,7 +1,7 @@
-package pt.ist.fenixWebFramework.rendererExtensions.factories;
+package pt.ist.bennu.renderers.rendererExtensions.factories;
 
-import pt.ist.fenixWebFramework.renderers.model.UserIdentity;
-import pt.ist.fenixWebFramework.security.User;
+import pt.ist.bennu.renderers.core.model.UserIdentity;
+import pt.ist.bennu.renderers.security.User;
 
 public class FenixUserIdentity implements UserIdentity {
 

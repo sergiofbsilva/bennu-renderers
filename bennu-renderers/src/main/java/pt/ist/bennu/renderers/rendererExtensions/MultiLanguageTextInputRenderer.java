@@ -1,9 +1,9 @@
-package pt.ist.fenixWebFramework.rendererExtensions;
+package pt.ist.bennu.renderers.rendererExtensions;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlActionLink;
-import pt.ist.fenixWebFramework.renderers.components.HtmlContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlSimpleValueComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlTextArea;
+import pt.ist.bennu.renderers.core.components.HtmlActionLink;
+import pt.ist.bennu.renderers.core.components.HtmlContainer;
+import pt.ist.bennu.renderers.core.components.HtmlSimpleValueComponent;
+import pt.ist.bennu.renderers.core.components.HtmlTextArea;
 
 /**
  * This renderer extends the {@link MultiLanguageStringInputRenderer}. The only difference

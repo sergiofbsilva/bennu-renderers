@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.filters.contentRewrite;
+package pt.ist.bennu.renderers.servlets.filters.contentRewrite;
 
 import java.io.IOException;
 
@@ -11,7 +11,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import pt.ist.fenixWebFramework._development.LogLevel;
+import pt.ist.bennu.renderers._development.LogLevel;
 
 public class RequestRewriterFilter implements Filter {
 

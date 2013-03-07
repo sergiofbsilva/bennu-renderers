@@ -1,21 +1,21 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
-import pt.ist.fenixWebFramework.renderers.CollectionRenderer.CollectionTabularLayout;
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlInlineContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlInputComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlSimpleValueComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlText;
-import pt.ist.fenixWebFramework.renderers.components.Validatable;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.layouts.TabularLayout;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlChainValidator;
+import pt.ist.bennu.renderers.core.CollectionRenderer.CollectionTabularLayout;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlContainer;
+import pt.ist.bennu.renderers.core.components.HtmlInlineContainer;
+import pt.ist.bennu.renderers.core.components.HtmlInputComponent;
+import pt.ist.bennu.renderers.core.components.HtmlSimpleValueComponent;
+import pt.ist.bennu.renderers.core.components.HtmlText;
+import pt.ist.bennu.renderers.core.components.Validatable;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.layouts.TabularLayout;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
+import pt.ist.bennu.renderers.core.validators.HtmlChainValidator;
 
 /**
  * This renderer allows to edit all objects of a collection at the same time.
- * The presentation is very similar to the one of {@link pt.ist.fenixWebFramework.renderers.CollectionRenderer} but instead of
+ * The presentation is very similar to the one of {@link pt.ist.bennu.renderers.core.CollectionRenderer} but instead of
  * presentig the slot's value in each cell, the slot's editor is shown.
  * 
  * <p>

@@ -1,20 +1,20 @@
-package pt.ist.fenixWebFramework.rendererExtensions;
+package pt.ist.bennu.renderers.rendererExtensions;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlBlockContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlHiddenField;
-import pt.ist.fenixWebFramework.renderers.components.HtmlMenu;
-import pt.ist.fenixWebFramework.renderers.components.HtmlMenuEntry;
-import pt.ist.fenixWebFramework.renderers.components.HtmlMenuOption;
-import pt.ist.fenixWebFramework.renderers.components.HtmlScript;
-import pt.ist.fenixWebFramework.renderers.components.HtmlSimpleValueComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlTextInput;
-import pt.ist.fenixWebFramework.renderers.components.controllers.HtmlController;
-import pt.ist.fenixWebFramework.renderers.components.state.IViewState;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.components.HtmlBlockContainer;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlContainer;
+import pt.ist.bennu.renderers.core.components.HtmlHiddenField;
+import pt.ist.bennu.renderers.core.components.HtmlMenu;
+import pt.ist.bennu.renderers.core.components.HtmlMenuEntry;
+import pt.ist.bennu.renderers.core.components.HtmlMenuOption;
+import pt.ist.bennu.renderers.core.components.HtmlScript;
+import pt.ist.bennu.renderers.core.components.HtmlSimpleValueComponent;
+import pt.ist.bennu.renderers.core.components.HtmlTextInput;
+import pt.ist.bennu.renderers.core.components.controllers.HtmlController;
+import pt.ist.bennu.renderers.core.components.state.IViewState;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 /**
  * This renderer allows you to choose one string from a list of strings by using a menu. It also

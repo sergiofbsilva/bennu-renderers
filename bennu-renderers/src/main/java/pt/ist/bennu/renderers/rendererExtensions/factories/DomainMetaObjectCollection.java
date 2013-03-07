@@ -1,11 +1,11 @@
-package pt.ist.fenixWebFramework.rendererExtensions.factories;
+package pt.ist.bennu.renderers.rendererExtensions.factories;
 
 import java.util.List;
 
-import pt.ist.fenixWebFramework.renderers.model.MetaObject;
-import pt.ist.fenixWebFramework.renderers.model.MetaObjectCollection;
-import pt.ist.fenixWebFramework.services.ServiceManager;
-import pt.ist.fenixWebFramework.services.ServicePredicate;
+import pt.ist.bennu.renderers.core.model.MetaObject;
+import pt.ist.bennu.renderers.core.model.MetaObjectCollection;
+import pt.ist.bennu.renderers.services.ServiceManager;
+import pt.ist.bennu.renderers.services.ServicePredicate;
 
 public class DomainMetaObjectCollection extends MetaObjectCollection {
 

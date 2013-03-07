@@ -1,9 +1,9 @@
-package pt.ist.fenixWebFramework.renderers.model;
+package pt.ist.bennu.renderers.core.model;
 
 import java.util.Collection;
 
-import pt.ist.fenixWebFramework.renderers.schemas.Schema;
-import pt.ist.fenixWebFramework.renderers.schemas.SchemaSlotDescription;
+import pt.ist.bennu.renderers.core.schemas.Schema;
+import pt.ist.bennu.renderers.core.schemas.SchemaSlotDescription;
 
 public abstract class MetaObjectFactory {
     public static MetaObjectFactory DEFAULT_FACTORY = new DefaultMetaObjectFactory();

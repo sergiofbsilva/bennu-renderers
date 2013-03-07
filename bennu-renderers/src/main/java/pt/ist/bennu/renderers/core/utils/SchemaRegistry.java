@@ -1,10 +1,10 @@
-package pt.ist.fenixWebFramework.renderers.utils;
+package pt.ist.bennu.renderers.core.utils;
 
 import java.util.Hashtable;
 import java.util.Map;
 
-import pt.ist.fenixWebFramework.renderers.exceptions.NoSuchSchemaException;
-import pt.ist.fenixWebFramework.renderers.schemas.Schema;
+import pt.ist.bennu.renderers.core.exceptions.NoSuchSchemaException;
+import pt.ist.bennu.renderers.core.schemas.Schema;
 
 public class SchemaRegistry {
 

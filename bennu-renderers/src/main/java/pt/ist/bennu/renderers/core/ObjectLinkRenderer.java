@@ -1,19 +1,19 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
 import org.apache.commons.beanutils.PropertyUtils;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlLink;
-import pt.ist.fenixWebFramework.renderers.components.HtmlLink.Target;
-import pt.ist.fenixWebFramework.renderers.components.HtmlLinkWithPreprendedComment;
-import pt.ist.fenixWebFramework.renderers.components.HtmlText;
-import pt.ist.fenixWebFramework.renderers.components.state.ViewDestination;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.schemas.Schema;
-import pt.ist.fenixWebFramework.renderers.utils.RenderKit;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
-import pt.ist.fenixWebFramework.servlets.filters.contentRewrite.GenericChecksumRewriter;
-import pt.ist.fenixWebFramework.servlets.filters.contentRewrite.RequestRewriter;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlLink;
+import pt.ist.bennu.renderers.core.components.HtmlLinkWithPreprendedComment;
+import pt.ist.bennu.renderers.core.components.HtmlText;
+import pt.ist.bennu.renderers.core.components.HtmlLink.Target;
+import pt.ist.bennu.renderers.core.components.state.ViewDestination;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.schemas.Schema;
+import pt.ist.bennu.renderers.core.utils.RenderKit;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
+import pt.ist.bennu.renderers.servlets.filters.contentRewrite.GenericChecksumRewriter;
+import pt.ist.bennu.renderers.servlets.filters.contentRewrite.RequestRewriter;
 
 /**
  * This render is used to create a link out of an object. You choose the link

@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.security.accessControl;
+package pt.ist.bennu.renderers.security.accessControl;
 
 import static java.lang.annotation.ElementType.CONSTRUCTOR;
 import static java.lang.annotation.ElementType.METHOD;

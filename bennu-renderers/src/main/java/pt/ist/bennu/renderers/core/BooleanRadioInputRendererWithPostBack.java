@@ -1,15 +1,15 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlHiddenField;
-import pt.ist.fenixWebFramework.renderers.components.HtmlInlineContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlRadioButton;
-import pt.ist.fenixWebFramework.renderers.components.HtmlRadioButtonList;
-import pt.ist.fenixWebFramework.renderers.components.controllers.HtmlController;
-import pt.ist.fenixWebFramework.renderers.components.state.IViewState;
-import pt.ist.fenixWebFramework.renderers.components.state.ViewDestination;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlHiddenField;
+import pt.ist.bennu.renderers.core.components.HtmlInlineContainer;
+import pt.ist.bennu.renderers.core.components.HtmlRadioButton;
+import pt.ist.bennu.renderers.core.components.HtmlRadioButtonList;
+import pt.ist.bennu.renderers.core.components.controllers.HtmlController;
+import pt.ist.bennu.renderers.core.components.state.IViewState;
+import pt.ist.bennu.renderers.core.components.state.ViewDestination;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
 
 public class BooleanRadioInputRendererWithPostBack extends BooleanRadioInputRenderer {
     private String destination;

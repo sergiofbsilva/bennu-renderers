@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pt.ist.fenixWebFramework.struts.tiles;
+package pt.ist.bennu.renderers.struts.tiles;
 
 import java.util.HashMap;
 import java.util.Locale;

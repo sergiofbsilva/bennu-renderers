@@ -1,14 +1,14 @@
 /**
  * 
  */
-package pt.ist.fenixWebFramework.renderers.converters;
+package pt.ist.bennu.renderers.core.converters;
 
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-import pt.ist.fenixWebFramework.renderers.components.converters.ConversionException;
-import pt.ist.fenixWebFramework.renderers.components.converters.Converter;
+import pt.ist.bennu.renderers.core.components.converters.ConversionException;
+import pt.ist.bennu.renderers.core.components.converters.Converter;
 
 public class MultipleFormatDateConverter extends Converter {
     public static final String DEFAULT_FORMAT = "H:m";

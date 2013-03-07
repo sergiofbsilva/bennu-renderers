@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.schemas;
+package pt.ist.bennu.renderers.core.schemas;
 
 public class SignatureParameter {
     private SchemaSlotDescription slotDescription;

@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.rendererExtensions;
+package pt.ist.bennu.renderers.rendererExtensions;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -8,10 +8,10 @@ import org.joda.time.DateTimeFieldType;
 import org.joda.time.Duration;
 import org.joda.time.TimeOfDay;
 
-import pt.ist.fenixWebFramework.renderers.DateRenderer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlText;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
+import pt.ist.bennu.renderers.core.DateRenderer;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlText;
+import pt.ist.bennu.renderers.core.layouts.Layout;
 
 public class DurationRenderer extends DateRenderer {
 

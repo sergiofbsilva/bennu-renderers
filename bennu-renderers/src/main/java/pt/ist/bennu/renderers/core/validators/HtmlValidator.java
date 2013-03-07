@@ -1,11 +1,11 @@
-package pt.ist.fenixWebFramework.renderers.validators;
+package pt.ist.bennu.renderers.core.validators;
 
 import org.apache.commons.lang.StringUtils;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlFormComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlScript;
-import pt.ist.fenixWebFramework.renderers.components.Validatable;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.components.HtmlFormComponent;
+import pt.ist.bennu.renderers.core.components.HtmlScript;
+import pt.ist.bennu.renderers.core.components.Validatable;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 public abstract class HtmlValidator extends AbstractHtmlValidator {
 

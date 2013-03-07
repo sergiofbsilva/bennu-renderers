@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.model;
+package pt.ist.bennu.renderers.core.model;
 
 import javax.servlet.http.HttpServletRequest;
 

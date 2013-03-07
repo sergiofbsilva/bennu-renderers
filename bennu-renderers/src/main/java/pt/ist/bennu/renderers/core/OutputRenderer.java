@@ -1,6 +1,6 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
-import pt.ist.fenixWebFramework.renderers.contexts.OutputContext;
+import pt.ist.bennu.renderers.core.contexts.OutputContext;
 
 /**
  * The base renderer for every output renderer.

@@ -1,14 +1,14 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
 import java.util.Collection;
 import java.util.List;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlText;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.layouts.TabularLayout;
-import pt.ist.fenixWebFramework.renderers.model.MetaObject;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlText;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.layouts.TabularLayout;
+import pt.ist.bennu.renderers.core.model.MetaObject;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
 import pt.utl.ist.fenix.tools.util.i18n.MultiLanguageString;
 
 public class TabularNonNullValuesRenderer extends OutputRenderer {

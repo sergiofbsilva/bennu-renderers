@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.commons;
+package pt.ist.bennu.renderers.servlets.commons;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

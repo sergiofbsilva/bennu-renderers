@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.components.state;
+package pt.ist.bennu.renderers.core.components.state;
 
 public class LifeCycleConstants {
     public static String VIEWSTATE_PARAM_NAME = LifeCycleConstants.class.getName() + ".VIEWSTATE";

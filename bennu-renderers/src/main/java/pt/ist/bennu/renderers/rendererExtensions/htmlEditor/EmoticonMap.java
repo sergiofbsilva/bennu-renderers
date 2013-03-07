@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.rendererExtensions.htmlEditor;
+package pt.ist.bennu.renderers.rendererExtensions.htmlEditor;
 
 import java.util.HashMap;
 import java.util.Map;

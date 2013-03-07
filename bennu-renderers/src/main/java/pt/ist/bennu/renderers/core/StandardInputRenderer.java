@@ -1,30 +1,30 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
 
-import pt.ist.fenixWebFramework.FenixWebFramework;
-import pt.ist.fenixWebFramework.renderers.components.HtmlBlockContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlFormComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlImage;
-import pt.ist.fenixWebFramework.renderers.components.HtmlInlineContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlLabel;
-import pt.ist.fenixWebFramework.renderers.components.HtmlScript;
-import pt.ist.fenixWebFramework.renderers.components.HtmlTable;
-import pt.ist.fenixWebFramework.renderers.components.HtmlTableCell;
-import pt.ist.fenixWebFramework.renderers.components.HtmlTableRow;
-import pt.ist.fenixWebFramework.renderers.components.HtmlText;
-import pt.ist.fenixWebFramework.renderers.components.Validatable;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.layouts.TabularLayout;
-import pt.ist.fenixWebFramework.renderers.model.MetaObject;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlChainValidator;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlValidator;
+import pt.ist.bennu.renderers.FenixWebFramework;
+import pt.ist.bennu.renderers.core.components.HtmlBlockContainer;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlFormComponent;
+import pt.ist.bennu.renderers.core.components.HtmlImage;
+import pt.ist.bennu.renderers.core.components.HtmlInlineContainer;
+import pt.ist.bennu.renderers.core.components.HtmlLabel;
+import pt.ist.bennu.renderers.core.components.HtmlScript;
+import pt.ist.bennu.renderers.core.components.HtmlTable;
+import pt.ist.bennu.renderers.core.components.HtmlTableCell;
+import pt.ist.bennu.renderers.core.components.HtmlTableRow;
+import pt.ist.bennu.renderers.core.components.HtmlText;
+import pt.ist.bennu.renderers.core.components.Validatable;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.layouts.TabularLayout;
+import pt.ist.bennu.renderers.core.model.MetaObject;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.validators.HtmlChainValidator;
+import pt.ist.bennu.renderers.core.validators.HtmlValidator;
 
 /**
  * This renderer provides a simple way of editing objects. A table is used to

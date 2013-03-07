@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.components;
+package pt.ist.bennu.renderers.core.components;
 
 public class HtmlEMailLink extends HtmlLink {
 

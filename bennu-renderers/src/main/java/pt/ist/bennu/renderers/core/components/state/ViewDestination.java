@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.components.state;
+package pt.ist.bennu.renderers.core.components.state;
 
 import java.io.Serializable;
 

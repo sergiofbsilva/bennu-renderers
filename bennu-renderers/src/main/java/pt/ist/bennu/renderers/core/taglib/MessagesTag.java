@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.taglib;
+package pt.ist.bennu.renderers.core.taglib;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,10 +12,10 @@ import javax.servlet.jsp.tagext.BodyTagSupport;
 
 import org.apache.log4j.Logger;
 
-import pt.ist.fenixWebFramework._development.LogLevel;
-import pt.ist.fenixWebFramework.renderers.components.state.IViewState;
-import pt.ist.fenixWebFramework.renderers.components.state.Message;
-import pt.ist.fenixWebFramework.renderers.components.state.Message.Type;
+import pt.ist.bennu.renderers._development.LogLevel;
+import pt.ist.bennu.renderers.core.components.state.IViewState;
+import pt.ist.bennu.renderers.core.components.state.Message;
+import pt.ist.bennu.renderers.core.components.state.Message.Type;
 
 public class MessagesTag extends BodyTagSupport {
     private static final Logger logger = Logger.getLogger(MessagesTag.class);

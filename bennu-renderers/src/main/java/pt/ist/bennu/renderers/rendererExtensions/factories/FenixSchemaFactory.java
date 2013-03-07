@@ -1,12 +1,12 @@
-package pt.ist.fenixWebFramework.rendererExtensions.factories;
+package pt.ist.bennu.renderers.rendererExtensions.factories;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import pt.ist.fenixWebFramework.renderers.model.DefaultSchemaFactory;
-import pt.ist.fenixWebFramework.renderers.schemas.Schema;
-import pt.ist.fenixWebFramework.renderers.schemas.SchemaSlotDescription;
+import pt.ist.bennu.renderers.core.model.DefaultSchemaFactory;
+import pt.ist.bennu.renderers.core.schemas.Schema;
+import pt.ist.bennu.renderers.core.schemas.SchemaSlotDescription;
 import pt.ist.fenixframework.DomainObject;
 import pt.ist.fenixframework.FenixFramework;
 import dml.DomainClass;

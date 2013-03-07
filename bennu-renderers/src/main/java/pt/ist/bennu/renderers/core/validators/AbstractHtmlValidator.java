@@ -1,10 +1,10 @@
-package pt.ist.fenixWebFramework.renderers.validators;
+package pt.ist.bennu.renderers.core.validators;
 
 import javax.servlet.jsp.PageContext;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.Validatable;
-import pt.ist.fenixWebFramework.renderers.components.tags.HtmlTag;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.Validatable;
+import pt.ist.bennu.renderers.core.components.tags.HtmlTag;
 
 public abstract class AbstractHtmlValidator extends HtmlComponent {
 

@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.taglib;
+package pt.ist.bennu.renderers.core.taglib;
 
 import java.io.IOException;
 import java.util.Collection;
@@ -17,14 +17,14 @@ import org.apache.struts.action.ActionMapping;
 import org.apache.struts.config.ModuleConfig;
 import org.apache.struts.taglib.TagUtils;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.state.IViewState;
-import pt.ist.fenixWebFramework.renderers.components.state.ViewDestination;
-import pt.ist.fenixWebFramework.renderers.contexts.PresentationContext;
-import pt.ist.fenixWebFramework.renderers.model.UserIdentityFactory;
-import pt.ist.fenixWebFramework.renderers.schemas.Schema;
-import pt.ist.fenixWebFramework.renderers.utils.RenderKit;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.state.IViewState;
+import pt.ist.bennu.renderers.core.components.state.ViewDestination;
+import pt.ist.bennu.renderers.core.contexts.PresentationContext;
+import pt.ist.bennu.renderers.core.model.UserIdentityFactory;
+import pt.ist.bennu.renderers.core.schemas.Schema;
+import pt.ist.bennu.renderers.core.utils.RenderKit;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 public abstract class BaseRenderObjectTag extends TagSupport {
 

@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.filters;
+package pt.ist.bennu.renderers.servlets.filters;
 
 import java.io.IOException;
 import java.net.InetAddress;

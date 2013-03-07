@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.filters;
+package pt.ist.bennu.renderers.servlets.filters;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -15,8 +15,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang.CharEncoding;
 
-import pt.ist.fenixWebFramework.Config.CasConfig;
-import pt.ist.fenixWebFramework.FenixWebFramework;
+import pt.ist.bennu.renderers.FenixWebFramework;
+import pt.ist.bennu.renderers.Config.CasConfig;
 
 /**
  * 

@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.security.accessControl;
+package pt.ist.bennu.renderers.security.accessControl;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -20,7 +20,7 @@ import com.sun.tools.javac.code.Symbol.MethodSymbol;
 
 @SupportedSourceVersion(SourceVersion.RELEASE_6)
 //cannot use ActiveObject.class.getName() the value must be a constant expression BLEAH!
-@SupportedAnnotationTypes({ "pt.ist.fenixWebFramework.security.accessControl.Checked" })
+@SupportedAnnotationTypes({ "pt.ist.bennu.renderers.security.accessControl.Checked" })
 public class CheckedAnnotationProcessor extends AbstractProcessor {
 
     static final String LOG_FILENAME = ".checkedAnnotationLog";

@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.rendererExtensions.components;
+package pt.ist.bennu.renderers.rendererExtensions.components;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,11 +9,11 @@ import javax.servlet.jsp.PageContext;
 
 import org.apache.log4j.Logger;
 
-import pt.ist.fenixWebFramework._development.LogLevel;
-import pt.ist.fenixWebFramework.renderers.components.HtmlLink;
-import pt.ist.fenixWebFramework.renderers.components.HtmlScript;
-import pt.ist.fenixWebFramework.renderers.components.HtmlTextArea;
-import pt.ist.fenixWebFramework.renderers.components.tags.HtmlTag;
+import pt.ist.bennu.renderers._development.LogLevel;
+import pt.ist.bennu.renderers.core.components.HtmlLink;
+import pt.ist.bennu.renderers.core.components.HtmlScript;
+import pt.ist.bennu.renderers.core.components.HtmlTextArea;
+import pt.ist.bennu.renderers.core.components.tags.HtmlTag;
 import pt.utl.ist.fenix.tools.util.i18n.Language;
 
 public class TinyMceEditor extends HtmlTextArea {

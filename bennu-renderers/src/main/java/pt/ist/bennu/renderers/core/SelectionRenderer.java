@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -6,11 +6,11 @@ import java.util.List;
 
 import org.apache.commons.beanutils.PropertyUtils;
 
-import pt.ist.fenixWebFramework.renderers.components.converters.ConversionException;
-import pt.ist.fenixWebFramework.renderers.components.converters.Converter;
-import pt.ist.fenixWebFramework.renderers.model.MetaObject;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.components.converters.ConversionException;
+import pt.ist.bennu.renderers.core.components.converters.Converter;
+import pt.ist.bennu.renderers.core.model.MetaObject;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 public abstract class SelectionRenderer extends InputRenderer {
     private String providerClass;

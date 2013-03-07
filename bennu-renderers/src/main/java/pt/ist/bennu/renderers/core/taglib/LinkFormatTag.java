@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.taglib;
+package pt.ist.bennu.renderers.core.taglib;
 
 import static java.lang.String.format;
 
@@ -10,7 +10,7 @@ import javax.servlet.jsp.tagext.TagSupport;
 
 import org.apache.log4j.Logger;
 
-import pt.ist.fenixWebFramework._development.LogLevel;
+import pt.ist.bennu.renderers._development.LogLevel;
 
 public class LinkFormatTag extends TagSupport {
 

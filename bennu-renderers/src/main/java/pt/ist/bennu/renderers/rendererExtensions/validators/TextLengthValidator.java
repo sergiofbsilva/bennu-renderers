@@ -1,8 +1,8 @@
-package pt.ist.fenixWebFramework.rendererExtensions.validators;
+package pt.ist.bennu.renderers.rendererExtensions.validators;
 
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlChainValidator;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlValidator;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.validators.HtmlChainValidator;
+import pt.ist.bennu.renderers.core.validators.HtmlValidator;
 
 public class TextLengthValidator extends HtmlValidator {
 

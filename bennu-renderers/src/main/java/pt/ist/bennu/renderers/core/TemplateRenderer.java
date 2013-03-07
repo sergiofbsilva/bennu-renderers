@@ -1,8 +1,8 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlTemplate;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlTemplate;
+import pt.ist.bennu.renderers.core.layouts.Layout;
 
 /**
  * This renderer allows you to delegate the presentation of an object to

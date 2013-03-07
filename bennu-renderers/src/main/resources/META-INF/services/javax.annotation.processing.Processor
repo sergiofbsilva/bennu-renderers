@@ -1,6 +1,6 @@
-pt.ist.fenixWebFramework.services.ServiceAnnotationProcessor
-pt.ist.fenixWebFramework.security.accessControl.CheckedAnnotationProcessor
-pt.ist.fenixWebFramework.servlets.functionalities.CreateNodeActionAnnotationProcessor
-pt.ist.fenixWebFramework.servlets.functionalities.FunctionalityAnnotationProcessor
-pt.ist.fenixWebFramework.servlets.rest.RestAnnotationProcessor
-pt.ist.fenixWebFramework.struts.annotations.ActionAnnotationProcessor
+pt.ist.bennu.renderers.services.ServiceAnnotationProcessor
+pt.ist.bennu.renderers.security.accessControl.CheckedAnnotationProcessor
+pt.ist.bennu.renderers.servlets.functionalities.CreateNodeActionAnnotationProcessor
+pt.ist.bennu.renderers.servlets.functionalities.FunctionalityAnnotationProcessor
+pt.ist.bennu.renderers.servlets.rest.RestAnnotationProcessor
+pt.ist.bennu.renderers.struts.annotations.ActionAnnotationProcessor

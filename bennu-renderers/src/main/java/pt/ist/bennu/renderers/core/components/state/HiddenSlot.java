@@ -1,11 +1,11 @@
-package pt.ist.fenixWebFramework.renderers.components.state;
+package pt.ist.bennu.renderers.core.components.state;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import pt.ist.fenixWebFramework.renderers.components.converters.Converter;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlotKey;
+import pt.ist.bennu.renderers.core.components.converters.Converter;
+import pt.ist.bennu.renderers.core.model.MetaSlotKey;
 
 public class HiddenSlot implements Serializable {
     private String name;

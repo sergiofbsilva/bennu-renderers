@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.taglib;
+package pt.ist.bennu.renderers.core.taglib;
 
 import java.io.IOException;
 import java.util.List;
@@ -8,10 +8,10 @@ import javax.servlet.jsp.tagext.BodyTagSupport;
 
 import org.apache.struts.util.MessageResources;
 
-import pt.ist.fenixWebFramework.renderers.components.Constants;
-import pt.ist.fenixWebFramework.renderers.model.MetaObject;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.components.Constants;
+import pt.ist.bennu.renderers.core.model.MetaObject;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 public class LabelTag extends BodyTagSupport {
 

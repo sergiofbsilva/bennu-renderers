@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.commons;
+package pt.ist.bennu.renderers.servlets.commons;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.InputStream;
 
 /**
  * Represents a file that was uploaded by the user in a form. You can retrieve all uploaded files
- * by calling {@link pt.ist.fenixWebFramework.renderers.plugin.RenderersRequestProcessor#getAllUploadedFiles()}.
+ * by calling {@link pt.ist.bennu.renderers.core.plugin.RenderersRequestProcessor#getAllUploadedFiles()}.
  * 
  * @author cfgi
  */

@@ -1,6 +1,6 @@
-package pt.ist.fenixWebFramework.renderers.components;
+package pt.ist.bennu.renderers.core.components;
 
-import pt.ist.fenixWebFramework.renderers.model.MetaSlotKey;
+import pt.ist.bennu.renderers.core.model.MetaSlotKey;
 
 public interface SlotChanger {
     public void setTargetSlot(MetaSlotKey key);

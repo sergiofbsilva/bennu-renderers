@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.rendererExtensions.htmlEditor;
+package pt.ist.bennu.renderers.rendererExtensions.htmlEditor;
 
 import org.apache.commons.lang.StringUtils;
 import org.jsoup.Jsoup;
@@ -6,7 +6,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.safety.Cleaner;
 import org.jsoup.safety.Whitelist;
 
-import pt.ist.fenixWebFramework.renderers.components.converters.Converter;
+import pt.ist.bennu.renderers.core.components.converters.Converter;
 
 public class JsoupSafeHtmlConverter extends Converter {
     private static final String[] MATHJAX_TAGS = { "abs", "and", "annotation", "annotation-xml", "apply", "approx", "arccos",

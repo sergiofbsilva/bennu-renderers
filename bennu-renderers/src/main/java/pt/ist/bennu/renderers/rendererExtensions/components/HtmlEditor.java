@@ -1,10 +1,10 @@
-package pt.ist.fenixWebFramework.rendererExtensions.components;
+package pt.ist.bennu.renderers.rendererExtensions.components;
 
 import javax.servlet.jsp.PageContext;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlSimpleValueComponent;
-import pt.ist.fenixWebFramework.renderers.components.tags.HtmlTag;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.components.HtmlSimpleValueComponent;
+import pt.ist.bennu.renderers.core.components.tags.HtmlTag;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 public class HtmlEditor extends HtmlSimpleValueComponent {
 

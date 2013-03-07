@@ -1,19 +1,19 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
 import java.util.Properties;
 
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.PropertyUtils;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.contexts.PresentationContext;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.model.MetaObject;
-import pt.ist.fenixWebFramework.renderers.model.MetaObjectFactory;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
-import pt.ist.fenixWebFramework.renderers.schemas.Schema;
-import pt.ist.fenixWebFramework.renderers.utils.RenderKit;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.contexts.PresentationContext;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.model.MetaObject;
+import pt.ist.bennu.renderers.core.model.MetaObjectFactory;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
+import pt.ist.bennu.renderers.core.schemas.Schema;
+import pt.ist.bennu.renderers.core.utils.RenderKit;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 /**
  * The base class for all renderers. Allows all renderers to be configured with
@@ -23,8 +23,8 @@ import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
  * Renderers are currently divided in a complete and disjunctive hierarchy. This
  * class provides the base behaviour for every renderer.
  * 
- * @see pt.ist.fenixWebFramework.renderers.OutputRenderer
- * @see pt.ist.fenixWebFramework.renderers.InputRenderer
+ * @see pt.ist.bennu.renderers.core.OutputRenderer
+ * @see pt.ist.bennu.renderers.core.InputRenderer
  * 
  * @author cfgi
  */

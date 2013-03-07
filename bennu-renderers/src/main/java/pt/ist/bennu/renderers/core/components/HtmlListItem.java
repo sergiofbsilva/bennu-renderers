@@ -1,11 +1,11 @@
-package pt.ist.fenixWebFramework.renderers.components;
+package pt.ist.bennu.renderers.core.components;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.jsp.PageContext;
 
-import pt.ist.fenixWebFramework.renderers.components.tags.HtmlTag;
+import pt.ist.bennu.renderers.core.components.tags.HtmlTag;
 
 public class HtmlListItem extends HtmlComponent {
 

@@ -2,12 +2,12 @@
  * Author : Goncalo Luiz
  * Creation Date: Jul 26, 2006,10:56:35 AM
  */
-package pt.ist.fenixWebFramework.rendererExtensions;
+package pt.ist.bennu.renderers.rendererExtensions;
 
 import org.joda.time.DateTime;
 
-import pt.ist.fenixWebFramework.renderers.FormatRenderer;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
+import pt.ist.bennu.renderers.core.FormatRenderer;
+import pt.ist.bennu.renderers.core.layouts.Layout;
 
 /**
  * @author <a href="mailto:goncalo@ist.utl.pt">Goncalo Luiz</a><br>

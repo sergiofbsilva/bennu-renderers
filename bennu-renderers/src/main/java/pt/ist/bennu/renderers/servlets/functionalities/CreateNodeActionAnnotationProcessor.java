@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.functionalities;
+package pt.ist.bennu.renderers.servlets.functionalities;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -11,14 +11,14 @@ import javax.annotation.processing.SupportedSourceVersion;
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.TypeElement;
 
-import pt.ist.fenixWebFramework.struts.annotations.Mapping;
+import pt.ist.bennu.renderers.struts.annotations.Mapping;
 
 import com.sun.tools.javac.code.Symbol.ClassSymbol;
 import com.sun.tools.javac.code.Symbol.MethodSymbol;
 
 @SupportedSourceVersion(SourceVersion.RELEASE_6)
 //cannot use ActiveObject.class.getName() the value must be a constant expression BLEAH!
-@SupportedAnnotationTypes({ "pt.ist.fenixWebFramework.servlets.functionalities.CreateNodeAction" })
+@SupportedAnnotationTypes({ "pt.ist.bennu.renderers.servlets.functionalities.CreateNodeAction" })
 public class CreateNodeActionAnnotationProcessor extends AbstractProcessor {
 
     public static final String LOG_FILENAME = ".createNodeActionAnnotationLog";

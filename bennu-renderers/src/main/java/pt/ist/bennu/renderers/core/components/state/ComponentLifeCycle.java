@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.components.state;
+package pt.ist.bennu.renderers.core.components.state;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,24 +12,24 @@ import org.apache.log4j.Logger;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.taglib.html.Constants;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlFormComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlHiddenField;
-import pt.ist.fenixWebFramework.renderers.components.HtmlMultipleHiddenField;
-import pt.ist.fenixWebFramework.renderers.components.HtmlMultipleValueComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlSimpleValueComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlText;
-import pt.ist.fenixWebFramework.renderers.components.controllers.Controllable;
-import pt.ist.fenixWebFramework.renderers.components.controllers.HtmlController;
-import pt.ist.fenixWebFramework.renderers.contexts.InputContext;
-import pt.ist.fenixWebFramework.renderers.model.MetaObject;
-import pt.ist.fenixWebFramework.renderers.model.MetaObjectCollection;
-import pt.ist.fenixWebFramework.renderers.model.MetaObjectFactory;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlotKey;
-import pt.ist.fenixWebFramework.renderers.utils.RenderKit;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlChainValidator;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlValidator;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlFormComponent;
+import pt.ist.bennu.renderers.core.components.HtmlHiddenField;
+import pt.ist.bennu.renderers.core.components.HtmlMultipleHiddenField;
+import pt.ist.bennu.renderers.core.components.HtmlMultipleValueComponent;
+import pt.ist.bennu.renderers.core.components.HtmlSimpleValueComponent;
+import pt.ist.bennu.renderers.core.components.HtmlText;
+import pt.ist.bennu.renderers.core.components.controllers.Controllable;
+import pt.ist.bennu.renderers.core.components.controllers.HtmlController;
+import pt.ist.bennu.renderers.core.contexts.InputContext;
+import pt.ist.bennu.renderers.core.model.MetaObject;
+import pt.ist.bennu.renderers.core.model.MetaObjectCollection;
+import pt.ist.bennu.renderers.core.model.MetaObjectFactory;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
+import pt.ist.bennu.renderers.core.model.MetaSlotKey;
+import pt.ist.bennu.renderers.core.utils.RenderKit;
+import pt.ist.bennu.renderers.core.validators.HtmlChainValidator;
+import pt.ist.bennu.renderers.core.validators.HtmlValidator;
 
 public class ComponentLifeCycle {
     private static final Logger logger = Logger.getLogger(ComponentLifeCycle.class);

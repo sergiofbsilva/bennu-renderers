@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.plugin;
+package pt.ist.bennu.renderers.core.plugin;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -16,18 +16,18 @@ import org.jdom.Element;
 import org.jdom.JDOMException;
 import org.jdom.input.SAXBuilder;
 
-import pt.ist.fenixWebFramework._development.LogLevel;
-import pt.ist.fenixWebFramework.renderers.exceptions.NoRendererException;
-import pt.ist.fenixWebFramework.renderers.exceptions.NoSuchSchemaException;
-import pt.ist.fenixWebFramework.renderers.schemas.Schema;
-import pt.ist.fenixWebFramework.renderers.schemas.SchemaSlotDescription;
-import pt.ist.fenixWebFramework.renderers.schemas.Signature;
-import pt.ist.fenixWebFramework.renderers.schemas.SignatureParameter;
-import pt.ist.fenixWebFramework.renderers.utils.RenderKit;
-import pt.ist.fenixWebFramework.renderers.utils.RenderMode;
-import pt.ist.fenixWebFramework.renderers.utils.RendererPropertyUtils;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlValidator;
-import pt.ist.fenixWebFramework.renderers.validators.RequiredValidator;
+import pt.ist.bennu.renderers._development.LogLevel;
+import pt.ist.bennu.renderers.core.exceptions.NoRendererException;
+import pt.ist.bennu.renderers.core.exceptions.NoSuchSchemaException;
+import pt.ist.bennu.renderers.core.schemas.Schema;
+import pt.ist.bennu.renderers.core.schemas.SchemaSlotDescription;
+import pt.ist.bennu.renderers.core.schemas.Signature;
+import pt.ist.bennu.renderers.core.schemas.SignatureParameter;
+import pt.ist.bennu.renderers.core.utils.RenderKit;
+import pt.ist.bennu.renderers.core.utils.RenderMode;
+import pt.ist.bennu.renderers.core.utils.RendererPropertyUtils;
+import pt.ist.bennu.renderers.core.validators.HtmlValidator;
+import pt.ist.bennu.renderers.core.validators.RequiredValidator;
 import pt.ist.fenixframework.artifact.FenixFrameworkArtifact;
 import pt.ist.fenixframework.project.exception.FenixFrameworkProjectException;
 import pt.utl.ist.fenix.tools.util.Pair;

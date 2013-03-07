@@ -1,13 +1,13 @@
-package pt.ist.fenixWebFramework.rendererExtensions;
+package pt.ist.bennu.renderers.rendererExtensions;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.joda.time.YearMonthDay;
 
-import pt.ist.fenixWebFramework.renderers.DateInputRenderer;
-import pt.ist.fenixWebFramework.renderers.components.converters.Converter;
-import pt.ist.fenixWebFramework.renderers.converters.DateConverter;
+import pt.ist.bennu.renderers.core.DateInputRenderer;
+import pt.ist.bennu.renderers.core.components.converters.Converter;
+import pt.ist.bennu.renderers.core.converters.DateConverter;
 
 public class JodaTimeInputRenderer extends DateInputRenderer {
 

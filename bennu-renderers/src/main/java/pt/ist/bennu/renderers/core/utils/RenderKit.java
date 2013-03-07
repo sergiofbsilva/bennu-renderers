@@ -1,16 +1,16 @@
-package pt.ist.fenixWebFramework.renderers.utils;
+package pt.ist.bennu.renderers.core.utils;
 
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Properties;
 
-import pt.ist.fenixWebFramework.renderers.Renderer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.contexts.PresentationContext;
-import pt.ist.fenixWebFramework.renderers.exceptions.NoRendererException;
-import pt.ist.fenixWebFramework.renderers.exceptions.NoSuchSchemaException;
-import pt.ist.fenixWebFramework.renderers.schemas.Schema;
+import pt.ist.bennu.renderers.core.Renderer;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.contexts.PresentationContext;
+import pt.ist.bennu.renderers.core.exceptions.NoRendererException;
+import pt.ist.bennu.renderers.core.exceptions.NoSuchSchemaException;
+import pt.ist.bennu.renderers.core.schemas.Schema;
 
 /**
  * Entry point for the rendering mechanism. The render kit allows several renderers and schemas to

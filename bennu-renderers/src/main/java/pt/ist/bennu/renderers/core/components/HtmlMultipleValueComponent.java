@@ -1,8 +1,8 @@
-package pt.ist.fenixWebFramework.renderers.components;
+package pt.ist.bennu.renderers.core.components;
 
 import org.apache.commons.beanutils.ConvertUtils;
 
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
 
 public abstract class HtmlMultipleValueComponent extends HtmlFormComponent {
 

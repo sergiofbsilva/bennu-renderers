@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.rendererExtensions.actions;
+package pt.ist.bennu.renderers.rendererExtensions.actions;
 
 import javax.servlet.http.HttpServletRequest;
 

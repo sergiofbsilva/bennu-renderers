@@ -1,7 +1,7 @@
-package pt.ist.fenixWebFramework.renderers.validators;
+package pt.ist.bennu.renderers.core.validators;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlCheckBoxList;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.components.HtmlCheckBoxList;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 public class RequiredNrItemsValidator extends HtmlValidator {
     private Integer nrRequiredItems;

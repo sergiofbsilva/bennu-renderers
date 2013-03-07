@@ -1,9 +1,9 @@
-package pt.ist.fenixWebFramework.rendererExtensions.factories;
+package pt.ist.bennu.renderers.rendererExtensions.factories;
 
-import pt.ist.fenixWebFramework.renderers.model.DefaultValues;
-import pt.ist.fenixWebFramework.renderers.model.MetaObject;
+import pt.ist.bennu.renderers.core.model.DefaultValues;
+import pt.ist.bennu.renderers.core.model.MetaObject;
 
-public class MetaSlotWithDefault extends pt.ist.fenixWebFramework.renderers.model.MetaSlotWithDefault {
+public class MetaSlotWithDefault extends pt.ist.bennu.renderers.core.model.MetaSlotWithDefault {
 
     public MetaSlotWithDefault(MetaObject metaObject, String name) {
         super(metaObject, name);

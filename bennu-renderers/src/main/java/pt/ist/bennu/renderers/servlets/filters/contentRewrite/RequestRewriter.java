@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.filters.contentRewrite;
+package pt.ist.bennu.renderers.servlets.filters.contentRewrite;
 
 import javax.servlet.http.HttpServletRequest;
 

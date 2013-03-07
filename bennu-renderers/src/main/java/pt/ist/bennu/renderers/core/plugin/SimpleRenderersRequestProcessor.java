@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.plugin;
+package pt.ist.bennu.renderers.core.plugin;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -16,12 +16,12 @@ import org.apache.struts.action.ActionServlet;
 import org.apache.struts.action.RequestProcessor;
 import org.apache.struts.config.ModuleConfig;
 
-import pt.ist.fenixWebFramework._development.LogLevel;
-import pt.ist.fenixWebFramework.renderers.components.state.ComponentLifeCycle;
-import pt.ist.fenixWebFramework.renderers.components.state.EditRequest.ViewStateUserChangedException;
-import pt.ist.fenixWebFramework.renderers.components.state.IViewState;
-import pt.ist.fenixWebFramework.renderers.components.state.ViewDestination;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers._development.LogLevel;
+import pt.ist.bennu.renderers.core.components.state.ComponentLifeCycle;
+import pt.ist.bennu.renderers.core.components.state.IViewState;
+import pt.ist.bennu.renderers.core.components.state.ViewDestination;
+import pt.ist.bennu.renderers.core.components.state.EditRequest.ViewStateUserChangedException;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 /**
  * The standard renderers request processor. This processor is responsible for
@@ -32,7 +32,7 @@ import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
  * <p>
  * If any exception is thrown during the processing of a viewstate it will be handled by struts like if the exceptions occured in
  * the destiny action. This default behaviour can be overriden by making the destiny action implement the
- * {@link pt.ist.fenixWebFramework.renderers.plugin.ExceptionHandler} interface.
+ * {@link pt.ist.bennu.renderers.core.plugin.ExceptionHandler} interface.
  * 
  * <p>
  * The processor ensures that the current request and context are available through {@link #getCurrentRequest()} and

@@ -1,10 +1,10 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlLabel;
-import pt.ist.fenixWebFramework.renderers.components.HtmlRadioButton;
-import pt.ist.fenixWebFramework.renderers.components.HtmlRadioButtonList;
-import pt.ist.fenixWebFramework.renderers.components.HtmlSimpleValueComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlText;
+import pt.ist.bennu.renderers.core.components.HtmlLabel;
+import pt.ist.bennu.renderers.core.components.HtmlRadioButton;
+import pt.ist.bennu.renderers.core.components.HtmlRadioButtonList;
+import pt.ist.bennu.renderers.core.components.HtmlSimpleValueComponent;
+import pt.ist.bennu.renderers.core.components.HtmlText;
 
 /**
  * The <code>EnumRadioInputRenderer</code> provides a way of doing the

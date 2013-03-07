@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.components.controllers;
+package pt.ist.bennu.renderers.core.components.controllers;
 
 public interface Controllable {
     public boolean hasController();

@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.services;
+package pt.ist.bennu.renderers.services;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -22,9 +22,9 @@ public class ServiceAnnotationInjector {
         classPool.appendClassPath(new LoaderClassPath(loader));
 
         classPool.importPackage(SERVICE_MANAGER_PACKAGE);
-        classPool.importPackage("pt.ist.fenixWebFramework.security");
+        classPool.importPackage("pt.ist.bennu.renderers.security");
         classPool.importPackage("pt.ist.fenixframework.pstm");
-        classPool.importPackage("pt.ist.fenixWebFramework._development");
+        classPool.importPackage("pt.ist.bennu.renderers._development");
 
         File file = null;
         try {

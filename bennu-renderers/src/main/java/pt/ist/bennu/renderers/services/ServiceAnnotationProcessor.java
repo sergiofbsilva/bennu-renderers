@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.services;
+package pt.ist.bennu.renderers.services;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -18,7 +18,7 @@ import com.sun.tools.javac.code.Symbol.MethodSymbol;
 @SupportedSourceVersion(SourceVersion.RELEASE_6)
 // cannot use ActiveObject.class.getName() the value must be a constant
 // expression BLEAH!
-@SupportedAnnotationTypes({ "pt.ist.fenixWebFramework.services.Service" })
+@SupportedAnnotationTypes({ "pt.ist.bennu.renderers.services.Service" })
 public class ServiceAnnotationProcessor extends AbstractProcessor {
 
     static final String LOG_FILENAME = ".serviceAnnotationLog";

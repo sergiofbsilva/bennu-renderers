@@ -1,19 +1,19 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlTable;
-import pt.ist.fenixWebFramework.renderers.components.HtmlTableCell;
-import pt.ist.fenixWebFramework.renderers.components.HtmlTableCell.CellType;
-import pt.ist.fenixWebFramework.renderers.components.HtmlTableRow;
-import pt.ist.fenixWebFramework.renderers.components.HtmlText;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.model.MetaObject;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlTable;
+import pt.ist.bennu.renderers.core.components.HtmlTableCell;
+import pt.ist.bennu.renderers.core.components.HtmlTableRow;
+import pt.ist.bennu.renderers.core.components.HtmlText;
+import pt.ist.bennu.renderers.core.components.HtmlTableCell.CellType;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.model.MetaObject;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
 
 public class MatrixRenderer extends InputRenderer {
 

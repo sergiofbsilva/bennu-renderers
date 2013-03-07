@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.filters;
+package pt.ist.bennu.renderers.servlets.filters;
 
 import java.io.IOException;
 
@@ -13,8 +13,8 @@ import javax.servlet.http.HttpSession;
 
 import org.joda.time.DateTime;
 
-import pt.ist.fenixWebFramework.security.User;
-import pt.ist.fenixWebFramework.security.UserView;
+import pt.ist.bennu.renderers.security.User;
+import pt.ist.bennu.renderers.security.UserView;
 
 public class SetUserViewFilter implements Filter {
 

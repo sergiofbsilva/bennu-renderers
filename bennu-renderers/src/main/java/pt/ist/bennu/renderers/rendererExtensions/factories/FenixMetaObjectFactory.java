@@ -1,12 +1,12 @@
-package pt.ist.fenixWebFramework.rendererExtensions.factories;
+package pt.ist.bennu.renderers.rendererExtensions.factories;
 
-import pt.ist.fenixWebFramework.renderers.model.DefaultMetaObjectFactory;
-import pt.ist.fenixWebFramework.renderers.model.MetaObject;
-import pt.ist.fenixWebFramework.renderers.model.MetaObjectCollection;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
-import pt.ist.fenixWebFramework.renderers.schemas.Schema;
-import pt.ist.fenixWebFramework.renderers.schemas.SchemaSlotDescription;
-import pt.ist.fenixWebFramework.renderers.utils.RenderKit;
+import pt.ist.bennu.renderers.core.model.DefaultMetaObjectFactory;
+import pt.ist.bennu.renderers.core.model.MetaObject;
+import pt.ist.bennu.renderers.core.model.MetaObjectCollection;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
+import pt.ist.bennu.renderers.core.schemas.Schema;
+import pt.ist.bennu.renderers.core.schemas.SchemaSlotDescription;
+import pt.ist.bennu.renderers.core.utils.RenderKit;
 import pt.ist.fenixframework.DomainObject;
 
 public class FenixMetaObjectFactory extends DefaultMetaObjectFactory {

@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.ajax;
+package pt.ist.bennu.renderers.servlets.ajax;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,8 +16,8 @@ import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.lang.CharEncoding;
 import org.apache.commons.lang.StringUtils;
 
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
-import pt.ist.fenixWebFramework.servlets.json.JsonObject;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
+import pt.ist.bennu.renderers.servlets.json.JsonObject;
 
 public abstract class AutoCompleteServlet extends HttpServlet {
 

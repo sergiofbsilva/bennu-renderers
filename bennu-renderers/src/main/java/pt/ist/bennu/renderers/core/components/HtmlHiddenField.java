@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.components;
+package pt.ist.bennu.renderers.core.components;
 
 public class HtmlHiddenField extends HtmlTextInput {
 

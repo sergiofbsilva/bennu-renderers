@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.services;
+package pt.ist.bennu.renderers.services;
 
 public interface ServicePredicate {
 

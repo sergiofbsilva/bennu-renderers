@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.rendererExtensions;
+package pt.ist.bennu.renderers.rendererExtensions;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -7,8 +7,8 @@ import java.util.Locale;
 
 import org.joda.time.LocalDate;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.converters.Converter;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.converters.Converter;
 
 public class LocalDateInputRendererWithPicker extends DateInputRendererWithPicker {
 

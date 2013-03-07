@@ -1,8 +1,8 @@
-package pt.ist.fenixWebFramework.renderers.layouts;
+package pt.ist.bennu.renderers.core.layouts;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlList;
-import pt.ist.fenixWebFramework.renderers.components.HtmlListItem;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlList;
+import pt.ist.bennu.renderers.core.components.HtmlListItem;
 
 public abstract class ListLayout extends FlowLayout {
 

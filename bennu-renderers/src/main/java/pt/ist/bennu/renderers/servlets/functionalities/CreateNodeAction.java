@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.functionalities;
+package pt.ist.bennu.renderers.servlets.functionalities;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

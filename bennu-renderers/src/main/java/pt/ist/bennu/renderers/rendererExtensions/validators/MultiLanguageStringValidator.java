@@ -1,13 +1,13 @@
-package pt.ist.fenixWebFramework.rendererExtensions.validators;
+package pt.ist.bennu.renderers.rendererExtensions.validators;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import pt.ist.fenixWebFramework.rendererExtensions.MultiLanguageStringInputRenderer.LanguageBean;
-import pt.ist.fenixWebFramework.renderers.components.HtmlSimpleValueComponent;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlChainValidator;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlValidator;
+import pt.ist.bennu.renderers.core.components.HtmlSimpleValueComponent;
+import pt.ist.bennu.renderers.core.validators.HtmlChainValidator;
+import pt.ist.bennu.renderers.core.validators.HtmlValidator;
+import pt.ist.bennu.renderers.rendererExtensions.MultiLanguageStringInputRenderer.LanguageBean;
 import pt.utl.ist.fenix.tools.util.i18n.Language;
 
 public class MultiLanguageStringValidator extends HtmlValidator {

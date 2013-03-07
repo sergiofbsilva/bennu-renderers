@@ -1,6 +1,6 @@
-package pt.ist.fenixWebFramework.renderers.model;
+package pt.ist.bennu.renderers.core.model;
 
-import pt.ist.fenixWebFramework.renderers.utils.RendererPropertyUtils;
+import pt.ist.bennu.renderers.core.utils.RendererPropertyUtils;
 
 public class TransientMetaObject extends MetaObject {
 

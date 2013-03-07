@@ -1,9 +1,9 @@
-package pt.ist.fenixWebFramework.rendererExtensions.validators;
+package pt.ist.bennu.renderers.rendererExtensions.validators;
 
 import org.joda.time.LocalDate;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlSimpleValueComponent;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlChainValidator;
+import pt.ist.bennu.renderers.core.components.HtmlSimpleValueComponent;
+import pt.ist.bennu.renderers.core.validators.HtmlChainValidator;
 
 public class FutureLocalDateValidator extends LocalDateValidator {
 

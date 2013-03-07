@@ -1,12 +1,12 @@
-package pt.ist.fenixWebFramework.rendererExtensions;
+package pt.ist.bennu.renderers.rendererExtensions;
 
 import java.util.Collection;
 
-import pt.ist.fenixWebFramework.renderers.MenuOptionListRenderer;
-import pt.ist.fenixWebFramework.renderers.components.converters.Converter;
+import pt.ist.bennu.renderers.core.MenuOptionListRenderer;
+import pt.ist.bennu.renderers.core.components.converters.Converter;
 
 /**
- * Fenix extension to the {@link pt.ist.fenixWebFramework.renderers.MenuOptionListRenderer}.
+ * Fenix extension to the {@link pt.ist.bennu.renderers.core.MenuOptionListRenderer}.
  * 
  * {@inheritDoc}
  * 

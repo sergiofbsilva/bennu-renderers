@@ -1,9 +1,9 @@
-package pt.ist.fenixWebFramework.rendererExtensions.converters;
+package pt.ist.bennu.renderers.rendererExtensions.converters;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import pt.ist.fenixWebFramework.renderers.components.converters.Converter;
+import pt.ist.bennu.renderers.core.components.converters.Converter;
 import pt.ist.fenixframework.DomainObject;
 
 public class DomainObjectKeyArrayConverter extends Converter {

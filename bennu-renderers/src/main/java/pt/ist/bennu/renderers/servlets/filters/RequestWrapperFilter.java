@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.filters;
+package pt.ist.bennu.renderers.servlets.filters;
 
 import java.io.IOException;
 import java.io.Serializable;
@@ -31,10 +31,10 @@ import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUpload;
 import org.apache.commons.fileupload.FileUploadException;
 
-import pt.ist.fenixWebFramework.security.User;
-import pt.ist.fenixWebFramework.security.UserView;
-import pt.ist.fenixWebFramework.servlets.commons.CommonsFile;
-import pt.ist.fenixWebFramework.servlets.commons.UploadedFile;
+import pt.ist.bennu.renderers.security.User;
+import pt.ist.bennu.renderers.security.UserView;
+import pt.ist.bennu.renderers.servlets.commons.CommonsFile;
+import pt.ist.bennu.renderers.servlets.commons.UploadedFile;
 
 /**
  * 17/Fev/2003

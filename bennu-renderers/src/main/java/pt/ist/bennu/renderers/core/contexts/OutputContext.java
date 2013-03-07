@@ -1,7 +1,7 @@
-package pt.ist.fenixWebFramework.renderers.contexts;
+package pt.ist.bennu.renderers.core.contexts;
 
-import pt.ist.fenixWebFramework.renderers.model.MetaObject;
-import pt.ist.fenixWebFramework.renderers.utils.RenderMode;
+import pt.ist.bennu.renderers.core.model.MetaObject;
+import pt.ist.bennu.renderers.core.utils.RenderMode;
 
 public class OutputContext extends PresentationContext {
 

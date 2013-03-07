@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.components.converters;
+package pt.ist.bennu.renderers.core.components.converters;
 
 import java.io.Serializable;
 

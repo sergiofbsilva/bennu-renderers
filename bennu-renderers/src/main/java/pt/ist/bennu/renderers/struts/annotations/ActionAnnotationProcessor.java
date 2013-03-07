@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.struts.annotations;
+package pt.ist.bennu.renderers.struts.annotations;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -18,7 +18,7 @@ import pt.utl.ist.fenix.tools.util.FileUtils;
 import com.sun.tools.javac.code.Symbol.ClassSymbol;
 
 @SupportedSourceVersion(SourceVersion.RELEASE_6)
-@SupportedAnnotationTypes({ "pt.ist.fenixWebFramework.struts.annotations.Mapping" })
+@SupportedAnnotationTypes({ "pt.ist.bennu.renderers.struts.annotations.Mapping" })
 public class ActionAnnotationProcessor extends AbstractProcessor {
 
     static final String LOG_FILENAME = ".actionAnnotationLog";

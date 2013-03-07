@@ -1,8 +1,8 @@
-package pt.ist.fenixWebFramework.rendererExtensions.util;
+package pt.ist.bennu.renderers.rendererExtensions.util;
 
 import java.util.Properties;
 
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 import pt.utl.ist.fenix.tools.resources.AbstractMessageResourceProvider;
 
 public class RendererMessageResourceProvider extends AbstractMessageResourceProvider {

@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.services;
+package pt.ist.bennu.renderers.services;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -9,9 +9,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import pt.ist.fenixWebFramework._development.LogLevel;
-import pt.ist.fenixWebFramework.security.User;
-import pt.ist.fenixWebFramework.security.UserView;
+import pt.ist.bennu.renderers._development.LogLevel;
+import pt.ist.bennu.renderers.security.User;
+import pt.ist.bennu.renderers.security.UserView;
 import pt.ist.fenixframework.pstm.AbstractDomainObject;
 import pt.ist.fenixframework.pstm.IllegalWriteException;
 import pt.ist.fenixframework.pstm.ServiceInfo;

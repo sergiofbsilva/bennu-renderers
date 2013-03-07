@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.model;
+package pt.ist.bennu.renderers.core.model;
 
 import java.beans.PropertyDescriptor;
 import java.util.ArrayList;
@@ -8,8 +8,8 @@ import java.util.List;
 
 import org.apache.commons.beanutils.PropertyUtils;
 
-import pt.ist.fenixWebFramework.renderers.schemas.Schema;
-import pt.ist.fenixWebFramework.renderers.schemas.SchemaSlotDescription;
+import pt.ist.bennu.renderers.core.schemas.Schema;
+import pt.ist.bennu.renderers.core.schemas.SchemaSlotDescription;
 
 public class DefaultSchemaFactory extends SchemaFactory {
 

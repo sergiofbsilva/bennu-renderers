@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.model;
+package pt.ist.bennu.renderers.core.model;
 
 import java.io.Serializable;
 import java.lang.reflect.InvocationTargetException;

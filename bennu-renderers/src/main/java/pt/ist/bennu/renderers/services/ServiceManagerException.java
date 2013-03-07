@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.services;
+package pt.ist.bennu.renderers.services;
 
 public class ServiceManagerException extends Exception {
     private static final long serialVersionUID = -8465388874995985228L;

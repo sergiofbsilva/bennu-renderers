@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.plugin;
+package pt.ist.bennu.renderers.core.plugin;
 
 import java.util.Collection;
 import java.util.Enumeration;
@@ -11,11 +11,11 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.upload.FormFile;
 
-import pt.ist.fenixWebFramework.renderers.components.state.LifeCycleConstants;
-import pt.ist.fenixWebFramework.renderers.plugin.upload.RenderersRequestWrapper;
-import pt.ist.fenixWebFramework.renderers.plugin.upload.StrutsFile;
-import pt.ist.fenixWebFramework.servlets.commons.UploadedFile;
-import pt.ist.fenixWebFramework.servlets.filters.RequestWrapperFilter.FenixHttpServletRequestWrapper;
+import pt.ist.bennu.renderers.core.components.state.LifeCycleConstants;
+import pt.ist.bennu.renderers.core.plugin.upload.RenderersRequestWrapper;
+import pt.ist.bennu.renderers.core.plugin.upload.StrutsFile;
+import pt.ist.bennu.renderers.servlets.commons.UploadedFile;
+import pt.ist.bennu.renderers.servlets.filters.RequestWrapperFilter.FenixHttpServletRequestWrapper;
 
 /**
  * The standard renderers request processor. This processor is responsible for
@@ -26,7 +26,7 @@ import pt.ist.fenixWebFramework.servlets.filters.RequestWrapperFilter.FenixHttpS
  * <p>
  * If any exception is thrown during the processing of a viewstate it will be handled by struts like if the exceptions occured in
  * the destiny action. This default behaviour can be overriden by making the destiny action implement the
- * {@link pt.ist.fenixWebFramework.renderers.plugin.ExceptionHandler} interface.
+ * {@link pt.ist.bennu.renderers.core.plugin.ExceptionHandler} interface.
  * 
  * <p>
  * The processor ensures that the current request and context are available through {@link #getCurrentRequest()} and

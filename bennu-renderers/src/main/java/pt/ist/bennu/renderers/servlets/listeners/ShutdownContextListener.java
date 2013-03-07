@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.listeners;
+package pt.ist.bennu.renderers.servlets.listeners;
 
 import java.sql.Driver;
 import java.sql.DriverManager;

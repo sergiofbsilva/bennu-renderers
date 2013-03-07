@@ -1,13 +1,13 @@
-package pt.ist.fenixWebFramework.rendererExtensions.validators;
+package pt.ist.bennu.renderers.rendererExtensions.validators;
 
 import org.apache.commons.lang.StringUtils;
 
-import pt.ist.fenixWebFramework.rendererExtensions.AutoCompleteInputRenderer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlFormComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlSimpleValueComponent;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlChainValidator;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlValidator;
+import pt.ist.bennu.renderers.core.components.HtmlFormComponent;
+import pt.ist.bennu.renderers.core.components.HtmlSimpleValueComponent;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.validators.HtmlChainValidator;
+import pt.ist.bennu.renderers.core.validators.HtmlValidator;
+import pt.ist.bennu.renderers.rendererExtensions.AutoCompleteInputRenderer;
 
 public class RequiredAutoCompleteSelectionValidator extends HtmlValidator {
 

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pt.ist.fenixWebFramework.servlets.rest;
+package pt.ist.bennu.renderers.servlets.rest;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

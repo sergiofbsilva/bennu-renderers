@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.filters;
+package pt.ist.bennu.renderers.servlets.filters;
 
 import java.io.IOException;
 
@@ -14,7 +14,7 @@ import org.apache.log4j.Logger;
 
 public class ProfilingFilter implements Filter {
 
-    private final Logger logger = Logger.getLogger("pt.ist.fenixWebFramework.servlets.filters.ProfilingFilter");
+    private final Logger logger = Logger.getLogger("pt.ist.bennu.renderers.servlets.filters.ProfilingFilter");
 
     @Override
     public void init(final FilterConfig arg0) throws ServletException {

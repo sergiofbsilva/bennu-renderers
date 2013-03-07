@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.rendererExtensions;
+package pt.ist.bennu.renderers.rendererExtensions;
 
 import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
@@ -9,12 +9,12 @@ import org.joda.time.DateTimeFieldType;
 import org.joda.time.Partial;
 import org.joda.time.base.AbstractPartial;
 
-import pt.ist.fenixWebFramework.renderers.DateInputRenderer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.converters.ConversionException;
-import pt.ist.fenixWebFramework.renderers.components.converters.Converter;
-import pt.ist.fenixWebFramework.renderers.converters.DateConverter;
-import pt.ist.fenixWebFramework.renderers.converters.MultipleFormatDateConverter;
+import pt.ist.bennu.renderers.core.DateInputRenderer;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.converters.ConversionException;
+import pt.ist.bennu.renderers.core.components.converters.Converter;
+import pt.ist.bennu.renderers.core.converters.DateConverter;
+import pt.ist.bennu.renderers.core.converters.MultipleFormatDateConverter;
 
 /**
  * By default the value of <code>format</code> is used to show to the user

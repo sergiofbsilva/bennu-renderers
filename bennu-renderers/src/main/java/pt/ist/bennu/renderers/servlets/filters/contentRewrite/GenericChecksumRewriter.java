@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.filters.contentRewrite;
+package pt.ist.bennu.renderers.servlets.filters.contentRewrite;
 
 import java.util.TreeSet;
 
@@ -6,9 +6,9 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.codec.digest.DigestUtils;
 
-import pt.ist.fenixWebFramework.FenixWebFramework;
-import pt.ist.fenixWebFramework.security.User;
-import pt.ist.fenixWebFramework.security.UserView;
+import pt.ist.bennu.renderers.FenixWebFramework;
+import pt.ist.bennu.renderers.security.User;
+import pt.ist.bennu.renderers.security.UserView;
 
 public class GenericChecksumRewriter extends RequestRewriter {
 

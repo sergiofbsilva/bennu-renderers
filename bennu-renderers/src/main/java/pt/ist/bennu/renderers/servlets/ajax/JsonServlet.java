@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.ajax;
+package pt.ist.bennu.renderers.servlets.ajax;
 
 import java.io.IOException;
 import java.security.MessageDigest;
@@ -13,9 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.commons.lang.CharEncoding;
 import org.joda.time.DateTime;
 
-import pt.ist.fenixWebFramework.security.User;
-import pt.ist.fenixWebFramework.security.UserView;
-import pt.ist.fenixWebFramework.servlets.json.JsonObject;
+import pt.ist.bennu.renderers.security.User;
+import pt.ist.bennu.renderers.security.UserView;
+import pt.ist.bennu.renderers.servlets.json.JsonObject;
 
 public class JsonServlet extends HttpServlet {
 

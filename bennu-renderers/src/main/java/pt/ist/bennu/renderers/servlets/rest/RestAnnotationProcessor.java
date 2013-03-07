@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.rest;
+package pt.ist.bennu.renderers.servlets.rest;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -19,7 +19,7 @@ import javax.lang.model.element.TypeElement;
 import pt.utl.ist.fenix.tools.util.FileUtils;
 
 @SupportedSourceVersion(SourceVersion.RELEASE_6)
-@SupportedAnnotationTypes({ "pt.ist.fenixWebFramework.servlets.rest.Path" })
+@SupportedAnnotationTypes({ "pt.ist.bennu.renderers.servlets.rest.Path" })
 public class RestAnnotationProcessor extends AbstractProcessor {
 
     static final String LOG_FILENAME = ".restAnnotationLog";

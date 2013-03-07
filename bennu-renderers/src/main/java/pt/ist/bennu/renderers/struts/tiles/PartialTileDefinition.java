@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.struts.tiles;
+package pt.ist.bennu.renderers.struts.tiles;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -16,11 +16,11 @@ import java.util.Set;
 import org.apache.commons.lang.StringUtils;
 import org.apache.struts.tiles.ComponentDefinition;
 
-import pt.ist.fenixWebFramework.struts.annotations.Forward;
-import pt.ist.fenixWebFramework.struts.annotations.Forwards;
-import pt.ist.fenixWebFramework.struts.annotations.Mapping;
-import pt.ist.fenixWebFramework.struts.annotations.Tile;
-import pt.ist.fenixWebFramework.struts.annotations.TileCustomPropertyName;
+import pt.ist.bennu.renderers.struts.annotations.Forward;
+import pt.ist.bennu.renderers.struts.annotations.Forwards;
+import pt.ist.bennu.renderers.struts.annotations.Mapping;
+import pt.ist.bennu.renderers.struts.annotations.Tile;
+import pt.ist.bennu.renderers.struts.annotations.TileCustomPropertyName;
 
 public class PartialTileDefinition {
 

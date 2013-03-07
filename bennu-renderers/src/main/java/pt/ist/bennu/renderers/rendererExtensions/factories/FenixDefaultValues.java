@@ -1,9 +1,9 @@
-package pt.ist.fenixWebFramework.rendererExtensions.factories;
+package pt.ist.bennu.renderers.rendererExtensions.factories;
 
-import pt.ist.fenixWebFramework.renderers.model.DefaultValues;
+import pt.ist.bennu.renderers.core.model.DefaultValues;
 import pt.ist.fenixframework.DomainObject;
 
-public class FenixDefaultValues extends pt.ist.fenixWebFramework.renderers.model.DefaultValues {
+public class FenixDefaultValues extends pt.ist.bennu.renderers.core.model.DefaultValues {
 
     public static DefaultValues getInstance() {
         if (DefaultValues.instance == null) {

@@ -1,7 +1,7 @@
-package pt.ist.fenixWebFramework.renderers.components.controllers;
+package pt.ist.bennu.renderers.core.components.controllers;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlSubmitButton;
-import pt.ist.fenixWebFramework.renderers.components.state.IViewState;
+import pt.ist.bennu.renderers.core.components.HtmlSubmitButton;
+import pt.ist.bennu.renderers.core.components.state.IViewState;
 
 public abstract class HtmlSubmitButtonController extends HtmlController {
 

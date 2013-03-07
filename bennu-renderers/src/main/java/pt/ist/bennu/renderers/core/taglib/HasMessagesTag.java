@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.taglib;
+package pt.ist.bennu.renderers.core.taglib;
 
 import java.util.List;
 
@@ -6,10 +6,10 @@ import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.PageContext;
 import javax.servlet.jsp.tagext.TagSupport;
 
-import pt.ist.fenixWebFramework.renderers.components.state.IViewState;
-import pt.ist.fenixWebFramework.renderers.components.state.LifeCycleConstants;
-import pt.ist.fenixWebFramework.renderers.components.state.Message;
-import pt.ist.fenixWebFramework.renderers.components.state.Message.Type;
+import pt.ist.bennu.renderers.core.components.state.IViewState;
+import pt.ist.bennu.renderers.core.components.state.LifeCycleConstants;
+import pt.ist.bennu.renderers.core.components.state.Message;
+import pt.ist.bennu.renderers.core.components.state.Message.Type;
 
 public class HasMessagesTag extends TagSupport {
 

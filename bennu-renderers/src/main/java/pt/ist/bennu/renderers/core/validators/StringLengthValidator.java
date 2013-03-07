@@ -1,6 +1,6 @@
-package pt.ist.fenixWebFramework.renderers.validators;
+package pt.ist.bennu.renderers.core.validators;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlSimpleValueComponent;
+import pt.ist.bennu.renderers.core.components.HtmlSimpleValueComponent;
 
 public class StringLengthValidator extends HtmlValidator {
     private Integer min;

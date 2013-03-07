@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.exceptions;
+package pt.ist.bennu.renderers.core.exceptions;
 
 public class NoRendererException extends RuntimeException {
 

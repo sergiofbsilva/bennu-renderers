@@ -1,9 +1,9 @@
-package pt.ist.fenixWebFramework.renderers.components.controllers;
+package pt.ist.bennu.renderers.core.components.controllers;
 
 import java.io.Serializable;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.state.IViewState;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.state.IViewState;
 
 public abstract class HtmlController implements Serializable {
     private HtmlComponent controlledComponent;

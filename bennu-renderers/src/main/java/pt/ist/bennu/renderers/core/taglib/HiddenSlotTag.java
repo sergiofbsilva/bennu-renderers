@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.taglib;
+package pt.ist.bennu.renderers.core.taglib;
 
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.TagSupport;
@@ -6,7 +6,7 @@ import javax.servlet.jsp.tagext.TagSupport;
 import org.apache.commons.beanutils.ConvertUtils;
 import org.apache.struts.taglib.TagUtils;
 
-import pt.ist.fenixWebFramework.renderers.components.converters.Converter;
+import pt.ist.bennu.renderers.core.components.converters.Converter;
 
 public class HiddenSlotTag extends TagSupport {
 

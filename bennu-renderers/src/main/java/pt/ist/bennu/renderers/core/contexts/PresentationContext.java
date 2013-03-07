@@ -1,11 +1,11 @@
-package pt.ist.fenixWebFramework.renderers.contexts;
+package pt.ist.bennu.renderers.core.contexts;
 
 import java.util.Properties;
 
-import pt.ist.fenixWebFramework.renderers.components.state.IViewState;
-import pt.ist.fenixWebFramework.renderers.model.MetaObject;
-import pt.ist.fenixWebFramework.renderers.schemas.Schema;
-import pt.ist.fenixWebFramework.renderers.utils.RenderMode;
+import pt.ist.bennu.renderers.core.components.state.IViewState;
+import pt.ist.bennu.renderers.core.model.MetaObject;
+import pt.ist.bennu.renderers.core.schemas.Schema;
+import pt.ist.bennu.renderers.core.utils.RenderMode;
 
 public abstract class PresentationContext {
 

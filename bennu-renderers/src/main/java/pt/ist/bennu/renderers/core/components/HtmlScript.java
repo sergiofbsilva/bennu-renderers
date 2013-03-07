@@ -1,9 +1,9 @@
-package pt.ist.fenixWebFramework.renderers.components;
+package pt.ist.bennu.renderers.core.components;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.jsp.PageContext;
 
-import pt.ist.fenixWebFramework.renderers.components.tags.HtmlTag;
+import pt.ist.bennu.renderers.core.components.tags.HtmlTag;
 
 public class HtmlScript extends HtmlComponent {
 

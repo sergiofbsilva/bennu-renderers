@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pt.ist.fenixWebFramework.renderers.validators;
+package pt.ist.bennu.renderers.core.validators;
 
 import java.text.ParseException;
 

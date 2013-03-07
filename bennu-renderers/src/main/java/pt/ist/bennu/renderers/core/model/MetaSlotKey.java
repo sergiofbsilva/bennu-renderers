@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.model;
+package pt.ist.bennu.renderers.core.model;
 
 /**
  * The MetaSlotKey represents an indentifier that allows to identify in a single
@@ -6,7 +6,7 @@ package pt.ist.fenixWebFramework.renderers.model;
  * obtained by invoking {@link #toString()} and used in the interface to generate
  * identifiers that are unique to a certain slot.
  * 
- * @see pt.ist.fenixWebFramework.renderers.components.HtmlFormComponent#setTargetSlot(MetaSlotKey)
+ * @see pt.ist.bennu.renderers.core.components.HtmlFormComponent#setTargetSlot(MetaSlotKey)
  * 
  * @author cfgi
  */

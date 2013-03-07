@@ -1,7 +1,7 @@
-package pt.ist.fenixWebFramework.rendererExtensions.validators;
+package pt.ist.bennu.renderers.rendererExtensions.validators;
 
-import pt.ist.fenixWebFramework.renderers.validators.EmailValidator;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlChainValidator;
+import pt.ist.bennu.renderers.core.validators.EmailValidator;
+import pt.ist.bennu.renderers.core.validators.HtmlChainValidator;
 
 public class NotRequiredEmailValidator extends EmailValidator {
 

@@ -1,8 +1,8 @@
-package pt.ist.fenixWebFramework.rendererExtensions.taglib;
+package pt.ist.bennu.renderers.rendererExtensions.taglib;
 
 import javax.servlet.jsp.JspException;
 
-import pt.ist.fenixWebFramework.renderers.taglib.ViewObjectTag;
+import pt.ist.bennu.renderers.core.taglib.ViewObjectTag;
 import pt.ist.fenixframework.pstm.Transaction;
 
 public class FenixViewObjectTag extends ViewObjectTag {

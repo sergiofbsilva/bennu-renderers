@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.struts.annotations;
+package pt.ist.bennu.renderers.struts.annotations;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

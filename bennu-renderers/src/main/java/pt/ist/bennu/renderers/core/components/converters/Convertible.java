@@ -1,6 +1,6 @@
-package pt.ist.fenixWebFramework.renderers.components.converters;
+package pt.ist.bennu.renderers.core.components.converters;
 
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
 
 public interface Convertible {
     public boolean hasConverter();

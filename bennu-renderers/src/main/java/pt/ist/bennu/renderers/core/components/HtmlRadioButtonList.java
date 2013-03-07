@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.components;
+package pt.ist.bennu.renderers.core.components;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import javax.servlet.jsp.PageContext;
 
 import org.apache.commons.collections.Predicate;
 
-import pt.ist.fenixWebFramework.renderers.components.tags.HtmlTag;
+import pt.ist.bennu.renderers.core.components.tags.HtmlTag;
 
 public class HtmlRadioButtonList extends HtmlRadioButtonGroup {
 

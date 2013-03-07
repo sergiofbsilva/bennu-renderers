@@ -1,8 +1,8 @@
-package pt.ist.fenixWebFramework.rendererExtensions.taglib;
+package pt.ist.bennu.renderers.rendererExtensions.taglib;
 
 import javax.servlet.jsp.JspException;
 
-import pt.ist.fenixWebFramework.renderers.taglib.EditObjectTag;
+import pt.ist.bennu.renderers.core.taglib.EditObjectTag;
 import pt.ist.fenixframework.pstm.Transaction;
 
 public class FenixEditObjectTag extends EditObjectTag {

@@ -1,8 +1,8 @@
-package pt.ist.fenixWebFramework.renderers.utils;
+package pt.ist.bennu.renderers.core.utils;
 
 import java.util.Properties;
 
-import pt.ist.fenixWebFramework.renderers.Renderer;
+import pt.ist.bennu.renderers.core.Renderer;
 
 /**
  * RendererDescription is used to mantain the renderer's class and the default

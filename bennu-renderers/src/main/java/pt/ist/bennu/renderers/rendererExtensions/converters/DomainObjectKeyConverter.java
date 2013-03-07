@@ -1,7 +1,7 @@
-package pt.ist.fenixWebFramework.rendererExtensions.converters;
+package pt.ist.bennu.renderers.rendererExtensions.converters;
 
-import pt.ist.fenixWebFramework.renderers.components.converters.ConversionException;
-import pt.ist.fenixWebFramework.renderers.components.converters.Converter;
+import pt.ist.bennu.renderers.core.components.converters.ConversionException;
+import pt.ist.bennu.renderers.core.components.converters.Converter;
 import pt.ist.fenixframework.DomainObject;
 import pt.ist.fenixframework.pstm.Transaction;
 

@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.components;
+package pt.ist.bennu.renderers.core.components;
 
 import java.util.ArrayList;
 import java.util.Hashtable;
@@ -8,8 +8,8 @@ import java.util.Set;
 
 import javax.servlet.jsp.PageContext;
 
-import pt.ist.fenixWebFramework.renderers.components.tags.HtmlTag;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.components.tags.HtmlTag;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 public class HtmlLink extends HtmlComponent {
 

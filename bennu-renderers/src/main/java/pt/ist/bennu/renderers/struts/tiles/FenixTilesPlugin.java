@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pt.ist.fenixWebFramework.struts.tiles;
+package pt.ist.bennu.renderers.struts.tiles;
 
 import javax.servlet.ServletException;
 

@@ -1,15 +1,15 @@
 /**
  * 
  */
-package pt.ist.fenixWebFramework.rendererExtensions.controllers;
+package pt.ist.bennu.renderers.rendererExtensions.controllers;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlCheckBox;
-import pt.ist.fenixWebFramework.renderers.components.HtmlMultipleValueComponent;
-import pt.ist.fenixWebFramework.renderers.components.controllers.HtmlController;
-import pt.ist.fenixWebFramework.renderers.components.state.IViewState;
+import pt.ist.bennu.renderers.core.components.HtmlCheckBox;
+import pt.ist.bennu.renderers.core.components.HtmlMultipleValueComponent;
+import pt.ist.bennu.renderers.core.components.controllers.HtmlController;
+import pt.ist.bennu.renderers.core.components.state.IViewState;
 
 public class CopyCheckBoxValuesController extends HtmlController {
 

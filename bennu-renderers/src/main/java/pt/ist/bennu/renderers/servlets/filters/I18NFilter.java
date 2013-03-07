@@ -2,7 +2,7 @@
  * Created on 2005/05/13
  * 
  */
-package pt.ist.fenixWebFramework.servlets.filters;
+package pt.ist.bennu.renderers.servlets.filters;
 
 import java.io.IOException;
 import java.util.Locale;

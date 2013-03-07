@@ -1,14 +1,14 @@
-package pt.ist.fenixWebFramework.renderers.layouts;
+package pt.ist.bennu.renderers.core.layouts;
 
 import org.apache.log4j.Logger;
 
-import pt.ist.fenixWebFramework._development.LogLevel;
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlTable;
-import pt.ist.fenixWebFramework.renderers.components.HtmlTableCell;
-import pt.ist.fenixWebFramework.renderers.components.HtmlTableHeader;
-import pt.ist.fenixWebFramework.renderers.components.HtmlTableRow;
-import pt.ist.fenixWebFramework.renderers.components.HtmlText;
+import pt.ist.bennu.renderers._development.LogLevel;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlTable;
+import pt.ist.bennu.renderers.core.components.HtmlTableCell;
+import pt.ist.bennu.renderers.core.components.HtmlTableHeader;
+import pt.ist.bennu.renderers.core.components.HtmlTableRow;
+import pt.ist.bennu.renderers.core.components.HtmlText;
 
 public abstract class TabularLayout extends Layout {
     protected static Logger logger = Logger.getLogger(TabularLayout.class);

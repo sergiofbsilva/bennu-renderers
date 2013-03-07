@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.taglib;
+package pt.ist.bennu.renderers.core.taglib;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,9 +12,9 @@ import javax.servlet.jsp.tagext.BodyTagSupport;
 
 import org.apache.log4j.Logger;
 
-import pt.ist.fenixWebFramework.renderers.schemas.SchemaSlotDescription;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlValidator;
-import pt.ist.fenixWebFramework.renderers.validators.RequiredValidator;
+import pt.ist.bennu.renderers.core.schemas.SchemaSlotDescription;
+import pt.ist.bennu.renderers.core.validators.HtmlValidator;
+import pt.ist.bennu.renderers.core.validators.RequiredValidator;
 import pt.utl.ist.fenix.tools.util.Pair;
 
 public class SchemaSlotConfigTag extends BodyTagSupport implements PropertyContainerTag, ValidatorContainerTag {

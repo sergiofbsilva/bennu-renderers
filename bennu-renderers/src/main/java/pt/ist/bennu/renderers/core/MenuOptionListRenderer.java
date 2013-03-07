@@ -1,26 +1,26 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.lang.StringUtils;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlMenu;
-import pt.ist.fenixWebFramework.renderers.components.HtmlMenuOption;
-import pt.ist.fenixWebFramework.renderers.components.converters.BiDirectionalConverter;
-import pt.ist.fenixWebFramework.renderers.contexts.PresentationContext;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.model.MetaObject;
-import pt.ist.fenixWebFramework.renderers.model.MetaObjectFactory;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlotKey;
-import pt.ist.fenixWebFramework.renderers.schemas.Schema;
-import pt.ist.fenixWebFramework.renderers.utils.RenderKit;
-import pt.ist.fenixWebFramework.renderers.utils.RenderMode;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlMenu;
+import pt.ist.bennu.renderers.core.components.HtmlMenuOption;
+import pt.ist.bennu.renderers.core.components.converters.BiDirectionalConverter;
+import pt.ist.bennu.renderers.core.contexts.PresentationContext;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.model.MetaObject;
+import pt.ist.bennu.renderers.core.model.MetaObjectFactory;
+import pt.ist.bennu.renderers.core.model.MetaSlotKey;
+import pt.ist.bennu.renderers.core.schemas.Schema;
+import pt.ist.bennu.renderers.core.utils.RenderKit;
+import pt.ist.bennu.renderers.core.utils.RenderMode;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 /**
- * This renderer as a purpose similar to {@link pt.ist.fenixWebFramework.renderers.CheckBoxOptionListRenderer} but is
+ * This renderer as a purpose similar to {@link pt.ist.bennu.renderers.core.CheckBoxOptionListRenderer} but is
  * intended to collect only one value. All the possible values for the slot
  * beeing edited are presented in an html menu. The presentation of each object
  * must have in consideration that the object is beeing presented in an option

@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.plugin.upload;
+package pt.ist.bennu.renderers.core.plugin.upload;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.InputStream;
 
 import org.apache.struts.upload.FormFile;
 
-import pt.ist.fenixWebFramework.servlets.commons.UploadedFile;
+import pt.ist.bennu.renderers.servlets.commons.UploadedFile;
 
 /**
  * This is a wrapper around a {@link org.apache.struts.upload.FormFile form file} from

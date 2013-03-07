@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework;
+package pt.ist.bennu.renderers;
 
 import java.io.File;
 import java.io.IOException;
@@ -46,7 +46,7 @@ public class FenixWebFramework extends FenixFramework {
 
     private static void initializeLoggingSystem(final Config config) {
         if (config.logProfileFilename != null) {
-            final Logger logger = Logger.getLogger("pt.ist.fenixWebFramework.servlets.filters.ProfilingFilter");
+            final Logger logger = Logger.getLogger("pt.ist.bennu.renderers.servlets.filters.ProfilingFilter");
             logger.setAdditivity(false);
             logger.setLevel(Level.DEBUG);
 
@@ -56,7 +56,7 @@ public class FenixWebFramework extends FenixFramework {
                             + config.logProfileFilename;
             try {
                 final FileAppender fileAppender = new FileAppender(layout, filename, true);
-                fileAppender.setName("pt.ist.fenixWebFramework.servlets.filters");
+                fileAppender.setName("pt.ist.bennu.renderers.servlets.filters");
                 fileAppender.setThreshold(Priority.DEBUG);
 
                 final LevelRangeFilter levelRangeFilter = new LevelRangeFilter();

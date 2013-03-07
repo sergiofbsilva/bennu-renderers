@@ -1,12 +1,12 @@
 /**
  * 
  */
-package pt.ist.fenixWebFramework.renderers.converters;
+package pt.ist.bennu.renderers.core.converters;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import pt.ist.fenixWebFramework.renderers.components.converters.Converter;
+import pt.ist.bennu.renderers.core.components.converters.Converter;
 
 public class EnumArrayConverter extends Converter {
 

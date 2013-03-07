@@ -1,19 +1,19 @@
-package pt.ist.fenixWebFramework.renderers;
+package pt.ist.bennu.renderers.core;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.model.MetaObjectCollection;
-import pt.ist.fenixWebFramework.renderers.model.MetaObjectFactory;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.model.MetaObjectCollection;
+import pt.ist.bennu.renderers.core.model.MetaObjectFactory;
 
 /**
  * This renderer can be used to edit a single object in a tabular view as if
  * you were editing a collection with only the given object.
  * <p>
  * If you edit a collection with this renderer then it will behave exactly as the
- * {@link pt.ist.fenixWebFramework.renderers.TabularInputRenderer}.
+ * {@link pt.ist.bennu.renderers.core.TabularInputRenderer}.
  * 
  * @author cfgi
  */

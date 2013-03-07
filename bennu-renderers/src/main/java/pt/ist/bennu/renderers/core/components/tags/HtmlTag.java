@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.components.tags;
+package pt.ist.bennu.renderers.core.components.tags;
 
 import java.io.IOException;
 import java.io.Writer;

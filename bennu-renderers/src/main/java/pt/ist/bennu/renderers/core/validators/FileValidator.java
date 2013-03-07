@@ -1,9 +1,9 @@
-package pt.ist.fenixWebFramework.renderers.validators;
+package pt.ist.bennu.renderers.core.validators;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlInputFile;
-import pt.ist.fenixWebFramework.renderers.plugin.RenderersRequestProcessorImpl;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
-import pt.ist.fenixWebFramework.servlets.commons.UploadedFile;
+import pt.ist.bennu.renderers.core.components.HtmlInputFile;
+import pt.ist.bennu.renderers.core.plugin.RenderersRequestProcessorImpl;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
+import pt.ist.bennu.renderers.servlets.commons.UploadedFile;
 
 /**
  * This validator can be used to validate uploaded files. It allows you to

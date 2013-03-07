@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.utils;
+package pt.ist.bennu.renderers.core.utils;
 
 import java.io.IOException;
 import java.text.Collator;
@@ -29,13 +29,13 @@ import org.apache.struts.util.MessageResources;
 import org.apache.struts.util.ModuleUtils;
 import org.apache.struts.util.RequestUtils;
 
-import pt.ist.fenixWebFramework._development.LogLevel;
-import pt.ist.fenixWebFramework.rendererExtensions.util.IPresentableEnum;
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.state.ComponentLifeCycle;
-import pt.ist.fenixWebFramework.renderers.components.state.IViewState;
-import pt.ist.fenixWebFramework.renderers.components.state.LifeCycleConstants;
-import pt.ist.fenixWebFramework.renderers.plugin.RenderersRequestProcessorImpl;
+import pt.ist.bennu.renderers._development.LogLevel;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.state.ComponentLifeCycle;
+import pt.ist.bennu.renderers.core.components.state.IViewState;
+import pt.ist.bennu.renderers.core.components.state.LifeCycleConstants;
+import pt.ist.bennu.renderers.core.plugin.RenderersRequestProcessorImpl;
+import pt.ist.bennu.renderers.rendererExtensions.util.IPresentableEnum;
 
 public class RenderUtils {
     private static Logger logger = Logger.getLogger(RenderUtils.class);

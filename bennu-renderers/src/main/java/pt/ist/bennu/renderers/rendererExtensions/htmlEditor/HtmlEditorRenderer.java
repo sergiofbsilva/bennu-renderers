@@ -1,15 +1,15 @@
-package pt.ist.fenixWebFramework.rendererExtensions.htmlEditor;
+package pt.ist.bennu.renderers.rendererExtensions.htmlEditor;
 
 import javax.servlet.http.HttpServletRequest;
 
-import pt.ist.fenixWebFramework.rendererExtensions.components.HtmlEditor;
-import pt.ist.fenixWebFramework.renderers.InputRenderer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlInlineContainer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlSubmitButton;
-import pt.ist.fenixWebFramework.renderers.components.HtmlTextArea;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlotKey;
+import pt.ist.bennu.renderers.core.InputRenderer;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlInlineContainer;
+import pt.ist.bennu.renderers.core.components.HtmlSubmitButton;
+import pt.ist.bennu.renderers.core.components.HtmlTextArea;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.model.MetaSlotKey;
+import pt.ist.bennu.renderers.rendererExtensions.components.HtmlEditor;
 
 /**
  * An javascript html editor for doing the input of html text. This renderer

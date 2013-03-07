@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.model;
+package pt.ist.bennu.renderers.core.model;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -6,11 +6,11 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
-import pt.ist.fenixWebFramework.renderers.schemas.Schema;
-import pt.ist.fenixWebFramework.renderers.schemas.SchemaSlotDescription;
-import pt.ist.fenixWebFramework.renderers.schemas.Signature;
-import pt.ist.fenixWebFramework.renderers.schemas.SignatureParameter;
-import pt.ist.fenixWebFramework.renderers.utils.RenderKit;
+import pt.ist.bennu.renderers.core.schemas.Schema;
+import pt.ist.bennu.renderers.core.schemas.SchemaSlotDescription;
+import pt.ist.bennu.renderers.core.schemas.Signature;
+import pt.ist.bennu.renderers.core.schemas.SignatureParameter;
+import pt.ist.bennu.renderers.core.utils.RenderKit;
 
 public class DefaultMetaObjectFactory extends MetaObjectFactory {
 

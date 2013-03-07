@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.model;
+package pt.ist.bennu.renderers.core.model;
 
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
@@ -7,12 +7,12 @@ import java.util.Properties;
 
 import org.apache.commons.beanutils.PropertyUtils;
 
-import pt.ist.fenixWebFramework.rendererExtensions.validators.RequiredAutoCompleteSelectionValidator;
-import pt.ist.fenixWebFramework.renderers.components.converters.Converter;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
-import pt.ist.fenixWebFramework.renderers.utils.RendererPropertyUtils;
-import pt.ist.fenixWebFramework.renderers.validators.HtmlValidator;
-import pt.ist.fenixWebFramework.renderers.validators.RequiredValidator;
+import pt.ist.bennu.renderers.core.components.converters.Converter;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.utils.RendererPropertyUtils;
+import pt.ist.bennu.renderers.core.validators.HtmlValidator;
+import pt.ist.bennu.renderers.core.validators.RequiredValidator;
+import pt.ist.bennu.renderers.rendererExtensions.validators.RequiredAutoCompleteSelectionValidator;
 import pt.utl.ist.fenix.tools.util.Pair;
 
 /**
@@ -388,7 +388,7 @@ public class MetaSlot extends MetaObject {
     }
 
     public boolean isRequired() {
-        for (Pair<Class<pt.ist.fenixWebFramework.renderers.validators.HtmlValidator>, Properties> validator : getValidators()) {
+        for (Pair<Class<pt.ist.bennu.renderers.core.validators.HtmlValidator>, Properties> validator : getValidators()) {
             if (RequiredAutoCompleteSelectionValidator.class.isAssignableFrom(validator.getKey())
                     || RequiredValidator.class.isAssignableFrom(validator.getKey())) {
                 return true;

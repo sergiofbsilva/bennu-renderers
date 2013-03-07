@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.repository;
+package pt.ist.bennu.renderers.repository;
 
 public class SQLUpdateGenerator {
     public static void main(String[] args) throws Exception {

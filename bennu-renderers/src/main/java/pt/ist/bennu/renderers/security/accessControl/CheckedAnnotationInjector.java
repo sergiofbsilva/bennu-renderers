@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.security.accessControl;
+package pt.ist.bennu.renderers.security.accessControl;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -36,9 +36,9 @@ public class CheckedAnnotationInjector {
             throw new Error(e);
         }
 
-        // classPool.importPackage("pt.ist.fenixWebFramework.security");
+        // classPool.importPackage("pt.ist.bennu.renderers.security");
         // classPool.importPackage("pt.ist.fenixframework.pstm");
-        // classPool.importPackage("pt.ist.fenixWebFramework._development");
+        // classPool.importPackage("pt.ist.bennu.renderers._development");
 
         File file = null;
         try {

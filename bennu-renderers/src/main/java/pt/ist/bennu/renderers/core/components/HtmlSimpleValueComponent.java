@@ -1,11 +1,11 @@
-package pt.ist.fenixWebFramework.renderers.components;
+package pt.ist.bennu.renderers.core.components;
 
 import javax.servlet.jsp.PageContext;
 
 import org.apache.commons.beanutils.ConvertUtils;
 
-import pt.ist.fenixWebFramework.renderers.components.tags.HtmlTag;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
+import pt.ist.bennu.renderers.core.components.tags.HtmlTag;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
 
 public abstract class HtmlSimpleValueComponent extends HtmlFormComponent {
 

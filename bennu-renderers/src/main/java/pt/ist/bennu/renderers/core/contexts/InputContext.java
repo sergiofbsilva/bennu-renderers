@@ -1,13 +1,13 @@
-package pt.ist.fenixWebFramework.renderers.contexts;
+package pt.ist.bennu.renderers.core.contexts;
 
-import pt.ist.fenixWebFramework.renderers.components.HtmlForm;
-import pt.ist.fenixWebFramework.renderers.components.state.IViewState;
-import pt.ist.fenixWebFramework.renderers.components.state.ViewStateWrapper;
-import pt.ist.fenixWebFramework.renderers.model.MetaObject;
-import pt.ist.fenixWebFramework.renderers.model.MetaObjectKey;
-import pt.ist.fenixWebFramework.renderers.model.MetaSlot;
-import pt.ist.fenixWebFramework.renderers.model.UserIdentity;
-import pt.ist.fenixWebFramework.renderers.utils.RenderMode;
+import pt.ist.bennu.renderers.core.components.HtmlForm;
+import pt.ist.bennu.renderers.core.components.state.IViewState;
+import pt.ist.bennu.renderers.core.components.state.ViewStateWrapper;
+import pt.ist.bennu.renderers.core.model.MetaObject;
+import pt.ist.bennu.renderers.core.model.MetaObjectKey;
+import pt.ist.bennu.renderers.core.model.MetaSlot;
+import pt.ist.bennu.renderers.core.model.UserIdentity;
+import pt.ist.bennu.renderers.core.utils.RenderMode;
 
 public class InputContext extends PresentationContext {
 

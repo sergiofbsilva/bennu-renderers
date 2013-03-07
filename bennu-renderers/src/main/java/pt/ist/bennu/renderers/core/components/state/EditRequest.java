@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.components.state;
+package pt.ist.bennu.renderers.core.components.state;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -7,8 +7,8 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
 
-import pt.ist.fenixWebFramework.renderers.model.UserIdentity;
-import pt.ist.fenixWebFramework.renderers.model.UserIdentityFactory;
+import pt.ist.bennu.renderers.core.model.UserIdentity;
+import pt.ist.bennu.renderers.core.model.UserIdentityFactory;
 
 public class EditRequest extends HttpServletRequestWrapper {
 

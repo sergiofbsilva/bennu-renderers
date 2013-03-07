@@ -1,16 +1,16 @@
-package pt.ist.fenixWebFramework.rendererExtensions;
+package pt.ist.bennu.renderers.rendererExtensions;
 
 import java.util.Collection;
 
-import pt.ist.fenixWebFramework.renderers.CheckBoxOptionListRenderer;
-import pt.ist.fenixWebFramework.renderers.components.HtmlComponent;
-import pt.ist.fenixWebFramework.renderers.components.HtmlText;
-import pt.ist.fenixWebFramework.renderers.components.converters.Converter;
-import pt.ist.fenixWebFramework.renderers.layouts.Layout;
-import pt.ist.fenixWebFramework.renderers.utils.RenderUtils;
+import pt.ist.bennu.renderers.core.CheckBoxOptionListRenderer;
+import pt.ist.bennu.renderers.core.components.HtmlComponent;
+import pt.ist.bennu.renderers.core.components.HtmlText;
+import pt.ist.bennu.renderers.core.components.converters.Converter;
+import pt.ist.bennu.renderers.core.layouts.Layout;
+import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 /**
- * This is the Fenix extension to the {@link pt.ist.fenixWebFramework.renderers.CheckBoxOptionListRenderer}.
+ * This is the Fenix extension to the {@link pt.ist.bennu.renderers.core.CheckBoxOptionListRenderer}.
  * 
  * {@inheritDoc}
  * 

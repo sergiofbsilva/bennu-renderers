@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.rendererExtensions.util;
+package pt.ist.bennu.renderers.rendererExtensions.util;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;

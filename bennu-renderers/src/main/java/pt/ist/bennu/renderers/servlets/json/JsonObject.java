@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.servlets.json;
+package pt.ist.bennu.renderers.servlets.json;
 
 import java.util.HashMap;
 import java.util.Iterator;

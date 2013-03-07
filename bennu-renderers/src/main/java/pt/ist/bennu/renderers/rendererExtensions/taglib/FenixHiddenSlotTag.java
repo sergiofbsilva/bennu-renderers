@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.rendererExtensions.taglib;
+package pt.ist.bennu.renderers.rendererExtensions.taglib;
 
 import java.util.Collection;
 
@@ -6,12 +6,12 @@ import javax.servlet.jsp.JspException;
 
 import org.apache.struts.taglib.TagUtils;
 
-import pt.ist.fenixWebFramework.rendererExtensions.converters.DomainObjectKeyArrayConverter;
-import pt.ist.fenixWebFramework.rendererExtensions.converters.DomainObjectKeyConverter;
-import pt.ist.fenixWebFramework.renderers.components.state.HiddenSlot;
-import pt.ist.fenixWebFramework.renderers.converters.EnumConverter;
-import pt.ist.fenixWebFramework.renderers.model.MetaObjectFactory;
-import pt.ist.fenixWebFramework.renderers.taglib.HiddenSlotTag;
+import pt.ist.bennu.renderers.core.components.state.HiddenSlot;
+import pt.ist.bennu.renderers.core.converters.EnumConverter;
+import pt.ist.bennu.renderers.core.model.MetaObjectFactory;
+import pt.ist.bennu.renderers.core.taglib.HiddenSlotTag;
+import pt.ist.bennu.renderers.rendererExtensions.converters.DomainObjectKeyArrayConverter;
+import pt.ist.bennu.renderers.rendererExtensions.converters.DomainObjectKeyConverter;
 import pt.ist.fenixframework.DomainObject;
 import pt.ist.fenixframework.pstm.Transaction;
 

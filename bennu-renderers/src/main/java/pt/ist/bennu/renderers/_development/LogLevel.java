@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework._development;
+package pt.ist.bennu.renderers._development;
 
 public class LogLevel {
 

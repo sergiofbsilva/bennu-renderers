@@ -1,4 +1,4 @@
-package pt.ist.fenixWebFramework.renderers.plugin.upload;
+package pt.ist.bennu.renderers.core.plugin.upload;
 
 import java.util.ArrayList;
 import java.util.Enumeration;

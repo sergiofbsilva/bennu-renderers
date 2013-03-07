@@ -1,6 +1,6 @@
-package pt.ist.fenixWebFramework.renderers.model;
+package pt.ist.bennu.renderers.core.model;
 
-import pt.ist.fenixWebFramework.renderers.schemas.Schema;
+import pt.ist.bennu.renderers.core.schemas.Schema;
 
 public abstract class SchemaFactory {
     public static SchemaFactory DEFAULT_FACTORY = new DefaultSchemaFactory();
