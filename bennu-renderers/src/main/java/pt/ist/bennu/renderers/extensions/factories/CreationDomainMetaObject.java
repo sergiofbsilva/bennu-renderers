@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions.factories;
+package pt.ist.bennu.renderers.extensions.factories;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -6,8 +6,8 @@ import java.util.List;
 
 import pt.ist.bennu.renderers.core.model.InstanceCreator;
 import pt.ist.bennu.renderers.core.model.MetaObjectKey;
-import pt.ist.bennu.renderers.rendererExtensions.util.ObjectChange;
-import pt.ist.bennu.renderers.rendererExtensions.util.ObjectKey;
+import pt.ist.bennu.renderers.extensions.util.ObjectChange;
+import pt.ist.bennu.renderers.extensions.util.ObjectKey;
 import pt.ist.fenixframework.DomainObject;
 
 public class CreationDomainMetaObject extends DomainMetaObject {

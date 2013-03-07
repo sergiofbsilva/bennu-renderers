@@ -1,9 +1,9 @@
-package pt.ist.bennu.renderers.rendererExtensions.validators;
+package pt.ist.bennu.renderers.extensions.validators;
 
 import pt.ist.bennu.renderers.core.components.HtmlSimpleValueComponent;
 import pt.ist.bennu.renderers.core.validators.HtmlChainValidator;
 import pt.ist.bennu.renderers.core.validators.HtmlValidator;
-import pt.ist.bennu.renderers.rendererExtensions.DateTimeInputRenderer.DateTimeConverter;
+import pt.ist.bennu.renderers.extensions.DateTimeInputRenderer.DateTimeConverter;
 
 public class DateTimeValidator extends HtmlValidator {
 

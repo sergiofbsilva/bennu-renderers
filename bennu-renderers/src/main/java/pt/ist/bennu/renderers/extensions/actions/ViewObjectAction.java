@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions.actions;
+package pt.ist.bennu.renderers.extensions.actions;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

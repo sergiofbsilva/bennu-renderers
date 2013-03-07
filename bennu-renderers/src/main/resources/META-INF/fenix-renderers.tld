@@ -17,7 +17,7 @@
   
   <tag>
     <name>create</name>
-    <tag-class>pt.ist.bennu.renderers.rendererExtensions.taglib.FenixCreateObjectTag</tag-class>
+    <tag-class>pt.ist.bennu.renderers.extensions.taglib.FenixCreateObjectTag</tag-class>
     <body-content>JSP</body-content>
     <description>
       Renders a generic input presentation suitable for creating a new object.
@@ -150,7 +150,7 @@
   
   <tag>
     <name>edit</name>
-    <tag-class>pt.ist.bennu.renderers.rendererExtensions.taglib.FenixEditObjectTag</tag-class>
+    <tag-class>pt.ist.bennu.renderers.extensions.taglib.FenixEditObjectTag</tag-class>
     <body-content>JSP</body-content>
     <description>
       Renders a generic input presentation of an object.
@@ -392,7 +392,7 @@
   
   <tag>
     <name>view</name>
-    <tag-class>pt.ist.bennu.renderers.rendererExtensions.taglib.FenixViewObjectTag</tag-class>
+    <tag-class>pt.ist.bennu.renderers.extensions.taglib.FenixViewObjectTag</tag-class>
     <body-content>JSP</body-content>
     <description>
       Renders a generic presentation of an object.
@@ -672,7 +672,7 @@
 
   <tag>
     <name>hidden</name>
-    <tag-class>pt.ist.bennu.renderers.rendererExtensions.taglib.FenixHiddenSlotTag</tag-class>
+    <tag-class>pt.ist.bennu.renderers.extensions.taglib.FenixHiddenSlotTag</tag-class>
     <body-content>empty</body-content>
     <description>
       Permites the user to supply slots that are context dependant and are nor present
@@ -994,7 +994,7 @@
   
   <tag>
     <name>default</name>
-    <tag-class>pt.ist.bennu.renderers.rendererExtensions.taglib.FenixDefaultValueTag</tag-class>
+    <tag-class>pt.ist.bennu.renderers.extensions.taglib.FenixDefaultValueTag</tag-class>
     <body-content>JSP</body-content>
 
     <attribute>

@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions;
+package pt.ist.bennu.renderers.extensions;
 
 import pt.ist.bennu.renderers.core.StringInputRenderer;
 import pt.ist.bennu.renderers.core.components.HtmlComponent;

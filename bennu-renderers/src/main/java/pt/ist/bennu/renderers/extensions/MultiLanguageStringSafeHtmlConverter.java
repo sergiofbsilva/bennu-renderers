@@ -1,8 +1,8 @@
-package pt.ist.bennu.renderers.rendererExtensions;
+package pt.ist.bennu.renderers.extensions;
 
 import pt.ist.bennu.renderers.core.components.converters.Converter;
-import pt.ist.bennu.renderers.rendererExtensions.MultiLanguageStringInputRenderer.MultiLanguageStringConverter;
-import pt.ist.bennu.renderers.rendererExtensions.htmlEditor.JsoupSafeHtmlConverter;
+import pt.ist.bennu.renderers.extensions.MultiLanguageStringInputRenderer.MultiLanguageStringConverter;
+import pt.ist.bennu.renderers.extensions.htmlEditor.JsoupSafeHtmlConverter;
 import pt.utl.ist.fenix.tools.util.i18n.Language;
 import pt.utl.ist.fenix.tools.util.i18n.MultiLanguageString;
 

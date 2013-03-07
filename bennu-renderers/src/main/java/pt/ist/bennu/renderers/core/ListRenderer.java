@@ -14,7 +14,7 @@ import pt.ist.bennu.renderers.core.schemas.Schema;
 import pt.ist.bennu.renderers.core.utils.RenderKit;
 import pt.ist.bennu.renderers.core.utils.RenderUtils;
 import pt.ist.bennu.renderers.core.utils.RendererPropertyUtils;
-import pt.ist.bennu.renderers.rendererExtensions.CssStyler;
+import pt.ist.bennu.renderers.extensions.CssStyler;
 
 /**
  * This renderer provides a basic presentation for a {@link java.util.List}.

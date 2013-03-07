@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions.converters;
+package pt.ist.bennu.renderers.extensions.converters;
 
 import pt.ist.bennu.renderers.core.components.converters.ConversionException;
 import pt.ist.bennu.renderers.core.components.converters.Converter;

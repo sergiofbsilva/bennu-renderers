@@ -2,7 +2,7 @@
  * Author : Goncalo Luiz
  * Creation Date: Jul 26, 2006,10:56:35 AM
  */
-package pt.ist.bennu.renderers.rendererExtensions;
+package pt.ist.bennu.renderers.extensions;
 
 import org.joda.time.DateTime;
 

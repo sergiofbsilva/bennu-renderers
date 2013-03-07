@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions.taglib;
+package pt.ist.bennu.renderers.extensions.taglib;
 
 import java.util.Collection;
 
@@ -10,8 +10,8 @@ import pt.ist.bennu.renderers.core.components.state.HiddenSlot;
 import pt.ist.bennu.renderers.core.converters.EnumConverter;
 import pt.ist.bennu.renderers.core.model.MetaObjectFactory;
 import pt.ist.bennu.renderers.core.taglib.HiddenSlotTag;
-import pt.ist.bennu.renderers.rendererExtensions.converters.DomainObjectKeyArrayConverter;
-import pt.ist.bennu.renderers.rendererExtensions.converters.DomainObjectKeyConverter;
+import pt.ist.bennu.renderers.extensions.converters.DomainObjectKeyArrayConverter;
+import pt.ist.bennu.renderers.extensions.converters.DomainObjectKeyConverter;
 import pt.ist.fenixframework.DomainObject;
 import pt.ist.fenixframework.pstm.Transaction;
 

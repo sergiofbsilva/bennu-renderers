@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions;
+package pt.ist.bennu.renderers.extensions;
 
 import org.apache.commons.beanutils.PropertyUtils;
 import org.apache.commons.lang.StringUtils;
@@ -21,7 +21,7 @@ import pt.ist.bennu.renderers.core.model.MetaSlot;
 import pt.ist.bennu.renderers.core.model.MetaSlotKey;
 import pt.ist.bennu.renderers.core.utils.RenderUtils;
 import pt.ist.bennu.renderers.core.utils.RendererPropertyUtils;
-import pt.ist.bennu.renderers.rendererExtensions.converters.DomainObjectKeyConverter;
+import pt.ist.bennu.renderers.extensions.converters.DomainObjectKeyConverter;
 
 /**
  * This renderer allows you to search for a domain object by providing a list of

@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions.validators;
+package pt.ist.bennu.renderers.extensions.validators;
 
 import org.apache.commons.lang.StringUtils;
 
@@ -7,7 +7,7 @@ import pt.ist.bennu.renderers.core.components.HtmlSimpleValueComponent;
 import pt.ist.bennu.renderers.core.utils.RenderUtils;
 import pt.ist.bennu.renderers.core.validators.HtmlChainValidator;
 import pt.ist.bennu.renderers.core.validators.HtmlValidator;
-import pt.ist.bennu.renderers.rendererExtensions.AutoCompleteInputRenderer;
+import pt.ist.bennu.renderers.extensions.AutoCompleteInputRenderer;
 
 public class RequiredAutoCompleteSelectionValidator extends HtmlValidator {
 

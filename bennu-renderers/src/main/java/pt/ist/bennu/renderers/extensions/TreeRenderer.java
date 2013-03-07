@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions;
+package pt.ist.bennu.renderers.extensions;
 
 import java.util.ArrayList;
 import java.util.Collection;

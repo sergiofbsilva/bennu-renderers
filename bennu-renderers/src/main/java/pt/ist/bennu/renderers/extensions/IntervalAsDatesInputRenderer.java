@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pt.ist.bennu.renderers.rendererExtensions;
+package pt.ist.bennu.renderers.extensions;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -28,7 +28,7 @@ import pt.ist.bennu.renderers.core.components.state.IViewState;
 import pt.ist.bennu.renderers.core.converters.DateConverter;
 import pt.ist.bennu.renderers.core.layouts.Layout;
 import pt.ist.bennu.renderers.core.model.MetaSlotKey;
-import pt.ist.bennu.renderers.rendererExtensions.DateTimeInputRenderer.DateTimeConverter;
+import pt.ist.bennu.renderers.extensions.DateTimeInputRenderer.DateTimeConverter;
 
 /**
  * Input Renderer for the Joda Interval class.

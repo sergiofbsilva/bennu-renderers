@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions.htmlEditor;
+package pt.ist.bennu.renderers.extensions.htmlEditor;
 
 import java.util.HashMap;
 import java.util.Map;

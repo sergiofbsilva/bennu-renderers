@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions;
+package pt.ist.bennu.renderers.extensions;
 
 public class CssStyler {
     private String useIf;

@@ -12,7 +12,7 @@ import pt.ist.bennu.renderers.core.utils.RenderUtils;
 import pt.ist.bennu.renderers.core.utils.RendererPropertyUtils;
 import pt.ist.bennu.renderers.core.validators.HtmlValidator;
 import pt.ist.bennu.renderers.core.validators.RequiredValidator;
-import pt.ist.bennu.renderers.rendererExtensions.validators.RequiredAutoCompleteSelectionValidator;
+import pt.ist.bennu.renderers.extensions.validators.RequiredAutoCompleteSelectionValidator;
 import pt.utl.ist.fenix.tools.util.Pair;
 
 /**

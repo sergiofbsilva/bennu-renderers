@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions.taglib;
+package pt.ist.bennu.renderers.extensions.taglib;
 
 import javax.servlet.jsp.JspException;
 

@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions;
+package pt.ist.bennu.renderers.extensions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +20,7 @@ import pt.ist.bennu.renderers.core.components.converters.Converter;
 import pt.ist.bennu.renderers.core.components.state.IViewState;
 import pt.ist.bennu.renderers.core.layouts.Layout;
 import pt.ist.bennu.renderers.core.utils.RenderUtils;
-import pt.ist.bennu.renderers.rendererExtensions.components.TinyMceEditor;
+import pt.ist.bennu.renderers.extensions.components.TinyMceEditor;
 
 /**
  * This renderer has the same behaviour than

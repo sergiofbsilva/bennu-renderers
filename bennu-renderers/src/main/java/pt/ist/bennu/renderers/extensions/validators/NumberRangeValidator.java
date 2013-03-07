@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions.validators;
+package pt.ist.bennu.renderers.extensions.validators;
 
 import org.apache.commons.lang.StringUtils;
 

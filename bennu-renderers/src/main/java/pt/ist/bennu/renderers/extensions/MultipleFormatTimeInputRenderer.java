@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions;
+package pt.ist.bennu.renderers.extensions;
 
 import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;

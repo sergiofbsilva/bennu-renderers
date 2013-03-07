@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions.util;
+package pt.ist.bennu.renderers.extensions.util;
 
 public class ObjectKey {
 

@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions.htmlEditor;
+package pt.ist.bennu.renderers.extensions.htmlEditor;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -9,7 +9,7 @@ import pt.ist.bennu.renderers.core.components.HtmlSubmitButton;
 import pt.ist.bennu.renderers.core.components.HtmlTextArea;
 import pt.ist.bennu.renderers.core.layouts.Layout;
 import pt.ist.bennu.renderers.core.model.MetaSlotKey;
-import pt.ist.bennu.renderers.rendererExtensions.components.HtmlEditor;
+import pt.ist.bennu.renderers.extensions.components.HtmlEditor;
 
 /**
  * An javascript html editor for doing the input of html text. This renderer

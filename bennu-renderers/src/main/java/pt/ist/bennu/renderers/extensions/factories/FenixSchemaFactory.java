@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions.factories;
+package pt.ist.bennu.renderers.extensions.factories;
 
 import java.util.ArrayList;
 import java.util.Iterator;

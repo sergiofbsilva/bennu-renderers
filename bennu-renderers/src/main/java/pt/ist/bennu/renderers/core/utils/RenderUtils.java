@@ -35,7 +35,7 @@ import pt.ist.bennu.renderers.core.components.state.ComponentLifeCycle;
 import pt.ist.bennu.renderers.core.components.state.IViewState;
 import pt.ist.bennu.renderers.core.components.state.LifeCycleConstants;
 import pt.ist.bennu.renderers.core.plugin.RenderersRequestProcessorImpl;
-import pt.ist.bennu.renderers.rendererExtensions.util.IPresentableEnum;
+import pt.ist.bennu.renderers.extensions.util.IPresentableEnum;
 
 public class RenderUtils {
     private static Logger logger = Logger.getLogger(RenderUtils.class);

@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions.components;
+package pt.ist.bennu.renderers.extensions.components;
 
 import javax.servlet.jsp.PageContext;
 

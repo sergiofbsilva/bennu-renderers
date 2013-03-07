@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions;
+package pt.ist.bennu.renderers.extensions;
 
 import java.util.List;
 
@@ -25,7 +25,7 @@ import pt.ist.bennu.renderers.core.schemas.Schema;
 import pt.ist.bennu.renderers.core.utils.RenderKit;
 import pt.ist.bennu.renderers.core.utils.RenderMode;
 import pt.ist.bennu.renderers.core.utils.RenderUtils;
-import pt.ist.bennu.renderers.rendererExtensions.converters.DomainObjectKeyConverter;
+import pt.ist.bennu.renderers.extensions.converters.DomainObjectKeyConverter;
 import pt.ist.fenixframework.DomainObject;
 
 public class PagesRenderer extends InputRenderer {

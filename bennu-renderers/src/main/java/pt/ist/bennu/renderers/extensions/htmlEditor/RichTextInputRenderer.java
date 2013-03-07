@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions.htmlEditor;
+package pt.ist.bennu.renderers.extensions.htmlEditor;
 
 import pt.ist.bennu.renderers.core.InputRenderer;
 import pt.ist.bennu.renderers.core.components.HtmlBlockContainer;
@@ -13,7 +13,7 @@ import pt.ist.bennu.renderers.core.components.state.IViewState;
 import pt.ist.bennu.renderers.core.layouts.Layout;
 import pt.ist.bennu.renderers.core.model.MetaSlotKey;
 import pt.ist.bennu.renderers.core.utils.RenderUtils;
-import pt.ist.bennu.renderers.rendererExtensions.components.TinyMceEditor;
+import pt.ist.bennu.renderers.extensions.components.TinyMceEditor;
 
 /**
  * Allows you to use the <a href="http://tinymce.moxiecode.com/">TinyMCE</a>

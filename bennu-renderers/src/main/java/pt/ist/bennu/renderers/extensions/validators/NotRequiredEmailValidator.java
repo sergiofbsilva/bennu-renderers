@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions.validators;
+package pt.ist.bennu.renderers.extensions.validators;
 
 import pt.ist.bennu.renderers.core.validators.EmailValidator;
 import pt.ist.bennu.renderers.core.validators.HtmlChainValidator;

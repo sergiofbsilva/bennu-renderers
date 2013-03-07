@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions;
+package pt.ist.bennu.renderers.extensions;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -27,7 +27,7 @@ import pt.ist.bennu.renderers.core.schemas.Schema;
 import pt.ist.bennu.renderers.core.utils.RenderKit;
 import pt.ist.bennu.renderers.core.utils.RenderMode;
 import pt.ist.bennu.renderers.core.utils.RenderUtils;
-import pt.ist.bennu.renderers.rendererExtensions.converters.DomainObjectKeyArrayConverter;
+import pt.ist.bennu.renderers.extensions.converters.DomainObjectKeyArrayConverter;
 
 /**
  * This renderer allows you get a list as input but delegates part of the

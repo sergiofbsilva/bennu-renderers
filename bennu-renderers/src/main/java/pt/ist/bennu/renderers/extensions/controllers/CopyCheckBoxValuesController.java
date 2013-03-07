@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pt.ist.bennu.renderers.rendererExtensions.controllers;
+package pt.ist.bennu.renderers.extensions.controllers;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,10 +1,10 @@
-package pt.ist.bennu.renderers.rendererExtensions.validators;
+package pt.ist.bennu.renderers.extensions.validators;
 
 import java.util.Collection;
 
 import pt.ist.bennu.renderers.core.components.HtmlSimpleValueComponent;
 import pt.ist.bennu.renderers.core.validators.HtmlChainValidator;
-import pt.ist.bennu.renderers.rendererExtensions.MultiLanguageStringInputRenderer.LanguageBean;
+import pt.ist.bennu.renderers.extensions.MultiLanguageStringInputRenderer.LanguageBean;
 
 public class RequiredMultiLanguageStringValidator extends MultiLanguageStringValidator {
 

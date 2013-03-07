@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pt.ist.bennu.renderers.rendererExtensions;
+package pt.ist.bennu.renderers.extensions;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

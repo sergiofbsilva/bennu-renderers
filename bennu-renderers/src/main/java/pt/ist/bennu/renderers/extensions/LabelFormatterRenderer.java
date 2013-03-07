@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions;
+package pt.ist.bennu.renderers.extensions;
 
 import java.util.Properties;
 
@@ -6,7 +6,7 @@ import pt.ist.bennu.renderers.core.OutputRenderer;
 import pt.ist.bennu.renderers.core.components.HtmlComponent;
 import pt.ist.bennu.renderers.core.components.HtmlText;
 import pt.ist.bennu.renderers.core.layouts.Layout;
-import pt.ist.bennu.renderers.rendererExtensions.util.RendererMessageResourceProvider;
+import pt.ist.bennu.renderers.extensions.util.RendererMessageResourceProvider;
 import pt.utl.ist.fenix.tools.resources.LabelFormatter;
 
 public class LabelFormatterRenderer extends OutputRenderer {

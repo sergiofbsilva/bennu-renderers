@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions.htmlEditor;
+package pt.ist.bennu.renderers.extensions.htmlEditor;
 
 import org.apache.commons.lang.StringUtils;
 import org.jsoup.Jsoup;

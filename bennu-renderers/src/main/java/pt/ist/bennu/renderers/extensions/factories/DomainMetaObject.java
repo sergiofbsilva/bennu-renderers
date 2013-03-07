@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions.factories;
+package pt.ist.bennu.renderers.extensions.factories;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -13,8 +13,8 @@ import pt.ist.bennu.renderers.core.model.CompositeSlotSetter;
 import pt.ist.bennu.renderers.core.model.MetaObjectKey;
 import pt.ist.bennu.renderers.core.model.MetaSlot;
 import pt.ist.bennu.renderers.core.model.SimpleMetaObject;
-import pt.ist.bennu.renderers.rendererExtensions.util.ObjectChange;
-import pt.ist.bennu.renderers.rendererExtensions.util.ObjectKey;
+import pt.ist.bennu.renderers.extensions.util.ObjectChange;
+import pt.ist.bennu.renderers.extensions.util.ObjectKey;
 import pt.ist.bennu.renderers.services.ServiceManager;
 import pt.ist.bennu.renderers.services.ServicePredicate;
 import pt.ist.fenixframework.DomainObject;

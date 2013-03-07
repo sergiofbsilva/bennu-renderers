@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions.taglib;
+package pt.ist.bennu.renderers.extensions.taglib;
 
 import pt.ist.bennu.renderers.core.taglib.CreateObjectTag;
 

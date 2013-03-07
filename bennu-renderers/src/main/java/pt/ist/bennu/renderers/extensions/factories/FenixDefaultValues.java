@@ -1,4 +1,4 @@
-package pt.ist.bennu.renderers.rendererExtensions.factories;
+package pt.ist.bennu.renderers.extensions.factories;
 
 import pt.ist.bennu.renderers.core.model.DefaultValues;
 import pt.ist.fenixframework.DomainObject;
