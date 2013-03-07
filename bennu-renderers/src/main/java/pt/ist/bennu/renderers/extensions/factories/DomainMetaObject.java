@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Hashtable;
 import java.util.List;
+import java.util.concurrent.Callable;
 
 import org.apache.commons.beanutils.PropertyUtils;
 
@@ -15,8 +16,7 @@ import pt.ist.bennu.renderers.core.model.MetaSlot;
 import pt.ist.bennu.renderers.core.model.SimpleMetaObject;
 import pt.ist.bennu.renderers.extensions.util.ObjectChange;
 import pt.ist.bennu.renderers.extensions.util.ObjectKey;
-import pt.ist.bennu.renderers.services.ServiceManager;
-import pt.ist.bennu.renderers.services.ServicePredicate;
+import pt.ist.bennu.service.ServiceManager;
 import pt.ist.fenixframework.DomainObject;
 import pt.ist.fenixframework.pstm.IllegalWriteException;
 import pt.ist.fenixframework.pstm.Transaction;
@@ -103,18 +103,16 @@ public class DomainMetaObject extends SimpleMetaObject {
         callService(changes);
     }
 
-    public static class ServicePredicateWithResult implements ServicePredicate {
+    public static class ServicePredicateWithResult implements Callable<Object> {
 
         final List<ObjectChange> changes;
-
-        Object result = null;
 
         public ServicePredicateWithResult(final List<ObjectChange> changes) {
             this.changes = changes;
         }
 
         @Override
-        public void execute() {
+        public Object call() throws Exception {
             beforeRun(changes);
 
             Hashtable<ObjectKey, Object> objects = new Hashtable<ObjectKey, Object>();
@@ -141,11 +139,7 @@ public class DomainMetaObject extends SimpleMetaObject {
             }
 
             afterRun(objects.values());
-            result = objects.values();
-        }
-
-        public Object getResult() {
-            return result;
+            return objects.values();
         }
 
         protected void processChange(ObjectChange change, Object object) throws IllegalAccessException,
@@ -185,8 +179,7 @@ public class DomainMetaObject extends SimpleMetaObject {
         }
 
         /**
-         * Executed after all changes are made to the domain. This includes the
-         * creation of new objects.
+         * Executed after all changes are made to the domain. This includes the creation of new objects.
          * 
          * @param touchedObjects
          *            the objects that were edited in the interface or created
@@ -224,16 +217,16 @@ public class DomainMetaObject extends SimpleMetaObject {
         }
 
         protected void setSlotProperty(Object object, String slot, Object value) throws IllegalAccessException,
-                InvocationTargetException, NoSuchMethodException, InstantiationException {
+                InvocationTargetException, NoSuchMethodException {
             PropertyUtils.setProperty(object, slot, value);
         }
 
         protected void setCollectionProperty(Object object, String slot, List list) throws IllegalAccessException,
                 InvocationTargetException, NoSuchMethodException, InstantiationException {
-            Collection relation = (Collection) getSlotProperty(object, slot);
+            Collection<?> relation = (Collection<?>) getSlotProperty(object, slot);
 
             if (relation == null || isWriteableSlot(object, slot)) {
-                relation = new ArrayList();
+                relation = new ArrayList<>();
                 relation.addAll(list);
 
                 // ASSUMPTION: if collection is null then there is a setter that allows the value to be changed
@@ -272,15 +265,17 @@ public class DomainMetaObject extends SimpleMetaObject {
 
     }
 
-    protected ServicePredicateWithResult getServiceToCall(final List<ObjectChange> changes) {
+    protected Callable<Object> getServiceToCall(final List<ObjectChange> changes) {
         return new ServicePredicateWithResult(changes);
     }
 
     protected Object callService(final List<ObjectChange> changes) {
-        final ServicePredicateWithResult servicePredicate = getServiceToCall(changes);
-        ServiceManager.execute(servicePredicate);
-        final Object result = servicePredicate.getResult();
-        return result;
+        final Callable<Object> service = getServiceToCall(changes);
+        try {
+            return ServiceManager.execute(service);
+        } catch (Exception e) {
+            throw new Error(e);
+        }
     }
 
     protected Object[] getServiceArguments(List<ObjectChange> changes) {

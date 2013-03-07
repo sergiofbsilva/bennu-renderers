@@ -57,7 +57,7 @@ public class CreationDomainMetaObject extends DomainMetaObject {
         }
 
         @Override
-        public void execute() {
+        public Object call() throws Exception {
             beforeRun(changes);
 
             InstanceCreator instanceCreator = domainMetaObject.getInstanceCreator();
@@ -73,7 +73,7 @@ public class CreationDomainMetaObject extends DomainMetaObject {
                 }
             }
 
-            super.execute();
+            return super.call();
         }
 
         @Override
