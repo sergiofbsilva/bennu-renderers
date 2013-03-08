@@ -1,10 +1,8 @@
 package pt.ist.bennu.renderers.servlets.ajax;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import javax.servlet.ServletException;
@@ -17,7 +15,9 @@ import org.apache.commons.lang.CharEncoding;
 import org.apache.commons.lang.StringUtils;
 
 import pt.ist.bennu.renderers.core.utils.RenderUtils;
-import pt.ist.bennu.renderers.servlets.json.JsonObject;
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 
 public abstract class AutoCompleteServlet extends HttpServlet {
 
@@ -82,7 +82,8 @@ public abstract class AutoCompleteServlet extends HttpServlet {
 
     private String getResponseHtml(Collection result, String labelField, String format, String valueField, String styleClass,
             int maxCount) {
-        List<JsonObject> jsonObjects = new ArrayList<JsonObject>();
+        JsonArray array = new JsonArray();
+
         try {
             int count = 0;
             for (final Object element : result) {
@@ -90,19 +91,18 @@ public abstract class AutoCompleteServlet extends HttpServlet {
                     break;
                 }
 
-                final String labelProperty = BeanUtils.getProperty(element, labelField);
+                JsonObject object = new JsonObject();
+                object.addProperty("oid", BeanUtils.getProperty(element, valueField));
                 if (format == null) {
-                    jsonObjects.add(new JsonObject(BeanUtils.getProperty(element, valueField), labelProperty));
+                    object.addProperty("description", BeanUtils.getProperty(element, labelField));
                 } else {
-                    jsonObjects.add(new JsonObject(BeanUtils.getProperty(element, valueField), RenderUtils
-                            .getFormattedProperties(format, element)));
+                    object.addProperty("description", RenderUtils.getFormattedProperties(format, element));
                 }
             }
         } catch (Exception ex) {
             throw new RuntimeException("Error getting field property (see label and value fields)", ex);
 
         }
-
-        return JsonObject.getJsonArrayString(jsonObjects);
+        return array.toString();
     }
 }
