@@ -10,15 +10,15 @@ import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.BodyContent;
 import javax.servlet.jsp.tagext.BodyTagSupport;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import pt.ist.bennu.renderers._development.LogLevel;
 import pt.ist.bennu.renderers.core.components.state.IViewState;
 import pt.ist.bennu.renderers.core.components.state.Message;
 import pt.ist.bennu.renderers.core.components.state.Message.Type;
 
 public class MessagesTag extends BodyTagSupport {
-    private static final Logger logger = Logger.getLogger(MessagesTag.class);
+    private static final Logger logger = LoggerFactory.getLogger(MessagesTag.class);
 
     private Iterator<Message> iterator;
     private Message message;
@@ -85,7 +85,7 @@ public class MessagesTag extends BodyTagSupport {
         HasMessagesTag parent = (HasMessagesTag) findAncestorWithClass(this, HasMessagesTag.class);
 
         if (getType() != null) {
-            if (LogLevel.WARN) {
+            if (logger.isWarnEnabled()) {
                 if (parent != null && parent.getMessageType() != null) {
                     logger.warn("parent 'hasMessage' tag is beeing ignored since the 'type' attribute was specified");
                 }
@@ -105,7 +105,7 @@ public class MessagesTag extends BodyTagSupport {
         HasMessagesTag parent = (HasMessagesTag) findAncestorWithClass(this, HasMessagesTag.class);
 
         if (getFor() != null) {
-            if (LogLevel.WARN) {
+            if (logger.isWarnEnabled()) {
                 if (parent != null) {
                     logger.warn("parent 'hasMessages' tag is beeing ignore since 'for' attribute was specified");
                 }

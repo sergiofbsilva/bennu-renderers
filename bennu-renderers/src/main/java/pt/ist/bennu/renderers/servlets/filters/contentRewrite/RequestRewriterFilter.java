@@ -11,9 +11,11 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import pt.ist.bennu.renderers._development.LogLevel;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class RequestRewriterFilter implements Filter {
+    private static final Logger logger = LoggerFactory.getLogger(RequestRewriterFilter.class);
 
     @Override
     public void init(FilterConfig config) {
@@ -31,7 +33,7 @@ public class RequestRewriterFilter implements Filter {
 
         final ResponseWrapper responseWrapper = new ResponseWrapper(httpServletResponse);
 
-        if (LogLevel.DEBUG) {
+        if (logger.isDebugEnabled()) {
             continueChainAndWriteResponseWithTimeLog(filterChain, httpServletRequest, responseWrapper);
         } else {
             continueChainAndWriteResponse(filterChain, httpServletRequest, responseWrapper);
@@ -58,7 +60,7 @@ public class RequestRewriterFilter implements Filter {
         final long time1 = end1 - start1;
         final long time2 = end2 - start2;
         final long percent = time1 == 0 ? 0 : (100 * time2) / time1;
-        System.out.println("Actual response took: " + time1 + " ms. Parse and replace took: " + time2 + " ms. Performance loss: "
+        logger.debug("Actual response took: " + time1 + " ms. Parse and replace took: " + time2 + " ms. Performance loss: "
                 + percent + " %.");
     }
 

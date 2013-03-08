@@ -1,8 +1,10 @@
 package pt.ist.bennu.renderers.core;
 
-import org.apache.log4j.Logger;
 
-import pt.ist.bennu.renderers._development.LogLevel;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import pt.ist.bennu.renderers.core.components.HtmlComponent;
 import pt.ist.bennu.renderers.core.components.HtmlFormComponent;
 import pt.ist.bennu.renderers.core.components.HtmlLabel;
@@ -55,7 +57,7 @@ public class StandardInputBreakRenderer extends StandardInputRenderer {
 
     class ObjectInputTabularBreakLayout extends ObjectInputTabularLayout {
 
-        public Logger logger = Logger.getLogger(ObjectInputTabularLayout.class);
+        public Logger logger = LoggerFactory.getLogger(ObjectInputTabularLayout.class);
 
         public ObjectInputTabularBreakLayout(MetaObject object) {
             super(object);
@@ -140,7 +142,7 @@ public class StandardInputBreakRenderer extends StandardInputRenderer {
                         }
                     }
                 } catch (Exception e) {
-                    if (LogLevel.WARN) {
+                    if (logger.isWarnEnabled()) {
                         logger.warn("while generating table row " + rowIndex + " catched exception " + e);
                     }
                     e.printStackTrace();

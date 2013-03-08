@@ -8,14 +8,13 @@ import java.util.List;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.TagSupport;
 
-import org.apache.log4j.Logger;
-
-import pt.ist.bennu.renderers._development.LogLevel;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class LinkFormatTag extends TagSupport {
 
     static private final long serialVersionUID = 1L;
-    static private final Logger logger = Logger.getLogger(LinkFormatTag.class);
+    static private final Logger logger = LoggerFactory.getLogger(LinkFormatTag.class);
     static private final String ELEMENTS_SEPARATOR = ",";
 
     private String name;
@@ -152,7 +151,7 @@ public class LinkFormatTag extends TagSupport {
             setProperties(parent);
 
         } else {
-            if (LogLevel.WARN) {
+            if (logger.isWarnEnabled()) {
                 logger.warn("property tag was using inside an invalid container");
             }
         }

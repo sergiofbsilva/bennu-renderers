@@ -5,15 +5,15 @@ import java.io.IOException;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.TagSupport;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import pt.ist.bennu.renderers._development.LogLevel;
 import pt.ist.bennu.renderers.core.components.HtmlComponent;
 import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 public class ComponentTag extends TagSupport {
 
-    private static final Logger logger = Logger.getLogger(ComponentTag.class);
+    private static final Logger logger = LoggerFactory.getLogger(ComponentTag.class);
 
     @Override
     public int doEndTag() throws JspException {
@@ -22,7 +22,7 @@ public class ComponentTag extends TagSupport {
         HtmlComponent component = RenderUtils.getRegisteredComponent(id);
 
         if (component == null) {
-            if (LogLevel.WARN) {
+            if (logger.isWarnEnabled()) {
                 logger.warn("no component with id='" + id + "' was registered");
             }
         }

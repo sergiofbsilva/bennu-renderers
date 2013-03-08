@@ -3,12 +3,11 @@ package pt.ist.bennu.renderers.core.taglib;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.BodyTagSupport;
 
-import org.apache.log4j.Logger;
-
-import pt.ist.bennu.renderers._development.LogLevel;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class PropertyTag extends BodyTagSupport {
-    private static final Logger logger = Logger.getLogger(PropertyTag.class);
+    private static final Logger logger = LoggerFactory.getLogger(PropertyTag.class);
 
     private String name = null;
 
@@ -61,7 +60,7 @@ public class PropertyTag extends BodyTagSupport {
                 parent.addProperty(getName(), getBodyContent().getString());
             }
         } else {
-            if (LogLevel.WARN) {
+            if (logger.isWarnEnabled()) {
                 logger.warn("property tag was using inside an invalid container");
                 logger.warn("could not set property: " + getName() + "=" + getValue());
             }

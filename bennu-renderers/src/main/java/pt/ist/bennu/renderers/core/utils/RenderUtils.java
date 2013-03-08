@@ -22,14 +22,14 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.commons.beanutils.BeanComparator;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.PropertyUtils;
-import org.apache.log4j.Logger;
 import org.apache.struts.Globals;
 import org.apache.struts.config.ModuleConfig;
 import org.apache.struts.util.MessageResources;
 import org.apache.struts.util.ModuleUtils;
 import org.apache.struts.util.RequestUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import pt.ist.bennu.renderers._development.LogLevel;
 import pt.ist.bennu.renderers.core.components.HtmlComponent;
 import pt.ist.bennu.renderers.core.components.state.ComponentLifeCycle;
 import pt.ist.bennu.renderers.core.components.state.IViewState;
@@ -38,7 +38,7 @@ import pt.ist.bennu.renderers.core.plugin.RenderersRequestProcessorImpl;
 import pt.ist.bennu.renderers.extensions.util.IPresentableEnum;
 
 public class RenderUtils {
-    private static Logger logger = Logger.getLogger(RenderUtils.class);
+    private static Logger logger = LoggerFactory.getLogger(RenderUtils.class);
 
     public static String RESOURCE_LABEL_PREFIX = "label";
     public static String COMPONENT_REGISTRY_NAME = RenderUtils.class.getName() + "/component/registry";
@@ -58,7 +58,7 @@ public class RenderUtils {
         if (label != null) {
             return label;
         } else if (key != null) {
-            if (LogLevel.WARN) {
+            if (logger.isWarnEnabled()) {
                 logger.warn("key specified for slot '" + slotName + "' does not exist: " + key);
             }
         }
@@ -391,14 +391,14 @@ public class RenderUtils {
                     try {
                         PropertyUtils.setProperty(target, propertyName, properties.getProperty(propertyName));
                     } catch (Exception e) {
-                        if (LogLevel.DEBUG) {
+                        if (logger.isDebugEnabled()) {
                             logger.warn("The object " + target + " does not support property '" + propertyName
                                     + "': Not writeable!");
                         }
                     }
                 }
             } catch (Exception e) {
-                if (LogLevel.DEBUG) {
+                if (logger.isDebugEnabled()) {
                     logger.warn("The object " + target + " does not support property '" + propertyName + "': " + e);
                 }
             } // IllegalAccessException, InvocationTargetException,

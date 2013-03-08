@@ -7,9 +7,9 @@ import java.util.Properties;
 import javax.servlet.ServletContext;
 import javax.servlet.jsp.PageContext;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import pt.ist.bennu.renderers._development.LogLevel;
 import pt.ist.bennu.renderers.core.components.HtmlLink;
 import pt.ist.bennu.renderers.core.components.HtmlScript;
 import pt.ist.bennu.renderers.core.components.HtmlTextArea;
@@ -18,7 +18,7 @@ import pt.utl.ist.fenix.tools.util.i18n.Language;
 
 public class TinyMceEditor extends HtmlTextArea {
 
-    private static final Logger logger = Logger.getLogger(TinyMceEditor.class);
+    private static final Logger logger = LoggerFactory.getLogger(TinyMceEditor.class);
 
     public static final String EDITOR_PATH = "/javaScript/tiny_mce/";
     public static final String CODE_PATH = "/javaScript/tiny_mce/tiny_mce.js";
@@ -150,14 +150,14 @@ public class TinyMceEditor extends HtmlTextArea {
             InputStream stream = servletContext.getResourceAsStream(CONFIG_PATH + getConfig() + ".properties");
 
             if (stream == null) {
-                if (LogLevel.WARN) {
+                if (logger.isWarnEnabled()) {
                     logger.warn("could not read TinyMCE configuration named '" + getConfig() + "'");
                 }
             } else {
                 properties.load(stream);
             }
         } catch (IOException e) {
-            if (LogLevel.WARN) {
+            if (logger.isWarnEnabled()) {
                 logger.warn("exception thrown when reading TinyMCE configuration '" + getConfig() + "'" + e);
             }
             e.printStackTrace();

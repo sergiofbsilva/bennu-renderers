@@ -11,12 +11,12 @@ import java.util.Properties;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 
-import org.apache.log4j.Logger;
 import org.jdom.Element;
 import org.jdom.JDOMException;
 import org.jdom.input.SAXBuilder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import pt.ist.bennu.renderers._development.LogLevel;
 import pt.ist.bennu.renderers.core.exceptions.NoRendererException;
 import pt.ist.bennu.renderers.core.exceptions.NoSuchSchemaException;
 import pt.ist.bennu.renderers.core.schemas.Schema;
@@ -33,7 +33,7 @@ import pt.ist.fenixframework.project.exception.FenixFrameworkProjectException;
 import pt.utl.ist.fenix.tools.util.Pair;
 
 public class ConfigurationReader {
-    private static final Logger logger = Logger.getLogger(ConfigurationReader.class);
+    private static final Logger logger = LoggerFactory.getLogger(ConfigurationReader.class);
 
     public static void readSchemas(ServletContext context, URL schemaConfig) throws ServletException {
         Element root = readConfigRootElement(context, schemaConfig);
@@ -53,7 +53,7 @@ public class ConfigurationReader {
 
                 try {
                     RenderKit.getInstance().findSchema(schemaName);
-                    if (LogLevel.ERROR) {
+                    if (logger.isErrorEnabled()) {
                         logger.error("schema '" + schemaName + "' was already defined");
                     }
                     continue;
@@ -65,7 +65,7 @@ public class ConfigurationReader {
                 try {
                     type = getClassForType(typeName, true);
                 } catch (ClassNotFoundException e) {
-                    if (LogLevel.ERROR) {
+                    if (logger.isErrorEnabled()) {
                         logger.error("schema '" + schemaName + "' was defined for the undefined type '" + typeName + "'");
                     }
                     e.printStackTrace();
@@ -73,7 +73,7 @@ public class ConfigurationReader {
                 }
 
                 if (extendedSchemaName != null && refinedSchemaName != null) {
-                    if (LogLevel.ERROR) {
+                    if (logger.isErrorEnabled()) {
                         logger.error("schema '" + schemaName + "' cannot extend '" + extendedSchemaName + "' and refine '"
                                 + refinedSchemaName + "' at the same time");
                     }
@@ -84,7 +84,7 @@ public class ConfigurationReader {
                 try {
                     extendedSchema = RenderKit.getInstance().findSchema(extendedSchemaName);
                 } catch (NoSuchSchemaException e) {
-                    if (LogLevel.ERROR) {
+                    if (logger.isErrorEnabled()) {
                         logger.error("schema '" + schemaName + "' cannot extend '" + extendedSchemaName + "', schema not found");
                     }
                     e.printStackTrace();
@@ -95,7 +95,7 @@ public class ConfigurationReader {
                 try {
                     refinedSchema = RenderKit.getInstance().findSchema(refinedSchemaName);
                 } catch (NoSuchSchemaException e) {
-                    if (LogLevel.ERROR) {
+                    if (logger.isErrorEnabled()) {
                         logger.error("schema '" + schemaName + "' cannot refine '" + refinedSchemaName + "', schema not found");
                     }
                     e.printStackTrace();
@@ -103,7 +103,7 @@ public class ConfigurationReader {
                 }
 
                 if (extendedSchema != null && !extendedSchema.getType().isAssignableFrom(type)) {
-                    if (LogLevel.WARN) {
+                    if (logger.isWarnEnabled()) {
                         logger.warn("schema '" + schemaName + "' is defined for type '" + typeName
                                 + "' that is not a subclass of the type '" + extendedSchema.getType().getName()
                                 + "' specified in the extended schema");
@@ -122,7 +122,7 @@ public class ConfigurationReader {
 
                 List removeElements = schemaElement.getChildren("remove");
                 if (extendedSchemaName == null && refinedSchema == null && removeElements.size() > 0) {
-                    if (LogLevel.WARN) {
+                    if (logger.isWarnEnabled()) {
                         logger.warn("schema '" + schemaName
                                 + "' specifies slots to be removed but it does not extend or refine schema");
                     }
@@ -134,7 +134,7 @@ public class ConfigurationReader {
 
                         SchemaSlotDescription slotDescription = schema.getSlotDescription(name);
                         if (slotDescription == null) {
-                            if (LogLevel.WARN) {
+                            if (logger.isWarnEnabled()) {
                                 logger.warn("schema '" + schemaName + "' specifies that slot '" + name
                                         + "' is to be removed but it is not defined in the extended schema");
                             }
@@ -176,7 +176,7 @@ public class ConfigurationReader {
                             Class<HtmlValidator> validator = getClassForType(validatorName, true);
                             validators.add(new Pair<Class<HtmlValidator>, Properties>(validator, new Properties()));
                         } catch (ClassNotFoundException e) {
-                            if (LogLevel.ERROR) {
+                            if (logger.isErrorEnabled()) {
                                 logger.error("in schema '" + schemaName + "': validator '" + validatorName + "' was not found");
                             }
                             e.printStackTrace();
@@ -204,7 +204,7 @@ public class ConfigurationReader {
                             try {
                                 validator = getClassForType(validatorName, true);
                             } catch (ClassNotFoundException e) {
-                                if (LogLevel.ERROR) {
+                                if (logger.isErrorEnabled()) {
                                     logger.error("in schema '" + schemaName + "': validator '" + validatorName
                                             + "' was not found");
                                 }
@@ -221,7 +221,7 @@ public class ConfigurationReader {
                         try {
                             converter = getClassForType(converterName, true);
                         } catch (ClassNotFoundException e) {
-                            if (LogLevel.ERROR) {
+                            if (logger.isErrorEnabled()) {
                                 logger.error("in schema '" + schemaName + "': converter '" + converterName + "' was not found");
                             }
                             e.printStackTrace();
@@ -300,7 +300,7 @@ public class ConfigurationReader {
                     schema.setConstructor(refinedSchema.getConstructor());
                 }
 
-                if (LogLevel.DEBUG) {
+                if (logger.isDebugEnabled()) {
                     logger.debug("adding new schema: " + schema.getName());
                 }
                 RenderKit.getInstance().registerSchema(schema);
@@ -320,7 +320,7 @@ public class ConfigurationReader {
             int indexOfCloseParen = signature.indexOf(")", indexOfStartParent);
 
             if (indexOfCloseParen == -1) {
-                if (LogLevel.ERROR) {
+                if (logger.isErrorEnabled()) {
                     logger.error("in schema " + schema.getName() + ": malformed signature '" + signature + "', missing ')'");
                 }
                 return null;
@@ -354,7 +354,7 @@ public class ConfigurationReader {
             }
 
             SchemaSlotDescription slotDescription = schema.getSlotDescription(slotName);
-            if (LogLevel.ERROR) {
+            if (logger.isErrorEnabled()) {
                 if (slotDescription == null) {
                     logger.error("in schema " + schema.getName() + ": malformed signature '" + signature + "', slot '" + slotName
                             + "' is not defined");
@@ -367,7 +367,7 @@ public class ConfigurationReader {
                 try {
                     slotType = getClassForType(typeName, false);
                 } catch (ClassNotFoundException e) {
-                    if (LogLevel.ERROR) {
+                    if (logger.isErrorEnabled()) {
                         logger.error("in schema " + schema.getName() + ": malformed signature '" + signature
                                 + "', could not find type '" + typeName + "'");
                     }
@@ -431,20 +431,20 @@ public class ConfigurationReader {
 
                     RenderMode mode = RenderMode.getMode(modeName);
 
-                    if (LogLevel.WARN) {
+                    if (logger.isWarnEnabled()) {
                         if (hasRenderer(layout, objectClass, mode)) {
                             logger.warn(String.format("[%s] duplicated definition for type '%s' and layout '%s'", modeName,
                                     objectClass, layout));
                         }
                     }
 
-                    if (LogLevel.DEBUG) {
+                    if (logger.isDebugEnabled()) {
                         logger.debug("[" + modeName + "] adding new renderer: " + objectClass + "/" + layout + "/"
                                 + rendererClass + "/" + rendererProperties);
                     }
                     RenderKit.getInstance().registerRenderer(mode, objectClass, layout, rendererClass, rendererProperties);
                 } catch (ClassNotFoundException e) {
-                    if (LogLevel.ERROR) {
+                    if (logger.isErrorEnabled()) {
                         logger.error("could not register new renderer: " + e);
                     }
                     e.printStackTrace();
@@ -520,7 +520,7 @@ public class ConfigurationReader {
         }
 
         RendererPropertyUtils.destroyCache();
-        if (LogLevel.INFO) {
+        if (logger.isInfoEnabled()) {
             logger.info("configuration read");
         }
     }

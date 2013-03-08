@@ -5,15 +5,15 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import pt.ist.bennu.renderers._development.LogLevel;
 import pt.ist.bennu.renderers.core.utils.ClassHierarchyTable;
 
 // TODO: This needs revision. It's problably an horrible way of creating default values for types
 public class DefaultValues {
 
-    private static Logger logger = Logger.getLogger(DefaultValues.class);
+    private static Logger logger = LoggerFactory.getLogger(DefaultValues.class);
 
     protected static DefaultValues instance;
 
@@ -60,7 +60,7 @@ public class DefaultValues {
 
     public void registerCreator(Class type, ValueCreator creator) {
         defaultValues.put(type, creator);
-        if (LogLevel.INFO) {
+        if (logger.isInfoEnabled()) {
             logger.info("adding default value for type: " + type.getName());
         }
     }
@@ -114,7 +114,7 @@ public class DefaultValues {
             try {
                 return new Float(defaultValue != null ? defaultValue : "0.0");
             } catch (NumberFormatException e1) {
-                if (LogLevel.WARN) {
+                if (logger.isWarnEnabled()) {
                     logger.warn("could not create number from default value '" + defaultValue + "': " + e1);
                 }
                 e1.printStackTrace();
@@ -132,7 +132,7 @@ public class DefaultValues {
         try {
             return new Integer(defaultValue != null ? defaultValue : "0");
         } catch (NumberFormatException e) {
-            if (LogLevel.WARN) {
+            if (logger.isWarnEnabled()) {
                 logger.warn("could not create integer from default value '" + defaultValue + "': " + e);
             }
         }
@@ -148,7 +148,7 @@ public class DefaultValues {
         try {
             return new Float(defaultValue != null ? defaultValue : "0.0");
         } catch (NumberFormatException e) {
-            if (LogLevel.WARN) {
+            if (logger.isWarnEnabled()) {
                 logger.warn("could not create float from default value '" + defaultValue + "': " + e);
             }
         }
@@ -173,7 +173,7 @@ public class DefaultValues {
             try {
                 return new SimpleDateFormat("dd/MM/yyyy").parse(defaultValue);
             } catch (ParseException e) {
-                if (LogLevel.WARN) {
+                if (logger.isWarnEnabled()) {
                     logger.warn("could not create date from default value '" + defaultValue + "': " + e);
                 }
                 e.printStackTrace();

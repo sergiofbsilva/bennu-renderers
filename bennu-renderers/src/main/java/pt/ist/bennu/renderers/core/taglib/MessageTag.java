@@ -6,16 +6,16 @@ import java.util.List;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.TagSupport;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import pt.ist.bennu.renderers._development.LogLevel;
 import pt.ist.bennu.renderers.core.components.state.IViewState;
 import pt.ist.bennu.renderers.core.components.state.Message;
-import pt.ist.bennu.renderers.core.components.state.SlotMessage;
 import pt.ist.bennu.renderers.core.components.state.Message.Type;
+import pt.ist.bennu.renderers.core.components.state.SlotMessage;
 
 public class MessageTag extends TagSupport {
-    private static final Logger logger = Logger.getLogger(MessageTag.class);
+    private static final Logger logger = LoggerFactory.getLogger(MessageTag.class);
 
     private String forName;
     private String type;
@@ -70,7 +70,7 @@ public class MessageTag extends TagSupport {
         if (getFor() == null || parent != null) {
             return parent.getCurrentMessage();
         } else {
-            if (LogLevel.WARN) {
+            if (logger.isWarnEnabled()) {
                 if (parent != null) {
                     logger.warn("parent 'messages' tag is beeing ignored since 'for' attribute was defined");
                 }
@@ -103,7 +103,7 @@ public class MessageTag extends TagSupport {
                         if (slotMessage.getSlot() != null) {
                             pageContext.getOut().write(slotMessage.getSlot().getLabel());
                         } else {
-                            if (LogLevel.WARN) {
+                            if (logger.isWarnEnabled()) {
                                 logger.warn("asked to show " + getShow() + " but not " + getShow() + " was defined");
                             }
                         }
@@ -121,7 +121,7 @@ public class MessageTag extends TagSupport {
         MessagesTag parent = (MessagesTag) findAncestorWithClass(this, MessagesTag.class);
 
         if (getType() != null) {
-            if (LogLevel.WARN) {
+            if (logger.isWarnEnabled()) {
                 if (parent != null && parent.getMessageType() != null) {
                     logger.warn("parent 'messages' tag is beeing ignored since the 'type' attribute was specified");
                 }

@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.beanutils.PropertyUtils;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import pt.ist.bennu.renderers._development.LogLevel;
 import pt.ist.bennu.renderers.core.components.HtmlBlockContainer;
 import pt.ist.bennu.renderers.core.components.HtmlComponent;
 import pt.ist.bennu.renderers.core.components.HtmlText;
 import pt.ist.bennu.renderers.core.utils.RenderUtils;
 
 public abstract class Layout {
-    private static Logger logger = Logger.getLogger(Layout.class);
+    private static Logger logger = LoggerFactory.getLogger(Layout.class);
 
     private String classes;
 
@@ -85,7 +85,7 @@ public abstract class Layout {
             String name = name2;
 
             if (!PropertyUtils.isWriteable(this, name)) {
-                if (LogLevel.WARN) {
+                if (logger.isWarnEnabled()) {
                     logger.warn("Layout " + this + " specified a non-writeable property: " + name);
                 }
             } else {

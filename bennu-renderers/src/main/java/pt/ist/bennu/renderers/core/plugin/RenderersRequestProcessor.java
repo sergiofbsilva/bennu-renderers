@@ -1,8 +1,6 @@
 package pt.ist.bennu.renderers.core.plugin;
 
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -16,7 +14,6 @@ import org.apache.struts.action.ActionServlet;
 import org.apache.struts.config.ModuleConfig;
 import org.apache.struts.tiles.TilesRequestProcessor;
 
-import pt.ist.bennu.renderers._development.LogLevel;
 import pt.ist.bennu.renderers.core.components.state.ComponentLifeCycle;
 import pt.ist.bennu.renderers.core.components.state.IViewState;
 import pt.ist.bennu.renderers.core.components.state.ViewDestination;
@@ -93,9 +90,6 @@ public class RenderersRequestProcessor extends TilesRequestProcessor {
 
                 return super.processActionPerform(request, response, action, form, mapping);
             } catch (Exception e) {
-                if (LogLevel.WARN) {
-                    System.out.println(SimpleDateFormat.getInstance().format(new Date()));
-                }
                 e.printStackTrace();
 
                 if (action instanceof ExceptionHandler) {

@@ -1,8 +1,8 @@
 package pt.ist.bennu.renderers.core.layouts;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import pt.ist.bennu.renderers._development.LogLevel;
 import pt.ist.bennu.renderers.core.components.HtmlComponent;
 import pt.ist.bennu.renderers.core.components.HtmlTable;
 import pt.ist.bennu.renderers.core.components.HtmlTableCell;
@@ -11,7 +11,7 @@ import pt.ist.bennu.renderers.core.components.HtmlTableRow;
 import pt.ist.bennu.renderers.core.components.HtmlText;
 
 public abstract class TabularLayout extends Layout {
-    protected static Logger logger = Logger.getLogger(TabularLayout.class);
+    protected static Logger logger = LoggerFactory.getLogger(TabularLayout.class);
 
     private String caption;
     private String summary;
@@ -152,7 +152,7 @@ public abstract class TabularLayout extends Layout {
                     cell.setBody(getComponent(rowIndex, columnIndex));
                 }
             } catch (Exception e) {
-                if (LogLevel.WARN) {
+                if (logger.isWarnEnabled()) {
                     logger.warn("while generating table row " + rowIndex + " catched exception " + e);
                 }
                 e.printStackTrace();

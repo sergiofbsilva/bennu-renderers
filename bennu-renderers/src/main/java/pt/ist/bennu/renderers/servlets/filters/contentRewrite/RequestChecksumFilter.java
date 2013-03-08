@@ -97,7 +97,7 @@ public class RequestChecksumFilter implements Filter {
             checksum = (String) httpServletRequest.getAttribute(GenericChecksumRewriter.CHECKSUM_ATTRIBUTE_NAME);
         }
         if (!isValidChecksum(httpServletRequest, checksum)) {
-            // if (LogLevel.ERROR) {
+            // if (logger.isErrorEnabled()) {
             // final User user = UserView.getUser();
             // final String userString = ((user == null) ? "<no user logged in>"
             // : user.getUsername()) + " key : "

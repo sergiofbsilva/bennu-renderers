@@ -2,22 +2,22 @@ package pt.ist.bennu.renderers.core.plugin;
 
 import javax.servlet.ServletException;
 
-import org.apache.log4j.Logger;
 import org.apache.struts.action.ActionServlet;
 import org.apache.struts.action.PlugIn;
 import org.apache.struts.action.RequestProcessor;
 import org.apache.struts.config.ControllerConfig;
 import org.apache.struts.config.ModuleConfig;
 import org.apache.struts.util.RequestUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import pt.ist.bennu.renderers._development.LogLevel;
 import pt.ist.bennu.renderers.core.model.MetaObjectFactory;
 import pt.ist.bennu.renderers.core.model.SchemaFactory;
 import pt.ist.bennu.renderers.core.model.UserIdentityFactory;
 import pt.ist.bennu.renderers.core.utils.RenderKit;
 
 public class RenderersPlugin implements PlugIn {
-    private static Logger logger = Logger.getLogger(RenderersPlugin.class);
+    private static Logger logger = LoggerFactory.getLogger(RenderersPlugin.class);
 
     // TODO: allow per module configuration, this includes factories
     private static boolean initialized = false;
@@ -95,8 +95,8 @@ public class RenderersPlugin implements PlugIn {
             configProcessorClass = RequestUtils.applicationClass(configProcessorClassname);
 
         } catch (ClassNotFoundException ex) {
-            if (LogLevel.FATAL) {
-                logger.fatal("Can't set RequestProcessor: bad class name '" + configProcessorClassname + "'.");
+            if (logger.isErrorEnabled()) {
+                logger.error("Can't set RequestProcessor: bad class name '" + configProcessorClassname + "'.");
             }
             throw new ServletException(ex);
         }
@@ -111,8 +111,8 @@ public class RenderersPlugin implements PlugIn {
         // Check if specified request processor is compatible with ours.
         Class ourProcessorClass = RenderersRequestProcessorImpl.implementationClass;
         if (!ourProcessorClass.isAssignableFrom(configProcessorClass)) {
-            if (LogLevel.FATAL) {
-                logger.fatal("Specified processor is incopatible with " + RequestProcessor.class.getName());
+            if (logger.isErrorEnabled()) {
+                logger.error("Specified processor is incopatible with " + RequestProcessor.class.getName());
             }
             throw new ServletException("invalid processor was specified");
         }
