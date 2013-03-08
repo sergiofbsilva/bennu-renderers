@@ -48,7 +48,7 @@ public class PhoneUtil {
                     return phoneNumber;
                 }
             } catch (NumberParseException e) {
-                System.out.println("O n�mero n�o � v�lido:" + e);
+                System.out.println("O número não é válido:" + e);
                 return null;
             }
         }

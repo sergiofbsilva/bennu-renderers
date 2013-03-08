@@ -1,3 +1,1 @@
-pt.ist.bennu.renderers.services.ServiceAnnotationProcessor
 pt.ist.bennu.renderers.security.accessControl.CheckedAnnotationProcessor
-pt.ist.bennu.renderers.annotation.ActionAnnotationProcessor

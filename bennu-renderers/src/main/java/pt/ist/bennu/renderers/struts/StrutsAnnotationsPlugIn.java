@@ -1,21 +1,17 @@
 /**
  * 
  */
-package pt.ist.bennu.renderers.struts.plugin;
+package pt.ist.bennu.renderers.struts;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Properties;
 import java.util.Set;
 
 import javax.servlet.ServletException;
 
-import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
@@ -37,8 +33,6 @@ import pt.ist.bennu.renderers.annotation.Input;
 import pt.ist.bennu.renderers.annotation.Mapping;
 import pt.ist.bennu.renderers.struts.tiles.FenixDefinitionsFactory;
 import pt.ist.bennu.renderers.struts.tiles.PartialTileDefinition;
-import pt.ist.fenixframework.artifact.FenixFrameworkArtifact;
-import pt.ist.fenixframework.project.exception.FenixFrameworkProjectException;
 
 /**
  * @author - Shezad Anavarali (shezad@ist.utl.pt)
@@ -70,7 +64,6 @@ public class StrutsAnnotationsPlugIn implements PlugIn {
     public void init(ActionServlet servlet, ModuleConfig config) throws ServletException {
 
         if (!initialized) {
-            loadActionsFromFile(actionClasses);
             PartialTileDefinition.init();
             initialized = true;
         }
@@ -276,35 +269,7 @@ public class StrutsAnnotationsPlugIn implements PlugIn {
         return mapping.path() + INPUT_DEFAULT_PAGE_AND_METHOD;
     }
 
-    private void loadActionsFromFile(final Set<Class<?>> actionClasses) {
-        try {
-            ClassLoader loader = Thread.currentThread().getContextClassLoader();
-            Properties properties = new Properties();
-            try (InputStream stream = loader.getResourceAsStream("/configuration.properties")) {
-                if (stream == null) {
-                    throw new RuntimeException();
-                }
-                properties.load(stream);
-            }
-
-            for (FenixFrameworkArtifact artifact : FenixFrameworkArtifact.fromName(properties.getProperty("app.name"))
-                    .getArtifacts()) {
-                try (InputStream stream = loader.getResourceAsStream(artifact.getName() + "/.actionAnnotationLog")) {
-                    if (stream != null) {
-                        List<String> classnames = IOUtils.readLines(stream);
-                        for (String classname : classnames) {
-                            try {
-                                Class<?> type = loader.loadClass(classname);
-                                actionClasses.add(type);
-                            } catch (final ClassNotFoundException e) {
-                                e.printStackTrace();
-                            }
-                        }
-                    }
-                }
-            }
-        } catch (IOException | FenixFrameworkProjectException e) {
-            e.printStackTrace();
-        }
+    public static void registerMapping(Class<?> type) {
+        actionClasses.add(type);
     }
 }
