@@ -1,8 +1,11 @@
 package pt.ist.bennu.renderers.extensions;
 
+import java.util.Locale;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import pt.ist.bennu.core.util.MultiLanguageString;
 import pt.ist.bennu.renderers.core.StringRenderer;
 import pt.ist.bennu.renderers.core.components.HtmlBlockContainer;
 import pt.ist.bennu.renderers.core.components.HtmlComponent;
@@ -10,8 +13,8 @@ import pt.ist.bennu.renderers.core.components.HtmlContainer;
 import pt.ist.bennu.renderers.core.components.HtmlInlineContainer;
 import pt.ist.bennu.renderers.core.components.HtmlText;
 import pt.ist.bennu.renderers.core.layouts.Layout;
-import pt.ist.bennu.renderers.util.Language;
-import pt.ist.bennu.renderers.util.MultiLanguageString;
+
+import com.sun.tools.internal.xjc.Language;
 
 /**
  * This renderer provides a standard way of presenting a {@link MultiLanguageString}. The <tt>MultiLanguageString</tt> is
@@ -124,13 +127,13 @@ public class MultiLanguageStringRenderer extends StringRenderer {
 
         HtmlComponent component = super.renderComponent(layout, value, type);
 
-        if (mlString.getAllLanguages().isEmpty()) {
+        if (mlString.isEmpty()) {
             return component;
         }
 
         component.setLanguage(getUsedLanguage(mlString).toString());
 
-        if (mlString.isRequestedLanguage() && !isShowLanguageForced()) {
+        if (mlString.isLocaleAvailable() && !isShowLanguageForced()) {
             return component;
         }
 
@@ -152,17 +155,15 @@ public class MultiLanguageStringRenderer extends StringRenderer {
         return container;
     }
 
-    private Language getUsedLanguage(MultiLanguageString mlString) {
+    private Locale getUsedLanguage(MultiLanguageString mlString) {
         if (getLanguage() != null) {
-            return Language.valueOf(getLanguage());
-        } else {
-            return mlString.getContentLanguage();
+            return Locale.forLanguageTag(getLanguage());
         }
+        return mlString.getContentLocale();
     }
 
     protected String getRenderedText(MultiLanguageString mlString) {
-        Language language = getUsedLanguage(mlString);
-        return mlString.getContent(language);
+        return mlString.getContent(getUsedLanguage(mlString));
     }
 
 }

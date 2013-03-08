@@ -2,6 +2,7 @@ package pt.ist.bennu.renderers.extensions.components;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Locale;
 import java.util.Properties;
 
 import javax.servlet.ServletContext;
@@ -10,11 +11,11 @@ import javax.servlet.jsp.PageContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import pt.ist.bennu.core.i18n.I18N;
 import pt.ist.bennu.renderers.core.components.HtmlLink;
 import pt.ist.bennu.renderers.core.components.HtmlScript;
 import pt.ist.bennu.renderers.core.components.HtmlTextArea;
 import pt.ist.bennu.renderers.core.components.tags.HtmlTag;
-import pt.ist.bennu.renderers.util.Language;
 
 public class TinyMceEditor extends HtmlTextArea {
 
@@ -107,7 +108,7 @@ public class TinyMceEditor extends HtmlTextArea {
         properties.setProperty("convert_fonts_to_spans", "true");
         properties.setProperty("fix_list_elements", "true");
 
-        Language language = Language.getLanguage();
+        Locale language = I18N.getLocale();
         properties.setProperty("language", language.toString());
         properties.setProperty("docs_language", "en"); // hardcoded because pt
         // is not supported

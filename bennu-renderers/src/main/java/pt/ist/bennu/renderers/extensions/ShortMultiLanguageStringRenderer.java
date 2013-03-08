@@ -1,9 +1,9 @@
 package pt.ist.bennu.renderers.extensions;
 
+import pt.ist.bennu.core.util.MultiLanguageString;
 import pt.ist.bennu.renderers.core.components.HtmlComponent;
 import pt.ist.bennu.renderers.core.components.HtmlText;
 import pt.ist.bennu.renderers.core.layouts.Layout;
-import pt.ist.bennu.renderers.util.MultiLanguageString;
 
 /**
  * This renderer has the same behaviour as the

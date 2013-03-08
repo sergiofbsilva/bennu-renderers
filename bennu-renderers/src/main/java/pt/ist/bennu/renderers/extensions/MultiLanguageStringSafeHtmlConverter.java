@@ -1,10 +1,11 @@
 package pt.ist.bennu.renderers.extensions;
 
+import java.util.Locale;
+
+import pt.ist.bennu.core.util.MultiLanguageString;
 import pt.ist.bennu.renderers.core.components.converters.Converter;
 import pt.ist.bennu.renderers.extensions.MultiLanguageStringInputRenderer.MultiLanguageStringConverter;
 import pt.ist.bennu.renderers.extensions.htmlEditor.JsoupSafeHtmlConverter;
-import pt.ist.bennu.renderers.util.Language;
-import pt.ist.bennu.renderers.util.MultiLanguageString;
 
 public class MultiLanguageStringSafeHtmlConverter extends Converter {
 
@@ -26,17 +27,17 @@ public class MultiLanguageStringSafeHtmlConverter extends Converter {
             return null;
         }
 
-        if (mls.getAllLanguages().isEmpty()) {
+        if (mls.isEmpty()) {
             return null;
         }
 
-        for (Language language : mls.getAllLanguages()) {
+        for (Locale language : mls.getAllLocales()) {
             String text = (String) safeConverter.convert(String.class, mls.getContent(language));
 
             if (text == null) {
-                mls.removeContent(language);
+                mls = mls.without(language);
             } else {
-                mls.setContent(language, text);
+                mls = mls.with(language, text);
             }
         }
 
