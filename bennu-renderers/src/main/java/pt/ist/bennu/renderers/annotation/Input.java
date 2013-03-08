@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pt.ist.bennu.renderers.struts.annotations;
+package pt.ist.bennu.renderers.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -12,11 +12,8 @@ import java.lang.annotation.Target;
  * @author - Shezad Anavarali (shezad@ist.utl.pt)
  * 
  */
-@Target({ ElementType.TYPE })
+@Target({ ElementType.METHOD })
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Forwards {
+public @interface Input {
 
-    Forward[] value();
-
-    Tile tileProperties() default @Tile();
 }

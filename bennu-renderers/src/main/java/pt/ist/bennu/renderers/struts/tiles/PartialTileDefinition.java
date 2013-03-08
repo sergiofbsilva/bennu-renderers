@@ -16,11 +16,11 @@ import java.util.Set;
 import org.apache.commons.lang.StringUtils;
 import org.apache.struts.tiles.ComponentDefinition;
 
-import pt.ist.bennu.renderers.struts.annotations.Forward;
-import pt.ist.bennu.renderers.struts.annotations.Forwards;
-import pt.ist.bennu.renderers.struts.annotations.Mapping;
-import pt.ist.bennu.renderers.struts.annotations.Tile;
-import pt.ist.bennu.renderers.struts.annotations.TileCustomPropertyName;
+import pt.ist.bennu.renderers.annotation.Forward;
+import pt.ist.bennu.renderers.annotation.Forwards;
+import pt.ist.bennu.renderers.annotation.Mapping;
+import pt.ist.bennu.renderers.annotation.Tile;
+import pt.ist.bennu.renderers.annotation.TileCustomPropertyName;
 
 public class PartialTileDefinition {
 

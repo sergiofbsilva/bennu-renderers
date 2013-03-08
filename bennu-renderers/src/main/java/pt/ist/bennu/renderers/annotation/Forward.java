@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pt.ist.bennu.renderers.struts.annotations;
+package pt.ist.bennu.renderers.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

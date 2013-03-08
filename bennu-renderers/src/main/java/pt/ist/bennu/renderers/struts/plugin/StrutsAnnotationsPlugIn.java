@@ -29,12 +29,12 @@ import org.apache.struts.config.MessageResourcesConfig;
 import org.apache.struts.config.ModuleConfig;
 
 import pt.ist.bennu.renderers.RenderersConfigurationManager;
-import pt.ist.bennu.renderers.struts.annotations.ExceptionHandling;
-import pt.ist.bennu.renderers.struts.annotations.Exceptions;
-import pt.ist.bennu.renderers.struts.annotations.Forward;
-import pt.ist.bennu.renderers.struts.annotations.Forwards;
-import pt.ist.bennu.renderers.struts.annotations.Input;
-import pt.ist.bennu.renderers.struts.annotations.Mapping;
+import pt.ist.bennu.renderers.annotation.ExceptionHandling;
+import pt.ist.bennu.renderers.annotation.Exceptions;
+import pt.ist.bennu.renderers.annotation.Forward;
+import pt.ist.bennu.renderers.annotation.Forwards;
+import pt.ist.bennu.renderers.annotation.Input;
+import pt.ist.bennu.renderers.annotation.Mapping;
 import pt.ist.bennu.renderers.struts.tiles.FenixDefinitionsFactory;
 import pt.ist.bennu.renderers.struts.tiles.PartialTileDefinition;
 import pt.ist.fenixframework.artifact.FenixFrameworkArtifact;
