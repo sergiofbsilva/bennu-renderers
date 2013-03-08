@@ -3,8 +3,8 @@ package pt.ist.bennu.renderers.extensions;
 import pt.ist.bennu.renderers.core.components.converters.Converter;
 import pt.ist.bennu.renderers.extensions.MultiLanguageStringInputRenderer.MultiLanguageStringConverter;
 import pt.ist.bennu.renderers.extensions.htmlEditor.JsoupSafeHtmlConverter;
-import pt.utl.ist.fenix.tools.util.i18n.Language;
-import pt.utl.ist.fenix.tools.util.i18n.MultiLanguageString;
+import pt.ist.bennu.renderers.util.Language;
+import pt.ist.bennu.renderers.util.MultiLanguageString;
 
 public class MultiLanguageStringSafeHtmlConverter extends Converter {
 

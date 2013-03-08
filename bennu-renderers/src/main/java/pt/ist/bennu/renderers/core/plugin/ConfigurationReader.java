@@ -28,9 +28,9 @@ import pt.ist.bennu.renderers.core.utils.RenderMode;
 import pt.ist.bennu.renderers.core.utils.RendererPropertyUtils;
 import pt.ist.bennu.renderers.core.validators.HtmlValidator;
 import pt.ist.bennu.renderers.core.validators.RequiredValidator;
+import pt.ist.bennu.renderers.util.Pair;
 import pt.ist.fenixframework.artifact.FenixFrameworkArtifact;
 import pt.ist.fenixframework.project.exception.FenixFrameworkProjectException;
-import pt.utl.ist.fenix.tools.util.Pair;
 
 public class ConfigurationReader {
     private static final Logger logger = LoggerFactory.getLogger(ConfigurationReader.class);

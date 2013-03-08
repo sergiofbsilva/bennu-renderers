@@ -14,7 +14,7 @@ import pt.ist.bennu.renderers.core.components.HtmlLink;
 import pt.ist.bennu.renderers.core.components.HtmlScript;
 import pt.ist.bennu.renderers.core.components.HtmlTextArea;
 import pt.ist.bennu.renderers.core.components.tags.HtmlTag;
-import pt.utl.ist.fenix.tools.util.i18n.Language;
+import pt.ist.bennu.renderers.util.Language;
 
 public class TinyMceEditor extends HtmlTextArea {
 

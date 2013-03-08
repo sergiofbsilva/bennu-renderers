@@ -9,7 +9,7 @@ import org.apache.commons.collections.Predicate;
 import org.joda.time.DateTime;
 import org.joda.time.YearMonthDay;
 
-import pt.utl.ist.fenix.tools.util.DateFormatUtil;
+import pt.ist.bennu.renderers.util.DateFormatUtil;
 
 /**
  * @author - Shezad Anavarali (shezad@ist.utl.pt)

@@ -34,7 +34,7 @@ import pt.ist.bennu.renderers.core.schemas.SchemaSlotDescription;
 import pt.ist.bennu.renderers.core.utils.RenderKit;
 import pt.ist.bennu.renderers.core.validators.HtmlValidator;
 import pt.ist.bennu.renderers.core.validators.RequiredValidator;
-import pt.utl.ist.fenix.tools.util.Pair;
+import pt.ist.bennu.renderers.util.Pair;
 
 public class EditObjectTag extends BaseRenderObjectTag implements ValidatorContainerTag {
 

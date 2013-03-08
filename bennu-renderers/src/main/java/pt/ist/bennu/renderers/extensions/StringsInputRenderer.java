@@ -26,7 +26,7 @@ import pt.ist.bennu.renderers.core.layouts.Layout;
 import pt.ist.bennu.renderers.core.model.MetaSlot;
 import pt.ist.bennu.renderers.core.model.MetaSlotKey;
 import pt.ist.bennu.renderers.core.utils.RenderUtils;
-import pt.utl.ist.fenix.tools.util.Strings;
+import pt.ist.bennu.renderers.util.Strings;
 
 /**
  * This renderer provides a generic way of editing slots that contain a {@link Strings}. The interface generated allows the user

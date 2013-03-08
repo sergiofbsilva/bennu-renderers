@@ -34,7 +34,7 @@ import pt.ist.bennu.renderers.core.model.MetaSlot;
 import pt.ist.bennu.renderers.core.schemas.Schema;
 import pt.ist.bennu.renderers.core.utils.RenderUtils;
 import pt.ist.bennu.renderers.core.utils.RendererPropertyUtils;
-import pt.utl.ist.fenix.tools.util.CollectionPager;
+import pt.ist.bennu.renderers.util.CollectionPager;
 
 /**
  * This renderer provides a way of presenting a collection in a table. The table

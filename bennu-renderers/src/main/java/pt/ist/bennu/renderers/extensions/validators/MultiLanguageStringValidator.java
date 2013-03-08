@@ -8,7 +8,7 @@ import pt.ist.bennu.renderers.core.components.HtmlSimpleValueComponent;
 import pt.ist.bennu.renderers.core.validators.HtmlChainValidator;
 import pt.ist.bennu.renderers.core.validators.HtmlValidator;
 import pt.ist.bennu.renderers.extensions.MultiLanguageStringInputRenderer.LanguageBean;
-import pt.utl.ist.fenix.tools.util.i18n.Language;
+import pt.ist.bennu.renderers.util.Language;
 
 public class MultiLanguageStringValidator extends HtmlValidator {
 

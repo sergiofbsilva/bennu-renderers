@@ -1,7 +1,7 @@
 package pt.ist.bennu.renderers.core.validators;
 
 import pt.ist.bennu.renderers.core.utils.RenderUtils;
-import pt.utl.ist.fenix.tools.util.PhoneUtil;
+import pt.ist.bennu.renderers.util.PhoneUtil;
 
 public class PhoneValidator extends HtmlValidator {
 

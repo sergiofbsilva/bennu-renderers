@@ -3,7 +3,7 @@ package pt.ist.bennu.renderers.extensions.util;
 import java.util.Properties;
 
 import pt.ist.bennu.renderers.core.utils.RenderUtils;
-import pt.utl.ist.fenix.tools.resources.AbstractMessageResourceProvider;
+import pt.ist.bennu.renderers.util.AbstractMessageResourceProvider;
 
 public class RendererMessageResourceProvider extends AbstractMessageResourceProvider {
 

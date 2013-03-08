@@ -32,9 +32,9 @@ import pt.ist.bennu.renderers.core.utils.RenderKit;
 import pt.ist.bennu.renderers.core.utils.RenderUtils;
 import pt.ist.bennu.renderers.core.validators.HtmlValidator;
 import pt.ist.bennu.renderers.extensions.validators.MultiLanguageStringValidator;
-import pt.utl.ist.fenix.tools.util.Pair;
-import pt.utl.ist.fenix.tools.util.i18n.Language;
-import pt.utl.ist.fenix.tools.util.i18n.MultiLanguageString;
+import pt.ist.bennu.renderers.util.Language;
+import pt.ist.bennu.renderers.util.MultiLanguageString;
+import pt.ist.bennu.renderers.util.Pair;
 
 /**
  * This renderer provides a generic way of editing slots that contain a {@link MultiLanguageString}. The interface generated

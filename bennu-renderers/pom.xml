@@ -37,11 +37,6 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>pt.ist</groupId>
-			<artifactId>fenix-tools</artifactId>
-			<version>1.0</version>
-		</dependency>
-		<dependency>
 			<groupId>org.jdom</groupId>
 			<artifactId>jdom</artifactId>
 			<version>1.1</version>

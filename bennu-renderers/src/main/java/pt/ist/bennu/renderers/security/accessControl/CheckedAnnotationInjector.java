@@ -1,7 +1,6 @@
 package pt.ist.bennu.renderers.security.accessControl;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Modifier;
@@ -16,7 +15,8 @@ import javassist.ClassPool;
 import javassist.CtClass;
 import javassist.CtMethod;
 import javassist.NotFoundException;
-import pt.utl.ist.fenix.tools.util.FileUtils;
+
+import org.apache.commons.io.FileUtils;
 
 public class CheckedAnnotationInjector {
 
@@ -46,7 +46,7 @@ public class CheckedAnnotationInjector {
             if (file.exists()) {
                 final Map<String, Set<String[]>> linesByClass = new HashMap<String, Set<String[]>>();
 
-                final String fileContents = FileUtils.readFile(new FileInputStream(file));
+                final String fileContents = FileUtils.readFileToString(file);
                 final String[] lines = fileContents.split(CheckedAnnotationProcessor.ENTRY_SEPERATOR);
                 for (final String line : lines) {
                     final String[] strings = line.split(CheckedAnnotationProcessor.FIELD_SEPERATOR);

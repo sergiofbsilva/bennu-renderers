@@ -7,7 +7,7 @@ import pt.ist.bennu.renderers.core.components.HtmlComponent;
 import pt.ist.bennu.renderers.core.components.HtmlText;
 import pt.ist.bennu.renderers.core.layouts.Layout;
 import pt.ist.bennu.renderers.extensions.util.RendererMessageResourceProvider;
-import pt.utl.ist.fenix.tools.resources.LabelFormatter;
+import pt.ist.bennu.renderers.util.LabelFormatter;
 
 public class LabelFormatterRenderer extends OutputRenderer {
 

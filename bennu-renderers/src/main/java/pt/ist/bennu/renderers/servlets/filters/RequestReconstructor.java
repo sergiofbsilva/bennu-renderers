@@ -6,7 +6,7 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
-import pt.utl.ist.fenix.tools.util.Pair;
+import pt.ist.bennu.renderers.util.Pair;
 
 public class RequestReconstructor {
 

@@ -13,7 +13,7 @@ import javax.annotation.processing.SupportedSourceVersion;
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.TypeElement;
 
-import pt.utl.ist.fenix.tools.util.FileUtils;
+import org.apache.commons.io.FileUtils;
 
 import com.sun.tools.javac.code.Symbol.ClassSymbol;
 
@@ -32,7 +32,7 @@ public class ActionAnnotationProcessor extends AbstractProcessor {
         final File file = new File(LOG_FILENAME);
         if (file.exists()) {
             try {
-                final String contents = FileUtils.readFile(LOG_FILENAME);
+                final String contents = FileUtils.readFileToString(new File(LOG_FILENAME));
                 for (final String line : contents.split(ENTRY_SEPERATOR)) {
                     actions.add(line);
                 }

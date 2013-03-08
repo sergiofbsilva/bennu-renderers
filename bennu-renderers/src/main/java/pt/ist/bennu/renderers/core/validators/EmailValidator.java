@@ -1,6 +1,6 @@
 package pt.ist.bennu.renderers.core.validators;
 
-import pt.utl.ist.fenix.tools.util.EMail;
+import pt.ist.bennu.renderers.util.EMail;
 
 public class EmailValidator extends RegexpValidator {
 

@@ -15,7 +15,7 @@ import org.apache.struts.tiles.DefinitionsFactoryException;
 import org.apache.struts.tiles.NoSuchDefinitionException;
 import org.apache.struts.tiles.xmlDefinition.I18nFactorySet;
 
-import pt.utl.ist.fenix.tools.util.i18n.Language;
+import pt.ist.bennu.renderers.util.Language;
 
 /**
  * @author - Shezad Anavarali (shezad@ist.utl.pt)

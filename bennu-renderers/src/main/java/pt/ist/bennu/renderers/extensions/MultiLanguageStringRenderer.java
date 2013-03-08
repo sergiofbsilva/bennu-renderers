@@ -10,8 +10,8 @@ import pt.ist.bennu.renderers.core.components.HtmlContainer;
 import pt.ist.bennu.renderers.core.components.HtmlInlineContainer;
 import pt.ist.bennu.renderers.core.components.HtmlText;
 import pt.ist.bennu.renderers.core.layouts.Layout;
-import pt.utl.ist.fenix.tools.util.i18n.Language;
-import pt.utl.ist.fenix.tools.util.i18n.MultiLanguageString;
+import pt.ist.bennu.renderers.util.Language;
+import pt.ist.bennu.renderers.util.MultiLanguageString;
 
 /**
  * This renderer provides a standard way of presenting a {@link MultiLanguageString}. The <tt>MultiLanguageString</tt> is

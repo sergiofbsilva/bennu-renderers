@@ -20,7 +20,7 @@ import javax.servlet.http.HttpSession;
 
 import org.apache.struts.Globals;
 
-import pt.utl.ist.fenix.tools.util.i18n.Language;
+import pt.ist.bennu.renderers.util.Language;
 
 /**
  * 

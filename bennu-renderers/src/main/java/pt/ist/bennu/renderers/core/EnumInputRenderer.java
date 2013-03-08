@@ -24,7 +24,7 @@ import pt.ist.bennu.renderers.core.layouts.Layout;
 import pt.ist.bennu.renderers.core.model.MetaObject;
 import pt.ist.bennu.renderers.core.model.MetaSlotKey;
 import pt.ist.bennu.renderers.core.utils.RenderUtils;
-import pt.utl.ist.fenix.tools.util.Pair;
+import pt.ist.bennu.renderers.util.Pair;
 
 /**
  * This renderer presents an html menu with one option for each possible enum

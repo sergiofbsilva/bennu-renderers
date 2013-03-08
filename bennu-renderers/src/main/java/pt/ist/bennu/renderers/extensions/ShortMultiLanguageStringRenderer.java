@@ -3,7 +3,7 @@ package pt.ist.bennu.renderers.extensions;
 import pt.ist.bennu.renderers.core.components.HtmlComponent;
 import pt.ist.bennu.renderers.core.components.HtmlText;
 import pt.ist.bennu.renderers.core.layouts.Layout;
-import pt.utl.ist.fenix.tools.util.i18n.MultiLanguageString;
+import pt.ist.bennu.renderers.util.MultiLanguageString;
 
 /**
  * This renderer has the same behaviour as the

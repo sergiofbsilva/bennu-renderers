@@ -13,7 +13,7 @@ import pt.ist.bennu.renderers.core.utils.RendererPropertyUtils;
 import pt.ist.bennu.renderers.core.validators.HtmlValidator;
 import pt.ist.bennu.renderers.core.validators.RequiredValidator;
 import pt.ist.bennu.renderers.extensions.validators.RequiredAutoCompleteSelectionValidator;
-import pt.utl.ist.fenix.tools.util.Pair;
+import pt.ist.bennu.renderers.util.Pair;
 
 /**
  * A MetaSlot is an abstraction of a slot's value of a concrete domain object.

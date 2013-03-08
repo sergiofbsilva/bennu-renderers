@@ -5,7 +5,7 @@ import java.util.Properties;
 
 import pt.ist.bennu.renderers.core.components.converters.Converter;
 import pt.ist.bennu.renderers.core.validators.HtmlValidator;
-import pt.utl.ist.fenix.tools.util.Pair;
+import pt.ist.bennu.renderers.util.Pair;
 
 public class SchemaSlotDescription {
 

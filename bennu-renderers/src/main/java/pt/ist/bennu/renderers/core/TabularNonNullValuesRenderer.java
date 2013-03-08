@@ -9,7 +9,7 @@ import pt.ist.bennu.renderers.core.layouts.Layout;
 import pt.ist.bennu.renderers.core.layouts.TabularLayout;
 import pt.ist.bennu.renderers.core.model.MetaObject;
 import pt.ist.bennu.renderers.core.model.MetaSlot;
-import pt.utl.ist.fenix.tools.util.i18n.MultiLanguageString;
+import pt.ist.bennu.renderers.util.MultiLanguageString;
 
 public class TabularNonNullValuesRenderer extends OutputRenderer {
 
