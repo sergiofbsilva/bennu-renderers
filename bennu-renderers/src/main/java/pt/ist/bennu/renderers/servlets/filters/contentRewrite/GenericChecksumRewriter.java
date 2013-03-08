@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import pt.ist.bennu.core.security.Authenticate;
-import pt.ist.bennu.renderers.FenixWebFramework;
+import pt.ist.bennu.renderers.RenderersConfigurationManager;
 
 public class GenericChecksumRewriter extends RequestRewriter {
 
@@ -303,7 +303,7 @@ public class GenericChecksumRewriter extends RequestRewriter {
 
     private boolean isRedirectRequest(final HttpServletRequest httpServletRequest) {
         final String uri = httpServletRequest.getRequestURI();
-        final int offset = FenixWebFramework.getConfig().getAppContext().length() + 1;
+        final int offset = RenderersConfigurationManager.getAppContext().length() + 1;
         return uri.indexOf("redirect.do", offset) >= 0;
     }
 

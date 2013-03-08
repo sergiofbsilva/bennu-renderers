@@ -28,8 +28,7 @@ import org.apache.struts.config.FormBeanConfig;
 import org.apache.struts.config.MessageResourcesConfig;
 import org.apache.struts.config.ModuleConfig;
 
-import pt.ist.bennu.renderers.Config;
-import pt.ist.bennu.renderers.FenixWebFramework;
+import pt.ist.bennu.renderers.RenderersConfigurationManager;
 import pt.ist.bennu.renderers.struts.annotations.ExceptionHandling;
 import pt.ist.bennu.renderers.struts.annotations.Exceptions;
 import pt.ist.bennu.renderers.struts.annotations.Forward;
@@ -140,10 +139,7 @@ public class StrutsAnnotationsPlugIn implements PlugIn {
 
             String exceptionHandler = (handlerClass == null ? null : handlerClass.getName());
             if (exceptionHandler == null) {
-                final Config appConfig = FenixWebFramework.getConfig();
-                exceptionHandler =
-                        (appConfig.getExceptionHandlerClassname() == null ? ExceptionHandler.class.getName() : appConfig
-                                .getExceptionHandlerClassname());
+                exceptionHandler = RenderersConfigurationManager.getExceptionHandlerClassname();
             }
 
             String key = (exception.key() == null ? EXCEPTION_KEY_DEFAULT_PREFIX + exClass.getSimpleName() : exception.key());
