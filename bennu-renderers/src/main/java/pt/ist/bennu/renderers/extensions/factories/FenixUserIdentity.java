@@ -1,7 +1,7 @@
 package pt.ist.bennu.renderers.extensions.factories;
 
+import pt.ist.bennu.core.domain.User;
 import pt.ist.bennu.renderers.core.model.UserIdentity;
-import pt.ist.bennu.renderers.security.User;
 
 public class FenixUserIdentity implements UserIdentity {
 

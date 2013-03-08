@@ -6,9 +6,8 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.codec.digest.DigestUtils;
 
+import pt.ist.bennu.core.security.Authenticate;
 import pt.ist.bennu.renderers.FenixWebFramework;
-import pt.ist.bennu.renderers.security.User;
-import pt.ist.bennu.renderers.security.UserView;
 
 public class GenericChecksumRewriter extends RequestRewriter {
 
@@ -38,9 +37,9 @@ public class GenericChecksumRewriter extends RequestRewriter {
             stringBuilder.append(string);
         }
 
-        final User user = UserView.getUser();
-        if (user != null) {
-            stringBuilder.append(user.getPrivateConstantForDigestCalculation());
+        final String userDigest = Authenticate.getPrivateConstantForDigestCalculation();
+        if (userDigest != null) {
+            stringBuilder.append(userDigest);
         }
         final String checksum = new String(DigestUtils.shaHex(stringBuilder.toString()));
         // System.out.println("Generating checksum for: " +
