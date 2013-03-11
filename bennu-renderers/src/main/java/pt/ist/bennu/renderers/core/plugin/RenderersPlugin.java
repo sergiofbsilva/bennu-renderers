@@ -85,7 +85,6 @@ public class RenderersPlugin implements PlugIn {
     }
 
     private void initProcessor(ActionServlet servlet, ModuleConfig config) throws ServletException {
-        String ourProcessorClassname = RenderersRequestProcessorImpl.implementationClass.getName();
         ControllerConfig controllerConfig = config.getControllerConfig();
         String configProcessorClassname = controllerConfig.getProcessorClass();
 
@@ -95,26 +94,10 @@ public class RenderersPlugin implements PlugIn {
             configProcessorClass = RequestUtils.applicationClass(configProcessorClassname);
 
         } catch (ClassNotFoundException ex) {
-            if (logger.isErrorEnabled()) {
+            if (logger.isDebugEnabled()) {
                 logger.error("Can't set RequestProcessor: bad class name '" + configProcessorClassname + "'.");
             }
             throw new ServletException(ex);
-        }
-
-        if (configProcessorClassname.equals(RequestProcessor.class.getName())
-                || configProcessorClassname.endsWith(ourProcessorClassname)) {
-
-            controllerConfig.setProcessorClass(ourProcessorClassname);
-            return;
-        }
-
-        // Check if specified request processor is compatible with ours.
-        Class ourProcessorClass = RenderersRequestProcessorImpl.implementationClass;
-        if (!ourProcessorClass.isAssignableFrom(configProcessorClass)) {
-            if (logger.isErrorEnabled()) {
-                logger.error("Specified processor is incopatible with " + RequestProcessor.class.getName());
-            }
-            throw new ServletException("invalid processor was specified");
         }
     }
 
