@@ -7,8 +7,9 @@
 
 <html>
 	<head>
+		<script src="/bennu-portal/portal.js" type="text/javascript"></script>
 	</head>
-	<body>
+	<body style="display:none;">
 		<jsp:include page="<%=context.getBody()%>" />
 	</body>
 </html>
