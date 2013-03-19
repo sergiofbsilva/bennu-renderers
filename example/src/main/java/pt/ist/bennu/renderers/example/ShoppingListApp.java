@@ -49,4 +49,8 @@ public class ShoppingListApp extends ContextBaseAction {
         request.setAttribute("list", item.getShoppingList());
         return forward(request, "/example/viewShoppinglist.jsp");
     }
+
+    public ActionForward app(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) {
+        return list(mapping, form, request, response);
+    }
 }

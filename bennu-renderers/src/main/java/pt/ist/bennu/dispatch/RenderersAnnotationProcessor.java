@@ -18,6 +18,7 @@ import org.slf4j.LoggerFactory;
 import pt.ist.bennu.core.domain.groups.BennuGroup;
 import pt.ist.bennu.core.security.Authenticate;
 import pt.ist.bennu.dispatch.model.ApplicationInfo;
+import pt.ist.bennu.dispatch.model.BundleDetails;
 import pt.ist.bennu.dispatch.model.FunctionalityInfo;
 import pt.ist.bennu.renderers.actions.RenderAction;
 import pt.ist.bennu.renderers.annotation.Mapping;
@@ -62,6 +63,10 @@ public class RenderersAnnotationProcessor implements ServletContainerInitializer
             Map<Class<?>, ApplicationInfo> apps = new HashMap<>();
             for (Class<?> type : classes) {
                 Mapping mapping = type.getAnnotation(Mapping.class);
+                final Application app = type.getAnnotation(Application.class);
+                if (app != null) {
+                    extractApp(apps, type);
+                }
                 if (mapping != null) {
                     StrutsAnnotationsPlugIn.registerMapping(type);
                     scanEntryPoints(apps, mapping.path(), type);
@@ -86,23 +91,38 @@ public class RenderersAnnotationProcessor implements ServletContainerInitializer
     }
 
     public void extractFunctionality(Map<Class<?>, ApplicationInfo> apps, Functionality functionality) {
-        if (!apps.containsKey(functionality.app())) {
-            extractApp(apps, functionality.app());
-        }
-        apps.get(functionality.app()).addFunctionality(
-                new FunctionalityInfo(functionality.bundle(), functionality.title(), functionality.description(), functionality
-                        .path(), functionality.group()));
+        extractApp(apps, functionality.app());
+        BundleDetails details = new BundleDetails(functionality.bundle(), functionality.title(), functionality.description());
+        final ApplicationInfo app = apps.get(functionality.app());
+        final FunctionalityInfo functionalityInfo =
+                new FunctionalityInfo(app.getPath() + "/" + functionality.path(), functionality.group(), details);
+        app.addFunctionality(functionalityInfo);
     }
 
     private void extractApp(Map<Class<?>, ApplicationInfo> apps, Class<?> app) {
+        if (apps.containsKey(app)) {
+            return;
+        }
         Application application = app.getAnnotation(Application.class);
         if (application != null) {
-            apps.put(app, new ApplicationInfo(application.bundle(), application.title(), application.description(),
-                    "render.do?f=" + application.path(), application.group()));
-            actionMap
-                    .put(application.path(), new Forwarder(app.getAnnotation(Mapping.class).path() + ".do", application.group()));
+            if (!hasAppMethod(app)) {
+                throw new Error(String.format("Application class %s doesn't have app method.", app.getName()));
+            }
+            BundleDetails details = new BundleDetails(application.bundle(), application.title(), application.description());
+            apps.put(app, new ApplicationInfo("render.do?f=" + application.path(), application.group(), details));
+            actionMap.put(application.path(), new Forwarder(app.getAnnotation(Mapping.class).path() + ".do" + "?method=app",
+                    application.group()));
         } else {
             throw new Error();
         }
+    }
+
+    private boolean hasAppMethod(Class<?> app) {
+        for (Method method : app.getMethods()) {
+            if ("app".equals(method.getName())) {
+                return true;
+            }
+        }
+        return false;
     }
 }
