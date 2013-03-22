@@ -7,6 +7,7 @@
 
 .settings/
 .serviceAnnotationLog
+.classpath
 configuration.properties
 log4j.properties
 
