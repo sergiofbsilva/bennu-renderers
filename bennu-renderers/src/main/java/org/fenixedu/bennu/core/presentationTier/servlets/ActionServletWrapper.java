@@ -32,9 +32,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Enumeration;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
@@ -127,6 +129,7 @@ public class ActionServletWrapper extends ActionServlet {
         initializeParameterMapDefaults();
         initializeConfigurations();
         super.init(new ServletConfigWrapper(config));
+        new StrutsLogger(modules, config);
     }
 
     private void initializeParameterMapDefaults() {
@@ -198,11 +201,13 @@ public class ActionServletWrapper extends ActionServlet {
         }
     }
 
+    Set<ModuleConfig> modules = new HashSet<ModuleConfig>();
+
     @Override
     protected ModuleConfig initModuleConfig(String prefix, String paths) throws ServletException {
         logger.info("Initializing Struts Module '{}'", prefix);
         final ModuleConfig moduleConfig = super.initModuleConfig(prefix, paths);
-
+        modules.add(moduleConfig);
         for (MessageResourcesConfig config : resourcesConfigurations.values()) {
             // If a ResourceConfig with the key already exists, do nothing, this
             // means the user configured the resources manually in struts-config.xml
